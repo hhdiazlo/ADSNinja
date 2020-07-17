@@ -1,0 +1,13 @@
+{
+  "distance": 1000,
+  "shipment": {
+    "size": "Letter",
+    "weight": 0.9
+  },
+  "method": {
+    "transport": "Ground",
+    "pickup": "Dropoff",
+    "next day": true
+  },
+  "customer": "Silver"
+}

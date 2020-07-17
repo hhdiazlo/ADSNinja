@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="Shipping price">
+  <name>shippingPrice</name>
+  <uuid>00299fef-0563-4efd-9d04-260b50b7ce9c</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#d9cefc3d-927d-4da6-90a9-b46965652e45"/>
+  <targetRuleProject href="../../Shipping%20price#f3abdce4-42e2-4d52-8dcf-826a9d6bec95"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

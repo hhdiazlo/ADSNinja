@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Final price</name>
+  <uuid>552f48fe-28be-4f34-a0af-93a8639cf55b</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[set decision to round ('Price before discount' * (1 - Discount),2) ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

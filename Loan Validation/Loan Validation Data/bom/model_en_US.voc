@@ -1,0 +1,87 @@
+
+# Term: number of monthly payments
+@number\ of\ monthly\ payments#plural = number of monthly payments
+
+# newtype
+newtype#concept.label = loan
+newtype.newattribute#phrase.action = set the number of monthly payments of {this} to {number of monthly payments}
+newtype.newattribute#phrase.navigation = {number of monthly payments} of {this}
+newtype.newattribute1#phrase.action = set the start date of {this} to {start date}
+newtype.newattribute1#phrase.clearer = clear the start date of {this}
+newtype.newattribute1#phrase.navigation = {start date} of {this}
+newtype.newattribute2#phrase.action = set the amount of {this} to {amount}
+newtype.newattribute2#phrase.navigation = {amount} of {this}
+newtype.newattribute3#phrase.action = set the loan to value of {this} to {loan to value}
+newtype.newattribute3#phrase.navigation = {loan to value} of {this}
+newtype.newtype(java.lang.Long,ilog.rules.brl.Date,java.lang.Long,double)#phrase.navigation = a new {loan} where {0, number of monthly payments} {1, start date} {2, amount} {3, loan to value}
+
+# newtype1
+newtype1#concept.label = borrower
+newtype1.newattribute#phrase.action = set the first name of {this} to {first name}
+newtype1.newattribute#phrase.navigation = {first name} of {this}
+newtype1.newattribute1#phrase.action = set the last name of {this} to {last name}
+newtype1.newattribute1#phrase.navigation = {last name} of {this}
+newtype1.newattribute2#phrase.action = set the birth date of {this} to {birth date}
+newtype1.newattribute2#phrase.clearer = clear the birth date of {this}
+newtype1.newattribute2#phrase.navigation = {birth date} of {this}
+newtype1.newattribute3#phrase.action = set the SSN of {this} to {SSN}
+newtype1.newattribute3#phrase.clearer = clear the SSN of {this}
+newtype1.newattribute3#phrase.navigation = {SSN} of {this}
+newtype1.newattribute4#phrase.action = set the yearly income of {this} to {yearly income}
+newtype1.newattribute4#phrase.navigation = {yearly income} of {this}
+newtype1.newattribute5#phrase.action = set the zip code of {this} to {zip code}
+newtype1.newattribute5#phrase.navigation = {zip code} of {this}
+newtype1.newattribute6#phrase.action = set the credit score of {this} to {credit score}
+newtype1.newattribute6#phrase.navigation = {credit score} of {this}
+newtype1.newattribute7#phrase.action = set the spouse of {this} to {spouse}
+newtype1.newattribute7#phrase.clearer = clear the spouse of {this}
+newtype1.newattribute7#phrase.navigation = {spouse} of {this}
+newtype1.newattribute8#phrase.action = set the latest bankruptcy of {this} to {latest bankruptcy}
+newtype1.newattribute8#phrase.clearer = clear the latest bankruptcy of {this}
+newtype1.newattribute8#phrase.navigation = {latest bankruptcy} of {this}
+newtype1.newtype1(java.lang.String,java.lang.String,ilog.rules.brl.Date,newtype4,java.lang.Long,java.lang.String,java.lang.Long,newtype1,newtype2)#phrase.navigation = a new {borrower} where {0, first name} {1, last name} {2, birth date} {3, SSN} {4, yearly income} {5, zip code} {6, credit score} {7, spouse} {8, latest bankruptcy}
+
+# newtype2
+newtype2#concept.label = bankruptcy
+newtype2.newattribute#phrase.action = set the date of {this} to {date}
+newtype2.newattribute#phrase.clearer = clear the date of {this}
+newtype2.newattribute#phrase.navigation = {date} of {this}
+newtype2.newattribute1#phrase.action = set the chapter of {this} to {chapter}
+newtype2.newattribute1#phrase.navigation = {chapter} of {this}
+newtype2.newattribute2#phrase.action = set the reason of {this} to {reason}
+newtype2.newattribute2#phrase.navigation = {reason} of {this}
+newtype2.newtype2(ilog.rules.brl.Date,java.lang.Long,java.lang.String)#phrase.navigation = a new {bankruptcy} where {0, date} {1, chapter} {2, reason}
+
+# newtype3
+newtype3#concept.label = approval
+newtype3.newattribute#phrase.action = make it {approved} that {this} is approved
+newtype3.newattribute#phrase.navigation = {this} is approved
+newtype3.newattribute1#phrase.action = set the message of {this} to {message}
+newtype3.newattribute1#phrase.navigation = {message} of {this}
+newtype3.newtype3(boolean,java.lang.String)#phrase.navigation = a new {approval} where {0, approved} {1, message}
+
+# newtype4
+newtype4#concept.label = SSN
+newtype4.newattribute#phrase.action = set the area number of {this} to {area number}
+newtype4.newattribute#phrase.navigation = {area number} of {this}
+newtype4.newattribute1#phrase.action = set the group code of {this} to {group code}
+newtype4.newattribute1#phrase.navigation = {group code} of {this}
+newtype4.newattribute2#phrase.action = set the serial number of {this} to {serial number}
+newtype4.newattribute2#phrase.navigation = {serial number} of {this}
+newtype4.newtype4(java.lang.String,java.lang.String,java.lang.String)#phrase.navigation = a new {SSN} where {0, area number} {1, group code} {2, serial number}
+
+# newtype5
+newtype5#concept.label = grade
+newtype5.newattribute#phrase.action = set the grade of {this} to {grade}
+newtype5.newattribute#phrase.navigation = {grade} of {this}
+newtype5.newattribute1#phrase.action = set the message of {this} to {message}
+newtype5.newattribute1#phrase.navigation = {message} of {this}
+newtype5.newtype5(java.lang.String,java.lang.String)#phrase.navigation = a new {grade} where {0, grade} {1, message}
+
+# newtype6
+newtype6#concept.label = insurance
+newtype6.newattribute#phrase.action = make it {required} that {this} is required
+newtype6.newattribute#phrase.navigation = {this} is required
+newtype6.newattribute1#phrase.action = set the rate of {this} to {rate}
+newtype6.newattribute1#phrase.navigation = {rate} of {this}
+newtype6.newtype6(boolean,double)#phrase.navigation = a new {insurance} where {0, required} {1, rate}

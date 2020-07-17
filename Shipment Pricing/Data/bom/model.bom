@@ -1,0 +1,138 @@
+
+
+public class newenum
+        extends java.lang.Enum
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Pickup"
+        property "de.generated" "true"
+        property "ads.typeId" "1"
+{
+    domain {static newenumvalue, static newenumvalue1}
+    public static final readonly newenum newenumvalue
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Dropoff";
+    public static final readonly newenum newenumvalue1
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Pickup";
+}
+
+public class newenum1
+        extends java.lang.Enum
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Transport"
+        property "de.generated" "true"
+        property "ads.typeId" "2"
+{
+    domain {static newenumvalue, static newenumvalue1}
+    public static final readonly newenum1 newenumvalue
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Ground";
+    public static final readonly newenum1 newenumvalue1
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Air";
+}
+
+public class newenum2
+        extends java.lang.Enum
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Customer Status"
+        property "de.generated" "true"
+        property "ads.typeId" "3"
+{
+    domain {static newenumvalue, static newenumvalue1, static newenumvalue2}
+    public static final readonly newenum2 newenumvalue
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Gold";
+    public static final readonly newenum2 newenumvalue1
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Silver";
+    public static final readonly newenum2 newenumvalue2
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Bronze";
+}
+
+public class newenum3
+        extends java.lang.Enum
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Dimension"
+        property "de.generated" "true"
+        property "ads.typeId" "4"
+{
+    domain {static newenumvalue, static newenumvalue1, static newenumvalue2, static newenumvalue3}
+    public static final readonly newenum3 newenumvalue
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Pack 3";
+    public static final readonly newenum3 newenumvalue1
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Pack 2";
+    public static final readonly newenum3 newenumvalue2
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Pack 1";
+    public static final readonly newenum3 newenumvalue3
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Letter";
+}
+
+public class newtype
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Method"
+        property "de.generated" "true"
+        property "ads.typeId" "5"
+{
+    public boolean newattribute
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "next day"
+                property update "true";
+    public newenum1 newattribute1
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "transport"
+                property update "true";
+    public newenum newattribute2
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "pickup"
+                property update "true";
+    public newtype(boolean newattribute, newenum1 newattribute1, newenum newattribute2)
+                property autoExpand "true"
+                property groups "BALA"
+                property prototype "true";
+    public newtype()
+                property "dataio.default" "true";
+}
+
+public class newtype1
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Result"
+        property "de.generated" "true"
+        property "ads.typeId" "6"
+{
+    public ilog.rules.brl.Time newattribute
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ETA"
+                property update "true";
+    public double newattribute1
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "price"
+                property update "true";
+    public newtype1(ilog.rules.brl.Time newattribute, double newattribute1)
+                property autoExpand "true"
+                property groups "BALA"
+                property prototype "true";
+    public newtype1()
+                property "dataio.default" "true";
+}
+
+public class newtype2
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Shipment"
+        property "de.generated" "true"
+        property "ads.typeId" "7"
+{
+    public newenum3 newattribute
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "size"
+                property update "true";
+    public double newattribute1
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "weight"
+                property update "true";
+    public newtype2(newenum3 newattribute, double newattribute1)
+                property autoExpand "true"
+                property groups "BALA"
+                property prototype "true";
+    public newtype2()
+                property "dataio.default" "true";
+}
+

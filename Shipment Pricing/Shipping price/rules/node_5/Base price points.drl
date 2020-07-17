@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Base price points</name>
+  <uuid>582ce508-7f0e-438b-aa92-86954b165de7</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[set decision to 'Shipping cost' * 'Transportation multiplier'  ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

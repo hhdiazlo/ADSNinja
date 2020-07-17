@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Next-day costs</name>
+  <uuid>354b6553-fa16-4506-a30a-a4c4e049dde0</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+    Method is next day
+then
+    set decision to decision +3 ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>
