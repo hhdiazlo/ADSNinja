@@ -1,0 +1,41 @@
+
+# Diagnosis
+Diagnosis#concept.label = Diagnosis
+Diagnosis.Diagnosis(IllnessDomain,java.util.List)#phrase.navigation = a new {Diagnosis} where {0, disease} {1, recommendations}
+Diagnosis.addTo_recommendationses(java.lang.String)#phrase.action = add {0} to the recommendationses of {this}
+Diagnosis.clear_recommendationses()#phrase.action = clear the recommendationses of {this}
+Diagnosis.disease#phrase.action = set the disease of {this} to {disease}
+Diagnosis.disease#phrase.clearer = clear the disease of {this}
+Diagnosis.disease#phrase.navigation = {disease} of {this}
+Diagnosis.recommendationses#phrase.action = set the recommendationses of {this} to {recommendations}
+Diagnosis.recommendationses#phrase.navigation = {recommendations} of {this}
+Diagnosis.removeFrom_recommendationses(java.lang.String)#phrase.action = remove {0} from the recommendationses of {this}
+
+# IllnessDomain
+IllnessDomain#concept.label = IllnessDomain
+IllnessDomain.aLLERGIES#instance.label = ALLERGIES
+IllnessDomain.cOLD#instance.label = COLD
+IllnessDomain.cORONAVIRUS#instance.label = CORONAVIRUS
+IllnessDomain.fLU#instance.label = FLU
+IllnessDomain.hEALTHY#instance.label = HEALTHY
+IllnessDomain.uNDETERMINED#instance.label = UNDETERMINED
+
+# Symptom
+Symptom#concept.label = Symptom
+Symptom.Symptom(SymptomsDomain)#phrase.navigation = a new {Symptom} where {0, name}
+Symptom.newAttribute#phrase.action = set the name of {this} to {name}
+Symptom.newAttribute#phrase.clearer = clear the name of {this}
+Symptom.newAttribute#phrase.navigation = {name} of {this}
+
+# SymptomsDomain
+SymptomsDomain#concept.label = SymptomsDomain
+SymptomsDomain.cOUGH#instance.label = COUGH
+SymptomsDomain.eXHAUSTATION#instance.label = EXHAUSTATION
+SymptomsDomain.fATIGUE#instance.label = FATIGUE
+SymptomsDomain.fEVER#instance.label = FEVER
+SymptomsDomain.iTCHYEYES#instance.label = ITCHY EYES
+SymptomsDomain.mILDCHESTDISCOMFORT#instance.label = MILD CHEST DISCOMFORT
+SymptomsDomain.rUNNYNOSE#instance.label = RUNNY NOSE
+SymptomsDomain.sHORTNESSOFBREATH#instance.label = SHORTNESS OF BREATH
+SymptomsDomain.sNEEZING#instance.label = SNEEZING
+SymptomsDomain.wEAKNESS#instance.label = WEAKNESS
