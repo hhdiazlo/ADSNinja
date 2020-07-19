@@ -34,6 +34,7 @@
                 <input bomType="Symptom" collection="true" name="Received Symptoms"/>
                 <output bomType="Diagnosis" collection="false" name="Identify Illness"/>
                 <rule defaultRule="false" href="node_2/Healthy%20Patient.drl" kind="BusinessRule" name="Healthy Patient"/>
+                <rule defaultRule="false" href="node_2/Single%20Symptom.dmt" kind="DecisionTable" name="Single Symptom"/>
             </ruleset>
         </extensionElements>
         <variable id="node_2_ii" name="Identify Illness" typeRef="Diagnosis"/>
