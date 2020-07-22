@@ -40,7 +40,7 @@
                     <ActionSet>
                         <Action DefId="A0">
                             <Expression>
-                                <Param><![CDATA[{ "Give yourself a pat on the back" }]]></Param>
+                                <Param><![CDATA[{ "Give yourself a pat on the back as you seem  to be a healthy person" }]]></Param>
                             </Expression>
                         </Action>
                     </ActionSet>
@@ -52,7 +52,7 @@
                     <ActionSet>
                         <Action DefId="A0">
                             <Expression>
-                                <Param><![CDATA[{ "You may have a cold" }]]></Param>
+                                <Param/>
                             </Expression>
                         </Action>
                     </ActionSet>
@@ -64,7 +64,31 @@
                     <ActionSet>
                         <Action DefId="A0">
                             <Expression>
-                                <Param><![CDATA[{ "You may have allergies" }]]></Param>
+                                <Param><![CDATA[{ "Symptoms look like allergies. Consider taking Allegro" }]]></Param>
+                            </Expression>
+                        </Action>
+                    </ActionSet>
+                </Condition>
+                <Condition>
+                    <Expression>
+                        <Param><![CDATA[CORONAVIRUS]]></Param>
+                    </Expression>
+                    <ActionSet>
+                        <Action DefId="A0">
+                            <Expression>
+                                <Param><![CDATA[{ "Please contact your Physician and start a self-quatantine period of 2 weeks" }]]></Param>
+                            </Expression>
+                        </Action>
+                    </ActionSet>
+                </Condition>
+                <Condition>
+                    <Expression>
+                        <Param><![CDATA[FLU]]></Param>
+                    </Expression>
+                    <ActionSet>
+                        <Action DefId="A0">
+                            <Expression>
+                                <Param><![CDATA[{ "Symptoms look like  you have the FLU. Please contact  your Physician and ask for Tamiflu" }]]></Param>
                             </Expression>
                         </Action>
                     </ActionSet>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>COVID19 validation</name>
+  <uuid>e4584ed3-c375-48a4-8654-58c10710328c</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+ all of the following conditions are true:
+ - there is one Symptom in 'Received Symptoms' 
+     where the name of  this Symptom is FEVER, 
+- there is one Symptom in 'Received Symptoms' 
+     where the name of  this Symptom is SHORTNESS OF BREATH,
+- there are at least 2 Symptoms in 'Received Symptoms' 
+     where the name of  each Symptom is one of {COUGH, FATIGUE,  WEAKNESS, EXHAUSTATION},
+then
+   set decision to a new Diagnosis where 
+    the disease is CORONAVIRUS ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

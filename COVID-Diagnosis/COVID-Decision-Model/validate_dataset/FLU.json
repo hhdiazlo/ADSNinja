@@ -1,0 +1,13 @@
+{
+  "receivedSymptoms": [
+    {
+      "name": "FEVER"
+    },
+    {
+      "name": "COUGH"
+    },
+    {
+      "name": "EXHAUSTATION"
+    }
+  ]
+}
