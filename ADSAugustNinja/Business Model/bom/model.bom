@@ -1,0 +1,89 @@
+
+
+public class Diagnosis
+        property "ads.typeId" "3"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Diagnosis"
+        property "de.generated" "true"
+{
+    public IlllnessDomain1 disease
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "disease"
+                property update "true";
+    public java.util.List recommendationses domain 0,* class string
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "recommendationses"
+                property update "true";
+    public Diagnosis(IlllnessDomain1 disease, 
+        java.util.List recommendationses domain 0,* class string)
+                property autoExpand "true"
+                property groups "BALA"
+                property prototype "true";
+    public Diagnosis()
+                property "dataio.default" "true";
+    public void addTo_recommendationses(string recommendationses)
+                property collectionAttribute "recommendationses"
+                property update "true";
+    public void clear_recommendationses()
+                property collectionAttribute "recommendationses"
+                property update "true";
+    public void removeFrom_recommendationses(string recommendationses)
+                property collectionAttribute "recommendationses"
+                property update "true";
+    public void set_recommendationses(java.util.Collection recommendationses domain 0,* class string)
+                property collectionAttribute "recommendationses"
+                property update "true";
+}
+
+public class IlllnessDomain1
+        extends java.lang.Enum
+        property "ads.typeId" "1"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Illlness Domain"
+        property "de.generated" "true"
+{
+    domain {static cOLD, static fLU, static hEALTHY}
+    public static final readonly IlllnessDomain1 cOLD
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "COLD";
+    public static final readonly IlllnessDomain1 fLU
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FLU";
+    public static final readonly IlllnessDomain1 hEALTHY
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "HEALTHY";
+}
+
+public class Symptom
+        property "ads.typeId" "4"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Symptom"
+        property "de.generated" "true"
+{
+    public SymptomsDomain name
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "name"
+                property update "true";
+    public Symptom(SymptomsDomain name)
+                property autoExpand "true"
+                property groups "BALA"
+                property prototype "true";
+    public Symptom()
+                property "dataio.default" "true";
+}
+
+public class SymptomsDomain
+        extends java.lang.Enum
+        property "ads.typeId" "2"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "SymptomsDomain"
+        property "de.generated" "true"
+{
+    domain {static fATIGUE, static fEVER, static sNEEZING}
+    public static final readonly SymptomsDomain fATIGUE
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FATIGUE";
+    public static final readonly SymptomsDomain fEVER
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FEVER";
+    public static final readonly SymptomsDomain sNEEZING
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SNEEZING";
+}
+

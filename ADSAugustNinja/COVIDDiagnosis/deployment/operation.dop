@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="operation" targetRuleProjectName="COVIDDiagnosis">
+  <name>COVIDDiagnosis</name>
+  <uuid>c8953f29-ddc0-46c9-87b5-26e06d4a6111</uuid>
+  <decisionModel href="../rules/decisionModel.dmo#d87d4593-b70a-41ba-a2f4-41dc1f541fe7"/>
+  <targetRuleProject href="../../COVIDDiagnosis#587be19c-6a71-4985-8a7e-4142ca2450ca"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>
