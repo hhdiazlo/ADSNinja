@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>healthy patient 2</name>
+  <uuid>b4ee7e6c-28b3-4a09-bc5b-74f74ffb77b5</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+    there are 0 Symptoms in 'Received Symptoms'  
+then
+    set decision to a new Diagnosis where
+        the disease is HEALTHY ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

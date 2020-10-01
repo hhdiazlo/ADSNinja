@@ -52,7 +52,7 @@
                     <ActionSet>
                         <Action DefId="A0">
                             <Expression>
-                                <Param/>
+                                <Param><![CDATA[{ "Symptoms look like a COLD.  Stay at home an relax" }]]></Param>
                             </Expression>
                         </Action>
                     </ActionSet>

@@ -40,6 +40,7 @@
                 <rule defaultRule="false" href="node_2/COVID19%20validation.drl" kind="BusinessRule" name="COVID19 validation"/>
                 <rule defaultRule="false" href="node_2/FLU%20validation.drl" kind="BusinessRule" name="FLU validation"/>
                 <rule defaultRule="false" href="node_2/Combined%20Symptoms.dmt" kind="DecisionTable" name="Combined Symptoms"/>
+                <rule defaultRule="false" href="node_2/healthy%20patient%202.drl" kind="BusinessRule" name="healthy patient 2"/>
             </ruleset>
         </extensionElements>
         <variable id="node_2_ii" name="Identify Illness" typeRef="Diagnosis"/>
