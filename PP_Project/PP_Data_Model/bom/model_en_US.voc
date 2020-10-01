@@ -1,0 +1,17 @@
+
+# Temperature
+Temperature#concept.label = temperature
+Temperature.cold#instance.label = cold
+Temperature.hot#instance.label = hot
+Temperature.warm#instance.label = warm
+
+# Weather
+Weather#concept.label = weather
+Weather.Weather(java.lang.Long,boolean,Temperature)#phrase.navigation = a new {weather} where {0, rain forecst} {1, storm alert} {2, temperature}
+Weather.rainForecst#phrase.action = set the rain forecst of {this} to {rain forecst}
+Weather.rainForecst#phrase.navigation = {rain forecst} of {this}
+Weather.stormAlert#phrase.action = make it {storm alert} that {this} is storm alert
+Weather.stormAlert#phrase.navigation = {this} is storm alert
+Weather.temperature#phrase.action = set the temperature of {this} to {temperature}
+Weather.temperature#phrase.clearer = clear the temperature of {this}
+Weather.temperature#phrase.navigation = {temperature} of {this}

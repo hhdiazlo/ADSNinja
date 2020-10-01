@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>output-default-setting</name>
+  <uuid>8af10f6a-4e53-4fea-8e47-64271e4a3bab</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[set decision to "WOW a deluge. Stay home" ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

@@ -1,0 +1,45 @@
+
+
+public class Temperature
+        extends java.lang.Enum
+        property "ads.typeId" "1"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "temperature"
+        property "de.generated" "true"
+{
+    domain {static cold, static hot, static warm}
+    public static final readonly Temperature cold
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "cold";
+    public static final readonly Temperature hot
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "hot";
+    public static final readonly Temperature warm
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "warm";
+}
+
+public class Weather
+        property "ads.typeId" "2"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "weather"
+        property "de.generated" "true"
+{
+    public java.lang.Long rainForecst
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "rain forecst"
+                property update "true";
+    public boolean stormAlert
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "storm alert"
+                property update "true";
+    public Temperature temperature
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "temperature"
+                property update "true";
+    public Weather(java.lang.Long rainForecst, boolean stormAlert, Temperature temperature)
+                property autoExpand "true"
+                property groups "BALA"
+                property prototype "true";
+    public Weather()
+                property "dataio.default" "true";
+}
+
