@@ -26,15 +26,15 @@
         </pluginManagement>
     </build>
     
-    <distributionManagement>
+   <distributionManagement>
       <snapshotRepository>
         <id>snapshots</id>
-        <url>http://hhdiazlohost-2:8081/nexus/content/repositories/snapshots</url>
+        <url>http://nexus-hhdiazlo-utils.rhos-cp4a-cluster-84ea8dc8fe6c9a7b527923bad86bde7a-0000.us-east.containers.appdomain.cloud/nexus/content/repositories/snapshots</url>
       </snapshotRepository>
       <repository>
             <id>releases</id>
-            <url>http://hhdiazlohost-2:8081/nexus/content/repositories/releases</url>
+            <url>http://nexus-hhdiazlo-utils.rhos-cp4a-cluster-84ea8dc8fe6c9a7b527923bad86bde7a-0000.us-east.containers.appdomain.cloud/nexus/content/repositories/releases</url>
       </repository>
-    </distributionManagement>
+  </distributionManagement>
 
 </project>
