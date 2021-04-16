@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>test 1</name>
+  <uuid>6f1a3a23-5615-4e1d-98f0-e3ef55ed4e4d</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[set decision to a new Response data where
+		the interestRate is 0.05, 
+		isHighRisk is true , 
+		the monthlyPayment is 250, 
+		the riskAssesmentMessage is "Customer is considered very very high risk" ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

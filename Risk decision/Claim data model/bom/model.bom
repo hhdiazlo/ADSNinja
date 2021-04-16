@@ -1,0 +1,32 @@
+
+
+public class ResponseData
+        property "ads.typeId" "1"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Response data"
+        property "de.generated" "true"
+{
+    public double interestRate
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "interestRate"
+                property update "true";
+    public boolean isHighRisk
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "isHighRisk"
+                property update "true";
+    public double monthlyPayment
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "monthlyPayment"
+                property update "true";
+    public string riskAssesmentMessage
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "riskAssesmentMessage"
+                property update "true";
+    public ResponseData(double interestRate, boolean isHighRisk, double monthlyPayment, string riskAssesmentMessage)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public ResponseData()
+                property "dataio.default" "true";
+}
+

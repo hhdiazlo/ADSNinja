@@ -1,0 +1,21 @@
+
+# ResponseData
+ResponseData#concept.label = Response data
+ResponseData.ResponseData(double,boolean,double,java.lang.String)#phrase.navigation = a new {Response data} where {0, interestRate} {1, isHighRisk} {2, monthlyPayment} {3, riskAssesmentMessage}
+ResponseData.interestRate#phrase.action = set the interestRate of {this} to {interestRate}
+ResponseData.interestRate#phrase.addition_setter = add {interestRate} to the interestRate of {this}
+ResponseData.interestRate#phrase.navigation = {interestRate} of {this}
+ResponseData.interestRate#phrase.subtraction_setter = subtract {interestRate} from the interestRate of {this}
+ResponseData.isHighRisk#phrase.action[0] = {this} gets isHighRisk only if {isHighRisk}
+ResponseData.isHighRisk#phrase.action[1] = make it {isHighRisk} that {this} is isHighRisk
+ResponseData.isHighRisk#phrase.action[1].deprecated = true
+ResponseData.isHighRisk#phrase.navigation = {this} is isHighRisk
+ResponseData.isHighRisk#phrase.negative_predicate = {this} is not isHighRisk
+ResponseData.isHighRisk#phrase.negative_predicate_setter = {this} does not get isHighRisk
+ResponseData.isHighRisk#phrase.positive_predicate_setter = {this} gets isHighRisk
+ResponseData.monthlyPayment#phrase.action = set the monthlyPayment of {this} to {monthlyPayment}
+ResponseData.monthlyPayment#phrase.addition_setter = add {monthlyPayment} to the monthlyPayment of {this}
+ResponseData.monthlyPayment#phrase.navigation = {monthlyPayment} of {this}
+ResponseData.monthlyPayment#phrase.subtraction_setter = subtract {monthlyPayment} from the monthlyPayment of {this}
+ResponseData.riskAssesmentMessage#phrase.action = set the riskAssesmentMessage of {this} to {riskAssesmentMessage}
+ResponseData.riskAssesmentMessage#phrase.navigation = {riskAssesmentMessage} of {this}
