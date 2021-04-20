@@ -13,15 +13,15 @@ public class ResponseData
                 property "ads.attributeId" "2"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "isHighRisk"
                 property update "true";
-    public double monthlyPayment
-                property "ads.attributeId" "3"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "monthlyPayment"
-                property update "true";
     public string riskAssesmentMessage
                 property "ads.attributeId" "4"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "riskAssesmentMessage"
                 property update "true";
-    public ResponseData(double interestRate, boolean isHighRisk, double monthlyPayment, string riskAssesmentMessage)
+    public double riskScore
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "riskScore"
+                property update "true";
+    public ResponseData(double interestRate, boolean isHighRisk, double riskScore, string riskAssesmentMessage)
                 property autoExpand "true"
                 property beanConstructor "true"
                 property groups "BALA"

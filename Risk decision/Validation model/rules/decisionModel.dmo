@@ -7,22 +7,22 @@
     <extensionElements>
         <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
     </extensionElements>
-    <inputData id="node_0" name="Customer Date of Birth">
+    <inputData id="node_0" name="Policy Holder Date of Birth">
         <extensionElements>
             <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
-                <output bomType="ilog.rules.brl.SimpleDate" collection="false" name="Customer Date of Birth"/>
+                <output bomType="ilog.rules.brl.SimpleDate" collection="false" name="Policy Holder Date of Birth"/>
             </initialization>
         </extensionElements>
-        <variable id="node_0_ii" name="Customer Date of Birth" typeRef="ilog.rules.brl.SimpleDate"/>
+        <variable id="node_0_ii" name="Policy Holder Date of Birth" typeRef="ilog.rules.brl.SimpleDate"/>
     </inputData>
     <decision id="node_1" name="Decision">
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
-                <input bomType="ilog.rules.brl.SimpleDate" collection="false" name="Customer Date of Birth"/>
-                <input bomType="java.lang.Double" collection="false" name="Net income"/>
-                <input bomType="java.lang.Double" collection="false" name="Loan Amount"/>
+                <input bomType="ilog.rules.brl.SimpleDate" collection="false" name="Policy Holder Date of Birth"/>
+                <input bomType="java.lang.Double" collection="false" name="Three Year Loss Run"/>
+                <input bomType="java.lang.Double" collection="false" name="Coverage Amount"/>
                 <output bomType="ResponseData" collection="false" name="Decision"/>
-                <rule defaultRule="false" href="node_1/test%201.drl" kind="BusinessRule" name="test 1"/>
+                <rule defaultRule="false" href="node_1/Risk%20by%20age.dmt" kind="DecisionTable" name="Risk by age"/>
             </ruleset>
         </extensionElements>
         <variable id="node_1_ii" name="Decision" typeRef="ResponseData"/>
@@ -36,21 +36,21 @@
             <requiredInput href="#node_3"/>
         </informationRequirement>
     </decision>
-    <inputData id="node_2" name="Net income">
+    <inputData id="node_2" name="Three Year Loss Run">
         <extensionElements>
             <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
-                <output bomType="java.lang.Double" collection="false" name="Net income"/>
+                <output bomType="java.lang.Double" collection="false" name="Three Year Loss Run"/>
             </initialization>
         </extensionElements>
-        <variable id="node_2_ii" name="Net income" typeRef="java.lang.Double"/>
+        <variable id="node_2_ii" name="Three Year Loss Run" typeRef="java.lang.Double"/>
     </inputData>
-    <inputData id="node_3" name="Loan Amount">
+    <inputData id="node_3" name="Coverage Amount">
         <extensionElements>
             <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
-                <output bomType="java.lang.Double" collection="false" name="Loan Amount"/>
+                <output bomType="java.lang.Double" collection="false" name="Coverage Amount"/>
             </initialization>
         </extensionElements>
-        <variable id="node_3_ii" name="Loan Amount" typeRef="java.lang.Double"/>
+        <variable id="node_3_ii" name="Coverage Amount" typeRef="java.lang.Double"/>
     </inputData>
 </definitions></definition>
 </com.ibm.rules.studio.model.decisionmodel:DecisionModel>
