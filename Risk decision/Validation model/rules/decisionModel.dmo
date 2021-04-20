@@ -23,6 +23,7 @@
                 <input bomType="java.lang.Double" collection="false" name="Coverage Amount"/>
                 <output bomType="ResponseData" collection="false" name="Decision"/>
                 <rule defaultRule="false" href="node_1/Risk%20by%20age.dmt" kind="DecisionTable" name="Risk by age"/>
+                <rule defaultRule="true" href="node_1/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
             </ruleset>
         </extensionElements>
         <variable id="node_1_ii" name="Decision" typeRef="ResponseData"/>
