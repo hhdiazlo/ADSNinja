@@ -24,7 +24,7 @@
             <ActionDefinitions>
                 <ActionDefinition Id="A0">
                     <ExpressionDefinition>
-                        <Text><![CDATA[set decision to a new Response data where
+                        <Text><![CDATA[set 'decision' to a new Response data where
 	the interestRate is <interestRate>, 
 	isHighRisk is <isHighRisk>, 
 	the riskScore is <riskScore>, 
@@ -53,13 +53,30 @@
                 </Condition>
                 <Condition>
                     <Expression>
+                        <Text><![CDATA[<a date> is after <a date> and before <a date>]]></Text>
+                        <Param><![CDATA[1/1/1970]]></Param>
+                        <Param><![CDATA[1/1/2000]]></Param>
+                    </Expression>
+                    <ActionSet>
+                        <Action DefId="A0">
+                            <Expression>
+                                <Param><![CDATA[0.05]]></Param>
+                                <Param><![CDATA[false]]></Param>
+                                <Param><![CDATA[300]]></Param>
+                                <Param><![CDATA["Regular customer moderate risk"]]></Param>
+                            </Expression>
+                        </Action>
+                    </ActionSet>
+                </Condition>
+                <Condition>
+                    <Expression>
                         <Text><![CDATA[<a date> is after <a date>]]></Text>
                         <Param><![CDATA[1/1/2000]]></Param>
                     </Expression>
                     <ActionSet>
                         <Action DefId="A0">
                             <Expression>
-                                <Param><![CDATA[0.1]]></Param>
+                                <Param><![CDATA[0.09]]></Param>
                                 <Param><![CDATA[true]]></Param>
                                 <Param><![CDATA[600]]></Param>
                                 <Param><![CDATA["Young customer with high risk score"]]></Param>
@@ -72,11 +89,17 @@
     </Body>
     <Resources DefaultLocale="en_US">
         <ResourceSet Locale="en_US">
-            <Data Name="Definitions(C0)#HeaderText"><![CDATA[Policy Holder Date of Birth]]></Data>
-            <Data Name="Definitions(A0)#Width"><![CDATA[400]]></Data>
-            <Data Name="Definitions(C0)[0]#HeaderText"><![CDATA[a date]]></Data>
             <Data Name="Definitions(A0)#HeaderText"><![CDATA[Decision]]></Data>
+            <Data Name="Definitions(A0)#Width"><![CDATA[400]]></Data>
+            <Data Name="Definitions(A0)[0]#Format"><![CDATA[{0,number,#0.##%}]]></Data>
+            <Data Name="Definitions(A0)[0]#HeaderText"><![CDATA[interestRate]]></Data>
+            <Data Name="Definitions(A0)[1]#HeaderText"><![CDATA[isHighRisk]]></Data>
+            <Data Name="Definitions(A0)[2]#HeaderText"><![CDATA[riskScore]]></Data>
+            <Data Name="Definitions(A0)[3]#HeaderText"><![CDATA[riskAssesmentMessage]]></Data>
+            <Data Name="Definitions(A0)[]#Format"><![CDATA[{0}]]></Data>
+            <Data Name="Definitions(C0)#HeaderText"><![CDATA[Policy Holder Date of Birth]]></Data>
             <Data Name="Definitions(C0)#Width"><![CDATA[189]]></Data>
+            <Data Name="Definitions(C0)[0]#HeaderText"><![CDATA[a date]]></Data>
         </ResourceSet>
     </Resources>
 </DT></definition>

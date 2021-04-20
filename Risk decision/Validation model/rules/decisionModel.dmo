@@ -15,26 +15,23 @@
         </extensionElements>
         <variable id="node_0_ii" name="Policy Holder Date of Birth" typeRef="ilog.rules.brl.SimpleDate"/>
     </inputData>
-    <decision id="node_1" name="Decision">
+    <decision id="node_1" name="Policy Holder validation">
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
                 <input bomType="ilog.rules.brl.SimpleDate" collection="false" name="Policy Holder Date of Birth"/>
-                <input bomType="java.lang.Double" collection="false" name="Three Year Loss Run"/>
-                <input bomType="java.lang.Double" collection="false" name="Coverage Amount"/>
-                <output bomType="ResponseData" collection="false" name="Decision"/>
+                <input bomType="java.lang.Long" collection="false" name="Policy validation risk score"/>
+                <output bomType="ResponseData" collection="false" name="Policy Holder validation"/>
                 <rule defaultRule="false" href="node_1/Risk%20by%20age.dmt" kind="DecisionTable" name="Risk by age"/>
                 <rule defaultRule="true" href="node_1/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
+                <rule defaultRule="false" href="node_1/include%20risk%20from%20policy%20validation.drl" kind="BusinessRule" name="include risk from policy validation"/>
             </ruleset>
         </extensionElements>
-        <variable id="node_1_ii" name="Decision" typeRef="ResponseData"/>
+        <variable id="node_1_ii" name="Policy Holder validation" typeRef="ResponseData"/>
         <informationRequirement>
             <requiredInput href="#node_0"/>
         </informationRequirement>
         <informationRequirement>
-            <requiredInput href="#node_2"/>
-        </informationRequirement>
-        <informationRequirement>
-            <requiredInput href="#node_3"/>
+            <requiredInput href="#node_4"/>
         </informationRequirement>
     </decision>
     <inputData id="node_2" name="Three Year Loss Run">
@@ -53,5 +50,22 @@
         </extensionElements>
         <variable id="node_3_ii" name="Coverage Amount" typeRef="java.lang.Double"/>
     </inputData>
+    <decision id="node_4" name="Policy validation risk score">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="java.lang.Double" collection="false" name="Three Year Loss Run"/>
+                <input bomType="java.lang.Double" collection="false" name="Coverage Amount"/>
+                <output bomType="java.lang.Long" collection="false" name="Policy validation risk score"/>
+                <rule defaultRule="false" href="node_4/standard%20policy%20validation.dmt" kind="DecisionTable" name="standard policy validation"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_4_ii" name="Policy validation risk score" typeRef="java.lang.Long"/>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_3"/>
+        </informationRequirement>
+    </decision>
 </definitions></definition>
 </com.ibm.rules.studio.model.decisionmodel:DecisionModel>
