@@ -17,7 +17,6 @@
             <plugin>
                 <groupId>com.ibm.decision</groupId>
                 <artifactId>build-maven-plugin</artifactId>
-                <version>3.0.1</version>
                 <configuration>
                     <deployments>
                         <deployment>
@@ -26,13 +25,6 @@
                     </deployments>
                 <packageName>decisions.hd_demo_solution.covid_diagnosis.covid_model</packageName>
                 </configuration>
-            <dependencies>
-                    <dependency>
-                        <groupId>com.ibm.decision</groupId>
-                        <artifactId>ml-integration-runtime</artifactId>
-                        <version>2.1.3</version>
-                    </dependency>
-                </dependencies>
             </plugin>
         </plugins>
     </build>
