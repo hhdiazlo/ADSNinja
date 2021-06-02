@@ -13,6 +13,7 @@ Diagnosis.removeFrom_recommendationses(java.lang.String)#phrase.action = remove 
 
 # IllnessDomain
 IllnessDomain#concept.label = IllnessDomain
+IllnessDomain.TEST#instance.label = TEST
 IllnessDomain.aLLERGIES#instance.label = ALLERGIES
 IllnessDomain.cOLD#instance.label = COLD
 IllnessDomain.cORONAVIRUS#instance.label = CORONAVIRUS

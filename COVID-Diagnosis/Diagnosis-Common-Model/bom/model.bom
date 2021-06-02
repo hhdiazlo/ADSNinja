@@ -16,6 +16,7 @@ public class Diagnosis
     public Diagnosis(IllnessDomain disease, 
         java.util.List recommendationses domain 0,* class string)
                 property autoExpand "true"
+                property beanConstructor "true"
                 property groups "BALA"
                 property prototype "true";
     public Diagnosis()
@@ -40,7 +41,10 @@ public class IllnessDomain
         property "com.fasterxml.jackson.annotation.JsonTypeName" "IllnessDomain"
         property "de.generated" "true"
 {
-    domain {static aLLERGIES, static cOLD, static cORONAVIRUS, static fLU, static hEALTHY, static uNDETERMINED}
+    domain {static aLLERGIES, static cOLD, static cORONAVIRUS, static fLU, static hEALTHY, static TEST, static uNDETERMINED}
+    public static final readonly IllnessDomain TEST
+                property "ads.attributeId" "7"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "TEST";
     public static final readonly IllnessDomain aLLERGIES
                 property "ads.attributeId" "3"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "ALLERGIES";
@@ -72,6 +76,7 @@ public class Symptom
                 property update "true";
     public Symptom(SymptomsDomain newAttribute)
                 property autoExpand "true"
+                property beanConstructor "true"
                 property groups "BALA"
                 property prototype "true";
     public Symptom()
