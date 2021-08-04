@@ -1,5 +1,5 @@
 
-package decisions.client_onboarding.client_onboarding_decisions.machineLearningScoreboard;
+package decisions.hd_decision_automations.client_onboarding_decisions.machineLearningScoreboard;
 
 
 public class Error
@@ -54,7 +54,7 @@ public class Output
         }
         property "de.generated" "true"
 {
-    public decisions.client_onboarding.client_onboarding_decisions.machineLearningScoreboard.Error error
+    public decisions.hd_decision_automations.client_onboarding_decisions.machineLearningScoreboard.Error error
                 property "ads.attributeId" "3"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "error";
     public java.lang.Double predictions
@@ -63,7 +63,7 @@ public class Output
     public java.util.List scores domain 0,* class java.lang.Double
                 property "ads.attributeId" "2"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "scores";
-    public Output(java.lang.Double predictions,
+    public Output(java.lang.Double predictions, 
         java.util.List scores domain 0,* class java.lang.Double)
                 property autoExpand "true"
                 property beanConstructor "true"
@@ -85,23 +85,24 @@ public class Output
     public void removeFrom_scores(java.lang.Double scores)
                 property collectionAttribute "scores"
                 property update "true";
-    public static Output run(decisions.client_onboarding.client_onboarding_decisions.machineLearningScoreboard.Input input)
+    public static Output run(decisions.hd_decision_automations.client_onboarding_decisions.machineLearningScoreboard.Input input)
                 property "de.generated" {
                     $gen "com.ibm.decision.ml.integration.client.ops.xom.PredictionCallGenerator",
                     $target "BOM",
-                    deploymentId "2",
-                    providerName ""
+                    deploymentId "6",
+                    providerName "decisions/HD-Decision-Automations/OPS1628053063112"
                 }
                 property pureFunction "true";
-    public static Output run(com.ibm.decision.run.RunContext runContext, decisions.client_onboarding.client_onboarding_decisions.machineLearningScoreboard.Input input)
+    public static Output run(com.ibm.decision.run.RunContext runContext, decisions.hd_decision_automations.client_onboarding_decisions.machineLearningScoreboard.Input input)
                 property "de.generated" {
                     $gen "com.ibm.decision.ml.integration.client.ops.xom.PredictionRunGenerator",
                     $target "BOM",
-                    deploymentId "2",
-                    providerName ""
+                    deploymentId "6",
+                    providerName "decisions/HD-Decision-Automations/OPS1628053063112"
                 }
                 property pureFunction "true";
     public void set_scores(java.util.Collection scores domain 0,* class java.lang.Double)
                 property collectionAttribute "scores"
                 property update "true";
 }
+

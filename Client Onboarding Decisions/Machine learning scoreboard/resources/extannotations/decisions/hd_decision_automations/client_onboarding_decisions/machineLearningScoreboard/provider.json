@@ -1,0 +1,9 @@
+{
+  "name" : "decisions/HD-Decision-Automations/OPS1628053063112",
+  "type" : "OPS",
+  "description" : "",
+  "mlUrl" : "http://52.117.76.5:8080",
+  "authUrl" : "",
+  "instanceId" : "",
+  "apiKey" : null
+}

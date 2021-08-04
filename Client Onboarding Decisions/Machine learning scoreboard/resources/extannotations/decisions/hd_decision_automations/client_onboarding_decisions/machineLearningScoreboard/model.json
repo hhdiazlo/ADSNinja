@@ -1,9 +1,9 @@
 {
   "name" : "service-payment-default-risk",
-  "id" : "2",
+  "id" : "6",
   "version" : "V1",
-  "modifiedAt" : "2021-05-18T11:17:30.845066Z",
-  "trainedAt" : "2021-05-18T11:17:30.845066Z",
+  "modifiedAt" : "2021-06-18T03:39:13.535814Z",
+  "trainedAt" : "2021-06-18T03:39:13.535814Z",
   "description" : "",
   "inputSchema" : {
     "id" : "input_id",
