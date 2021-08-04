@@ -1,0 +1,40 @@
+{
+  "name" : "service-payment-default-risk",
+  "id" : "2",
+  "version" : "V1",
+  "modifiedAt" : "2021-05-18T11:17:30.845066Z",
+  "trainedAt" : "2021-05-18T11:17:30.845066Z",
+  "description" : "",
+  "inputSchema" : {
+    "id" : "input_id",
+    "name" : "input for service-payment-default-risk",
+    "type" : "struct",
+    "fields" : [ {
+      "name" : "clientAnnualRevenue",
+      "type" : "float64",
+      "nullable" : false
+    }, {
+      "name" : "clientExistenceDuration",
+      "type" : "float64",
+      "nullable" : false
+    }, {
+      "name" : "clientEmployeeNumber",
+      "type" : "float64",
+      "nullable" : false
+    }, {
+      "name" : "clientIndustry",
+      "type" : "float64",
+      "nullable" : false
+    } ]
+  },
+  "outputSchema" : {
+    "id" : "output_id",
+    "name" : "output for service-payment-default-risk",
+    "type" : "struct",
+    "fields" : [ {
+      "name" : "attributes",
+      "type" : "object",
+      "nullable" : false
+    } ]
+  }
+}
