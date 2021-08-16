@@ -14,11 +14,11 @@ CountryDomain.USA#instance.label = United States Of America
 # DocumentationResponse
 DocumentationResponse#concept.label = Documentation Response
 DocumentationResponse.DocumentationResponse(java.util.List)#phrase.navigation = a new {Documentation Response} where {0, required documents}
-DocumentationResponse.addTo_requiredDocuments1(KYCDocumentDomain)#phrase.action = add {0} to the required documents of {this}
-DocumentationResponse.clear_requiredDocuments1()#phrase.action = clear the required documents of {this}
-DocumentationResponse.removeFrom_requiredDocuments1(KYCDocumentDomain)#phrase.action = remove {0} from the required documents of {this}
-DocumentationResponse.requiredDocuments1#phrase.action = set the required documents of {this} to {required documents}
-DocumentationResponse.requiredDocuments1#phrase.navigation = {required documents} of {this}
+DocumentationResponse.addTo_requiredDocuments(KYCDocumentDomain)#phrase.action = add {0} to the required documents of {this}
+DocumentationResponse.clear_requiredDocuments()#phrase.action = clear the required documents of {this}
+DocumentationResponse.removeFrom_requiredDocuments(KYCDocumentDomain)#phrase.action = remove {0} from the required documents of {this}
+DocumentationResponse.requiredDocuments#phrase.action = set the required documents of {this} to {required documents}
+DocumentationResponse.requiredDocuments#phrase.navigation = {required documents} of {this}
 
 # KYCDocumentDomain
 KYCDocumentDomain#concept.label = KYC Document Domain

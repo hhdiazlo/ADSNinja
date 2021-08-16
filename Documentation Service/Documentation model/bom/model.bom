@@ -39,28 +39,28 @@ public class DocumentationResponse
         property "com.fasterxml.jackson.annotation.JsonTypeName" "Documentation Response"
         property "de.generated" "true"
 {
-    public java.util.List requiredDocuments1 domain 0,* class KYCDocumentDomain
+    public java.util.List requiredDocuments domain 0,* class KYCDocumentDomain
                 property "ads.attributeId" "2"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "required documents 1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "required documents"
                 property update "true";
-    public DocumentationResponse(java.util.List requiredDocuments1 domain 0,* class KYCDocumentDomain)
+    public DocumentationResponse(java.util.List requiredDocuments domain 0,* class KYCDocumentDomain)
                 property autoExpand "true"
                 property beanConstructor "true"
                 property groups "BALA"
                 property prototype "true";
     public DocumentationResponse()
                 property "dataio.default" "true";
-    public void addTo_requiredDocuments1(KYCDocumentDomain requiredDocuments1)
-                property collectionAttribute "requiredDocuments1"
+    public void addTo_requiredDocuments(KYCDocumentDomain requiredDocuments)
+                property collectionAttribute "requiredDocuments"
                 property update "true";
-    public void clear_requiredDocuments1()
-                property collectionAttribute "requiredDocuments1"
+    public void clear_requiredDocuments()
+                property collectionAttribute "requiredDocuments"
                 property update "true";
-    public void removeFrom_requiredDocuments1(KYCDocumentDomain requiredDocuments1)
-                property collectionAttribute "requiredDocuments1"
+    public void removeFrom_requiredDocuments(KYCDocumentDomain requiredDocuments)
+                property collectionAttribute "requiredDocuments"
                 property update "true";
-    public void set_requiredDocuments1(java.util.Collection requiredDocuments1 domain 0,* class KYCDocumentDomain)
-                property collectionAttribute "requiredDocuments1"
+    public void set_requiredDocuments(java.util.Collection requiredDocuments domain 0,* class KYCDocumentDomain)
+                property collectionAttribute "requiredDocuments"
                 property update "true";
 }
 
