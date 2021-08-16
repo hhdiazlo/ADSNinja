@@ -1,0 +1,175 @@
+
+
+public class CountryDomain
+        extends java.lang.Enum
+        property "ads.typeId" "1"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Country Domain"
+        property "de.generated" "true"
+{
+    domain {static argentina, static mexico, static unitedStatesOfAmerica}
+    public static final readonly CountryDomain argentina
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Argentina";
+    public static final readonly CountryDomain mexico
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Mexico";
+    public static final readonly CountryDomain unitedStatesOfAmerica
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "United States of America";
+}
+
+public class DocumentationResponse
+        property "ads.typeId" "4"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Documentation Response"
+        property "de.generated" "true"
+{
+    public java.util.List requiredDocuments domain 0,* class KYCDocumentDomain
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "requiredDocuments"
+                property update "true";
+    public DocumentationResponse(java.util.List requiredDocuments domain 0,* class KYCDocumentDomain)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public DocumentationResponse()
+                property "dataio.default" "true";
+    public void addTo_requiredDocuments(KYCDocumentDomain requiredDocuments)
+                property collectionAttribute "requiredDocuments"
+                property update "true";
+    public void clear_requiredDocuments()
+                property collectionAttribute "requiredDocuments"
+                property update "true";
+    public void removeFrom_requiredDocuments(KYCDocumentDomain requiredDocuments)
+                property collectionAttribute "requiredDocuments"
+                property update "true";
+    public void set_requiredDocuments(java.util.Collection requiredDocuments domain 0,* class KYCDocumentDomain)
+                property collectionAttribute "requiredDocuments"
+                property update "true";
+}
+
+public class KYCDocumentDomain
+        extends java.lang.Enum
+        property "ads.typeId" "3"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "KYC Document Domain"
+        property "com.ibm.rules.domainProvider.msexcel.b2xColumn" "0"
+        property "com.ibm.rules.domainProvider.msexcel.documentationColumn.en_US" "2"
+        property "com.ibm.rules.domainProvider.msexcel.hasHeader" "true"
+        property "com.ibm.rules.domainProvider.msexcel.labelColumn.en_US" "1"
+        property "com.ibm.rules.domainProvider.msexcel.sheetIndex" "0"
+        property "com.ibm.rules.domainProvider.msexcel.valueColumn" "0"
+        property "de.generated" "true"
+        property domainProviderResource "domains/dynamicDomainTemplate.xlsx"
+{
+    domain 
+    {
+        static AMLPoliciesandProcedures,
+        static AMLQuestionnaire,
+        static AMLRepresentationLetter,
+        static AMLServiceProviderVerification,
+        static annualReportFinancialStatements,
+        static bankingLicense,
+        static bearerShareVerification,
+        static constitutionalDocument,
+        static foreignBankCertificate,
+        static formationCertificate,
+        static formationDocument,
+        static newEnumValue,
+        static offeringDocuments,
+        static proofofAddress,
+        static proofofAffiliation,
+        static proofofExchangeListing,
+        static proofofExistence,
+        static proofofIdentification,
+        static proofofManagementRelationship,
+        static proofofRegistration,
+        static proofofRegulation,
+        static wolfsbergQuestionnaire
+    }
+    public static final readonly KYCDocumentDomain AMLPoliciesandProcedures
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AMLPoliciesandProcedures";
+    public static final readonly KYCDocumentDomain AMLQuestionnaire
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AMLQuestionnaire";
+    public static final readonly KYCDocumentDomain AMLRepresentationLetter
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AMLRepresentationLetter";
+    public static final readonly KYCDocumentDomain AMLServiceProviderVerification
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AMLServiceProviderVerification";
+    public static final readonly KYCDocumentDomain annualReportFinancialStatements
+                property "ads.attributeId" "6"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Annual Report Financial Statements";
+    public static final readonly KYCDocumentDomain bankingLicense
+                property "ads.attributeId" "7"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BankingLicense";
+    public static final readonly KYCDocumentDomain bearerShareVerification
+                property "ads.attributeId" "8"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BearerShareVerification";
+    public static final readonly KYCDocumentDomain constitutionalDocument
+                property "ads.attributeId" "9"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ConstitutionalDocument";
+    public static final readonly KYCDocumentDomain foreignBankCertificate
+                property "ads.attributeId" "10"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ForeignBankCertificate";
+    public static final readonly KYCDocumentDomain formationCertificate
+                property "ads.attributeId" "11"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FormationCertificate";
+    public static final readonly KYCDocumentDomain formationDocument
+                property "ads.attributeId" "12"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FormationDocument";
+    public static final readonly KYCDocumentDomain newEnumValue
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "new enum value"
+                property deprecated "true";
+    public static final readonly KYCDocumentDomain offeringDocuments
+                property "ads.attributeId" "13"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "OfferingDocuments";
+    public static final readonly KYCDocumentDomain proofofAddress
+                property "ads.attributeId" "14"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ProofofAddress";
+    public static final readonly KYCDocumentDomain proofofAffiliation
+                property "ads.attributeId" "15"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ProofofAffiliation";
+    public static final readonly KYCDocumentDomain proofofExchangeListing
+                property "ads.attributeId" "16"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ProofofExchangeListing";
+    public static final readonly KYCDocumentDomain proofofExistence
+                property "ads.attributeId" "17"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ProofofExistence";
+    public static final readonly KYCDocumentDomain proofofIdentification
+                property "ads.attributeId" "18"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ProofofIdentification";
+    public static final readonly KYCDocumentDomain proofofManagementRelationship
+                property "ads.attributeId" "19"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ProofofManagementRelationship";
+    public static final readonly KYCDocumentDomain proofofRegistration
+                property "ads.attributeId" "20"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ProofofRegistration";
+    public static final readonly KYCDocumentDomain proofofRegulation
+                property "ads.attributeId" "21"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ProofofRegulation";
+    public static final readonly KYCDocumentDomain wolfsbergQuestionnaire
+                property "ads.attributeId" "22"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "WolfsbergQuestionnaire";
+}
+
+public class PrimaryBusinessPurposeDomain
+        extends java.lang.Enum
+        property "ads.typeId" "2"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Primary Business Purpose Domain"
+        property "de.generated" "true"
+{
+    domain {static BROKERDEALER, static CENTRALBANK, static MUTUALFUND}
+    public static final readonly PrimaryBusinessPurposeDomain BROKERDEALER
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BROKER DEALER";
+    public static final readonly PrimaryBusinessPurposeDomain CENTRALBANK
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CENTRAL BANK";
+    public static final readonly PrimaryBusinessPurposeDomain MUTUALFUND
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MUTUAL FUND";
+}
+
