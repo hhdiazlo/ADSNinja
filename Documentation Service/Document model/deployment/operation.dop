@@ -4,4 +4,13 @@
   <uuid>44f9c81e-b795-4390-b5a5-0897abc2daac</uuid>
   <decisionModel href="../rules/decisionModel.dmo#2809c3e5-0fc3-4bc9-9868-0e3d4e1ddd9e"/>
   <targetRuleProject href="../../Document%20model#da48d75c-10dd-4330-aea2-aa30096f67fe"/>
+  <tags key="operationDescription">
+    <value><![CDATA["Provides a list of KYC documents for specified country, primary business purpose and country risk"]]></value>
+  </tags>
+  <tags key="operationName">
+    <value><![CDATA["retrieveDocuments"]]></value>
+  </tags>
+  <tags key="exposedAtRuntime">
+    <value><![CDATA[true]]></value>
+  </tags>
 </com.ibm.rules.studio.model.decisionservice:Operation>
