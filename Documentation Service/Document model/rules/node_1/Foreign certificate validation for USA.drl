@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Foreign certificate validation for USA</name>
+  <uuid>a9c69898-c95d-4209-a1ef-a3928047ea17</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+   'Country name' is United States Of America 
+	and 'Primary business purpose' is CENTRAL BANK 
+then
+	add Foreign Bank Certificate to decision ; 
+    add Wolfsberg Questionnaire to decision;
+  
+    
+    ]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

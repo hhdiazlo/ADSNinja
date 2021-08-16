@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>decisionModel</name>
+  <uuid>2809c3e5-0fc3-4bc9-9868-0e3d4e1ddd9e</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <decision id="node_1" name="General validations">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="CountryDomain" collection="false" name="Country name"/>
+                <input bomType="PrimaryBusinessPurposeDomain" collection="false" name="Primary business purpose"/>
+                <output bomType="KYCDocumentDomain" collection="true" name="General validations"/>
+                <rule defaultRule="false" href="node_1/Banking%20license%20validation%20for%20Central%20Bank.drl" kind="BusinessRule" name="Banking license validation for Central Bank"/>
+                <rule defaultRule="false" href="node_1/Foreign%20certificate%20validation%20for%20USA.drl" kind="BusinessRule" name="Foreign certificate validation for USA"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_1_ii" name="General validations" typeRef="KYCDocumentDomain[]"/>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_6"/>
+        </informationRequirement>
+    </decision>
+    <inputData id="node_2" name="Country name">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="CountryDomain" collection="false" name="Country name"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_2_ii" name="Country name" typeRef="CountryDomain"/>
+    </inputData>
+    <inputData id="node_6" name="Primary business purpose">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="PrimaryBusinessPurposeDomain" collection="false" name="Primary business purpose"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_6_ii" name="Primary business purpose" typeRef="PrimaryBusinessPurposeDomain"/>
+    </inputData>
+    <inputData id="node_7" name="Registered country risk rating">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.Double" collection="false" name="Registered country risk rating"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_7_ii" name="Registered country risk rating" typeRef="java.lang.Double"/>
+    </inputData>
+    <decision id="node_9" name="Consolidated documents">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="KYCDocumentDomain" collection="true" name="General validations"/>
+                <input bomType="KYCDocumentDomain" collection="true" name="Country and rating validations"/>
+                <output bomType="DocumentationResponse" collection="true" name="Consolidated documents"/>
+                <rule defaultRule="false" href="node_9/build%20document%20list%20with%20general%20validation%20documents.drl" kind="BusinessRule" name="build document list with general validation documents"/>
+                <rule defaultRule="false" href="node_9/Include%20documents%20for%20country%20and%20rating%20validations.drl" kind="BusinessRule" name="Include documents for country and rating validations"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_9_ii" name="Consolidated documents" typeRef="DocumentationResponse[]"/>
+        <informationRequirement>
+            <requiredInput href="#node_1"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_10"/>
+        </informationRequirement>
+    </decision>
+    <decision id="node_10" name="Country and rating validations">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="CountryDomain" collection="false" name="Country name"/>
+                <input bomType="java.lang.Double" collection="false" name="Registered country risk rating"/>
+                <output bomType="KYCDocumentDomain" collection="true" name="Country and rating validations"/>
+                <rule defaultRule="false" href="node_10/Risk%20validation.dmt" kind="DecisionTable" name="Risk validation"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_10_ii" name="Country and rating validations" typeRef="KYCDocumentDomain[]"/>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_7"/>
+        </informationRequirement>
+    </decision>
+</definitions></definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>

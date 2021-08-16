@@ -1,0 +1,231 @@
+
+
+public class CountryDomain
+        extends java.lang.Enum
+        property "ads.typeId" "6"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Country Domain"
+        property "com.ibm.rules.domainProvider.msexcel.b2xColumn" "0"
+        property "com.ibm.rules.domainProvider.msexcel.documentationColumn.en_US" "2"
+        property "com.ibm.rules.domainProvider.msexcel.hasHeader" "true"
+        property "com.ibm.rules.domainProvider.msexcel.labelColumn.en_US" "1"
+        property "com.ibm.rules.domainProvider.msexcel.sheetIndex" "2"
+        property "com.ibm.rules.domainProvider.msexcel.valueColumn" "0"
+        property "de.generated" "true"
+        property domainProviderResource "domains/dynamicDomainTemplate.xlsx"
+{
+    domain {static ARG, static CA, static FR, static MEX, static UK, static USA}
+    public static final readonly CountryDomain ARG
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ARG";
+    public static final readonly CountryDomain CA
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CA";
+    public static final readonly CountryDomain FR
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FR";
+    public static final readonly CountryDomain MEX
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MEX";
+    public static final readonly CountryDomain UK
+                property "ads.attributeId" "6"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "UK";
+    public static final readonly CountryDomain USA
+                property "ads.attributeId" "7"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "USA";
+}
+
+public class DocumentationResponse
+        property "ads.typeId" "4"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Documentation Response"
+        property "de.generated" "true"
+{
+    public java.util.List requiredDocuments1 domain 0,* class KYCDocumentDomain
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "required documents 1"
+                property update "true";
+    public DocumentationResponse(java.util.List requiredDocuments1 domain 0,* class KYCDocumentDomain)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public DocumentationResponse()
+                property "dataio.default" "true";
+    public void addTo_requiredDocuments1(KYCDocumentDomain requiredDocuments1)
+                property collectionAttribute "requiredDocuments1"
+                property update "true";
+    public void clear_requiredDocuments1()
+                property collectionAttribute "requiredDocuments1"
+                property update "true";
+    public void removeFrom_requiredDocuments1(KYCDocumentDomain requiredDocuments1)
+                property collectionAttribute "requiredDocuments1"
+                property update "true";
+    public void set_requiredDocuments1(java.util.Collection requiredDocuments1 domain 0,* class KYCDocumentDomain)
+                property collectionAttribute "requiredDocuments1"
+                property update "true";
+}
+
+public class KYCDocumentDomain
+        extends java.lang.Enum
+        property "ads.typeId" "5"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "KYC Document Domain"
+        property "com.ibm.rules.domainProvider.msexcel.b2xColumn" "0"
+        property "com.ibm.rules.domainProvider.msexcel.documentationColumn.en_US" "2"
+        property "com.ibm.rules.domainProvider.msexcel.hasHeader" "true"
+        property "com.ibm.rules.domainProvider.msexcel.labelColumn.en_US" "1"
+        property "com.ibm.rules.domainProvider.msexcel.sheetIndex" "0"
+        property "com.ibm.rules.domainProvider.msexcel.valueColumn" "0"
+        property "de.generated" "true"
+        property domainProviderResource "domains/dynamicDomainTemplate.xlsx"
+{
+    domain 
+    {
+        static AMLPoliciesandProcedures,
+        static AMLQuestionnaire,
+        static AMLRepresentationLetter,
+        static AMLServiceProviderVerification,
+        static annualReportFinancialStatements,
+        static bankingLicense,
+        static bearerShareVerification,
+        static constitutionalDocument,
+        static foreignBankCertificate,
+        static formationCertificate,
+        static formationDocument,
+        static offeringDocuments,
+        static proofofAddress,
+        static proofofAffiliation,
+        static proofofExchangeListing,
+        static proofofExistence,
+        static proofofIdentification,
+        static proofofManagementRelationship,
+        static proofofRegistration,
+        static proofofRegulation,
+        static wolfsbergQuestionnaire
+    }
+    public static final readonly KYCDocumentDomain AMLPoliciesandProcedures
+                property "ads.attributeId" "23"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AMLPoliciesandProcedures";
+    public static final readonly KYCDocumentDomain AMLQuestionnaire
+                property "ads.attributeId" "24"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AMLQuestionnaire";
+    public static final readonly KYCDocumentDomain AMLRepresentationLetter
+                property "ads.attributeId" "25"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AMLRepresentationLetter";
+    public static final readonly KYCDocumentDomain AMLServiceProviderVerification
+                property "ads.attributeId" "26"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "AMLServiceProviderVerification";
+    public static final readonly KYCDocumentDomain annualReportFinancialStatements
+                property "ads.attributeId" "27"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "Annual Report Financial Statements";
+    public static final readonly KYCDocumentDomain bankingLicense
+                property "ads.attributeId" "28"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BankingLicense";
+    public static final readonly KYCDocumentDomain bearerShareVerification
+                property "ads.attributeId" "29"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BearerShareVerification";
+    public static final readonly KYCDocumentDomain constitutionalDocument
+                property "ads.attributeId" "30"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ConstitutionalDocument";
+    public static final readonly KYCDocumentDomain foreignBankCertificate
+                property "ads.attributeId" "31"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ForeignBankCertificate";
+    public static final readonly KYCDocumentDomain formationCertificate
+                property "ads.attributeId" "32"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FormationCertificate";
+    public static final readonly KYCDocumentDomain formationDocument
+                property "ads.attributeId" "33"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FormationDocument";
+    public static final readonly KYCDocumentDomain offeringDocuments
+                property "ads.attributeId" "34"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "OfferingDocuments";
+    public static final readonly KYCDocumentDomain proofofAddress
+                property "ads.attributeId" "35"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ProofofAddress";
+    public static final readonly KYCDocumentDomain proofofAffiliation
+                property "ads.attributeId" "36"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ProofofAffiliation";
+    public static final readonly KYCDocumentDomain proofofExchangeListing
+                property "ads.attributeId" "37"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ProofofExchangeListing";
+    public static final readonly KYCDocumentDomain proofofExistence
+                property "ads.attributeId" "38"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ProofofExistence";
+    public static final readonly KYCDocumentDomain proofofIdentification
+                property "ads.attributeId" "39"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ProofofIdentification";
+    public static final readonly KYCDocumentDomain proofofManagementRelationship
+                property "ads.attributeId" "40"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ProofofManagementRelationship";
+    public static final readonly KYCDocumentDomain proofofRegistration
+                property "ads.attributeId" "41"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ProofofRegistration";
+    public static final readonly KYCDocumentDomain proofofRegulation
+                property "ads.attributeId" "42"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "ProofofRegulation";
+    public static final readonly KYCDocumentDomain wolfsbergQuestionnaire
+                property "ads.attributeId" "43"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "WolfsbergQuestionnaire";
+}
+
+public class PrimaryBusinessPurposeDomain
+        extends java.lang.Enum
+        property "ads.typeId" "7"
+        property "com.fasterxml.jackson.annotation.JsonTypeName" "Primary Business Purpose Domain"
+        property "com.ibm.rules.domainProvider.msexcel.b2xColumn" "0"
+        property "com.ibm.rules.domainProvider.msexcel.documentationColumn.en_US" "2"
+        property "com.ibm.rules.domainProvider.msexcel.hasHeader" "true"
+        property "com.ibm.rules.domainProvider.msexcel.labelColumn.en_US" "1"
+        property "com.ibm.rules.domainProvider.msexcel.sheetIndex" "1"
+        property "com.ibm.rules.domainProvider.msexcel.valueColumn" "0"
+        property "de.generated" "true"
+        property domainProviderResource "domains/dynamicDomainTemplate.xlsx"
+{
+    domain 
+    {
+        static BROKERDEALER,
+        static CENTRALBANK,
+        static FIDEPOSIT,
+        static GOVERNMENT,
+        static HDGPEVC,
+        static INSURER,
+        static INVESTORADVISOR,
+        static MSB,
+        static MUTUALFUND,
+        static SPV,
+        static newEnumValue
+    }
+    public static final readonly PrimaryBusinessPurposeDomain BROKERDEALER
+                property "ads.attributeId" "2"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "BROKERDEALER";
+    public static final readonly PrimaryBusinessPurposeDomain CENTRALBANK
+                property "ads.attributeId" "3"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "CENTRALBANK";
+    public static final readonly PrimaryBusinessPurposeDomain FIDEPOSIT
+                property "ads.attributeId" "4"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "FIDEPOSIT";
+    public static final readonly PrimaryBusinessPurposeDomain GOVERNMENT
+                property "ads.attributeId" "5"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "GOVERNMENT";
+    public static final readonly PrimaryBusinessPurposeDomain HDGPEVC
+                property "ads.attributeId" "6"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "HDGPEVC";
+    public static final readonly PrimaryBusinessPurposeDomain INSURER
+                property "ads.attributeId" "7"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "INSURER";
+    public static final readonly PrimaryBusinessPurposeDomain INVESTORADVISOR
+                property "ads.attributeId" "8"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "INVESTORADVISOR";
+    public static final readonly PrimaryBusinessPurposeDomain MSB
+                property "ads.attributeId" "9"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MSB";
+    public static final readonly PrimaryBusinessPurposeDomain MUTUALFUND
+                property "ads.attributeId" "10"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "MUTUALFUND";
+    public static final readonly PrimaryBusinessPurposeDomain SPV
+                property "ads.attributeId" "11"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "SPV";
+    public static final readonly PrimaryBusinessPurposeDomain newEnumValue
+                property "ads.attributeId" "1"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "new enum value"
+                property deprecated "true";
+}
+
