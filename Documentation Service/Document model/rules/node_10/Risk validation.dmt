@@ -110,7 +110,7 @@
         <ResourceSet Locale="en_US">
             <Data Name="Definitions(C0)#HeaderText"><![CDATA[Country name]]></Data>
             <Data Name="Definitions(C1)#HeaderText"><![CDATA[Registered country risk rating]]></Data>
-            <Data Name="Definitions(A0)#Width"><![CDATA[208]]></Data>
+            <Data Name="Definitions(A0)#Width"><![CDATA[427]]></Data>
             <Data Name="Definitions(A0)[0]#HeaderText"><![CDATA[a Document Domain]]></Data>
             <Data Name="Definitions(A0)#HeaderText"><![CDATA[Country and rating validations]]></Data>
             <Data Name="Definitions(C1)#Width"><![CDATA[232]]></Data>

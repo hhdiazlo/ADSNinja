@@ -1,5 +1,5 @@
 
-package decisions.hd_decision_automations.client_onboarding_decisions.machineLearningScoreboard;
+package decisions.fss_demos.client_onboarding_decisions.machineLearningScoreboard;
 
 
 public class Error
@@ -54,7 +54,7 @@ public class Output
         }
         property "de.generated" "true"
 {
-    public decisions.hd_decision_automations.client_onboarding_decisions.machineLearningScoreboard.Error error
+    public decisions.fss_demos.client_onboarding_decisions.machineLearningScoreboard.Error error
                 property "ads.attributeId" "3"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "error";
     public java.lang.Double predictions
@@ -85,20 +85,14 @@ public class Output
     public void removeFrom_scores(java.lang.Double scores)
                 property collectionAttribute "scores"
                 property update "true";
-    public static Output run(decisions.hd_decision_automations.client_onboarding_decisions.machineLearningScoreboard.Input input)
-                property "de.generated" {
-                    $gen "com.ibm.decision.ml.integration.client.ops.xom.PredictionCallGenerator",
-                    $target "BOM",
-                    deploymentId "6",
-                    providerName "decisions/HD-Decision-Automations/OPS1628053063112"
-                }
+    public static Output run(decisions.fss_demos.client_onboarding_decisions.machineLearningScoreboard.Input input)
                 property pureFunction "true";
-    public static Output run(com.ibm.decision.run.RunContext runContext, decisions.hd_decision_automations.client_onboarding_decisions.machineLearningScoreboard.Input input)
+    public static Output run(com.ibm.decision.run.RunContext runContext, decisions.fss_demos.client_onboarding_decisions.machineLearningScoreboard.Input input)
                 property "de.generated" {
-                    $gen "com.ibm.decision.ml.integration.client.ops.xom.PredictionRunGenerator",
+                    $gen "com.ibm.decision.ml.integration.xom.PredictionRunGenerator",
                     $target "BOM",
                     deploymentId "6",
-                    providerName "decisions/HD-Decision-Automations/OPS1628053063112"
+                    providerName "decisions/FSS-Demos/OPS1629087243165"
                 }
                 property pureFunction "true";
     public void set_scores(java.util.Collection scores domain 0,* class java.lang.Double)
