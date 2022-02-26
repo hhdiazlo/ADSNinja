@@ -1,7 +1,4 @@
 
-# Term: required documents
-@required\ documents#plural = required documents
-
 # CountryDomain
 CountryDomain#concept.label = Country Domain
 CountryDomain.ARG#instance.label = Argentina
@@ -13,12 +10,12 @@ CountryDomain.USA#instance.label = United States Of America
 
 # DocumentationResponse
 DocumentationResponse#concept.label = Documentation Response
-DocumentationResponse.DocumentationResponse(java.util.List)#phrase.navigation = a new {Documentation Response} where {0, required documents}
-DocumentationResponse.addTo_requiredDocuments(KYCDocumentDomain)#phrase.action = add {0} to the required documents of {this}
-DocumentationResponse.clear_requiredDocuments()#phrase.action = clear the required documents of {this}
-DocumentationResponse.removeFrom_requiredDocuments(KYCDocumentDomain)#phrase.action = remove {0} from the required documents of {this}
-DocumentationResponse.requiredDocuments#phrase.action = set the required documents of {this} to {required documents}
-DocumentationResponse.requiredDocuments#phrase.navigation = {required documents} of {this}
+DocumentationResponse.DocumentationResponse(java.util.List)#phrase.navigation = a new {Documentation Response} where {0, required documents list}
+DocumentationResponse.addTo_requiredDocumentsList(KYCDocumentDomain)#phrase.action = add {0} to the required documents lists of {this}
+DocumentationResponse.clear_requiredDocumentsList()#phrase.action = clear the required documents lists of {this}
+DocumentationResponse.removeFrom_requiredDocumentsList(KYCDocumentDomain)#phrase.action = remove {0} from the required documents lists of {this}
+DocumentationResponse.requiredDocumentsList#phrase.action = set the required documents lists of {this} to {required documents list}
+DocumentationResponse.requiredDocumentsList#phrase.navigation = {required documents list} of {this}
 
 # KYCDocumentDomain
 KYCDocumentDomain#concept.label = KYC Document Domain
