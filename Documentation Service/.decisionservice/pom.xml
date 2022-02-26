@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>decisions.fss_demos.documentation_service</groupId>
+        <groupId>cp4admin.disputes_automation.documentation_service</groupId>
         <artifactId>documentationService</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
@@ -25,6 +25,7 @@
             <groupId>com.ibm.decision</groupId>
             <artifactId>engine-compact-runtime</artifactId>
             <version>${engine-compact-runtime.version}</version>
+            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>com.ibm.decision</groupId>
@@ -34,6 +35,7 @@
     </dependencies>
 
     
+
 <build>
         <resources>
             <resource>
@@ -108,11 +110,12 @@
                                         <exclude>bom-entries/*</exclude>
                                         <exclude>*.bom</exclude>
                                         <exclude>*.jmod</exclude>
-                                        <exclude>ilog/rules/engine/dataio/*</exclude>
-                                        <exclude>com.ibm.ia.generatedXOM.*</exclude>
+                                        <exclude>ilog/rules/engine/dataio/**</exclude>
+                                        <exclude>com/ibm/ia/generatedXOM/**</exclude>
                                         <exclude>META-INF/*.SF</exclude>
                                         <exclude>META-INF/*.DSA</exclude>
                                         <exclude>META-INF/*.RSA</exclude>
+                                        <exclude>com/fasterxml/**</exclude>
                                     </excludes>
                                 </filter>
                             </filters>

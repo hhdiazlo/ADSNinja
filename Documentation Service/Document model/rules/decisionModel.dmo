@@ -54,12 +54,11 @@
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
                 <input bomType="KYCDocumentDomain" collection="true" name="General validations"/>
                 <input bomType="KYCDocumentDomain" collection="true" name="Country and rating validations"/>
-                <output bomType="DocumentationResponse" collection="true" name="Consolidated documents"/>
-                <rule defaultRule="false" href="node_9/build%20document%20list%20with%20general%20validation%20documents.drl" kind="BusinessRule" name="build document list with general validation documents"/>
-                <rule defaultRule="false" href="node_9/Include%20documents%20for%20country%20and%20rating%20validations.drl" kind="BusinessRule" name="Include documents for country and rating validations"/>
+                <output bomType="DocumentationResponse" collection="false" name="Consolidated documents"/>
+                <rule defaultRule="false" href="node_9/Consolidate%20Result.drl" kind="BusinessRule" name="Consolidate Result"/>
             </ruleset>
         </extensionElements>
-        <variable id="node_9_ii" name="Consolidated documents" typeRef="DocumentationResponse[]"/>
+        <variable id="node_9_ii" name="Consolidated documents" typeRef="DocumentationResponse"/>
         <informationRequirement>
             <requiredInput href="#node_1"/>
         </informationRequirement>
