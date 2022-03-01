@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>test 1</name>
+  <uuid>caf287ce-4f8f-45ec-9d27-c1ae5ad9a861</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[then 
+print "x";]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

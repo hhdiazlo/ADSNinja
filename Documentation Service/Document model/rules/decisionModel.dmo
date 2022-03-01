@@ -15,6 +15,7 @@
                 <output bomType="KYCDocumentDomain" collection="true" name="General validations"/>
                 <rule defaultRule="false" href="node_1/Banking%20license%20validation%20for%20Central%20Bank.drl" kind="BusinessRule" name="Banking license validation for Central Bank"/>
                 <rule defaultRule="false" href="node_1/Foreign%20certificate%20validation%20for%20USA.drl" kind="BusinessRule" name="Foreign certificate validation for USA"/>
+                <rule defaultRule="false" href="node_1/test%201.drl" kind="BusinessRule" name="test 1"/>
             </ruleset>
         </extensionElements>
         <variable id="node_1_ii" name="General validations" typeRef="KYCDocumentDomain[]"/>
