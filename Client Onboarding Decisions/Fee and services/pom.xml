@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>decisions.hd_decision_automations.client_onboarding_decisions</groupId>
+        <groupId>cp4admin.hd_demos.client_onboarding_decisions</groupId>
         <artifactId>clientOnboardingDecisions</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
@@ -10,13 +10,20 @@
     <groupId>decisions.ads_jam_lab.client_onboarding</groupId>
     <artifactId>feeAndServices</artifactId>
     <version>LATEST-SNAPSHOT</version>
-    <packaging>decision-library</packaging>
+    
 
     <build>
         <plugins>
             <plugin>
                 <groupId>com.ibm.decision</groupId>
                 <artifactId>build-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>export</goal>
+                        </goals>
+                    </execution>
+                </executions>
                 <configuration>
                     <deployments>
                         <deployment>
@@ -33,14 +40,32 @@
         <dependency>
             <groupId>decisions.ads_jam_lab.client_onboarding</groupId>
             <artifactId>data</artifactId>
-            <type>decision-library</type>
             <version>LATEST-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>decisions.client_onboarding.client_onboarding_decisions</groupId>
             <artifactId>servicesSubset</artifactId>
-            <type>decision-library</type>
             <version>LATEST-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ibm.decision</groupId>
+            <artifactId>engine-compact-runtime</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ibm.decision</groupId>
+            <artifactId>engine-de-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.datatype</groupId>
+            <artifactId>jackson-datatype-jsr310</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
         </dependency>
     </dependencies>
 </project>
