@@ -4,4 +4,13 @@
   <uuid>76873267-7aa2-4a42-92ef-dd567792755d</uuid>
   <decisionModel href="../rules/decisionModel.dmo#61afdfcf-8776-4940-845e-5f075b61f986"/>
   <targetRuleProject href="../../COVID-Decision-Model#ce91ef53-cca8-4426-8aff-642bc3b076ef"/>
+  <tags key="operationDescription">
+    <value><![CDATA[""]]></value>
+  </tags>
+  <tags key="operationName">
+    <value><![CDATA["COVID-Decision-Model"]]></value>
+  </tags>
+  <tags key="exposedAtRuntime">
+    <value><![CDATA[true]]></value>
+  </tags>
 </com.ibm.rules.studio.model.decisionservice:Operation>
