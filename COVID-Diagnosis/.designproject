@@ -1,1 +1,5 @@
-{"description":"A Decision service used to diagnose a disease based on symptoms","locale":"en_US"}
+{
+  "description" : "A Decision service used to diagnose a disease based on symptoms",
+  "locale" : "en_US",
+  "groupId" : "hdiazl.hd_demos.covid_diagnosis"
+}

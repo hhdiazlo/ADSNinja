@@ -29,12 +29,19 @@
         </dependency>
         <dependency>
             <groupId>com.ibm.decision</groupId>
+            <artifactId>engine-de-api</artifactId>
+            <version>${engine-api.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.ibm.decision</groupId>
             <artifactId>ml-integration-runtime</artifactId>
             <version>${ml-integration-runtime.version}</version>
         </dependency>
     </dependencies>
 
     
+
 
 <build>
         <resources>
@@ -102,6 +109,11 @@
                                     <resource>META-INF/decision-providers</resource>
                                 </transformer>
                             </transformers>
+                            <artifactSet>
+                                <excludes>
+                                    <exclude>com.ibm.decision:engine-de-api</exclude>
+                                </excludes>
+                            </artifactSet>
                             <filters>
                                 <filter>
                                     <artifact>*:*</artifact>
@@ -125,4 +137,41 @@
             </plugin>
         </plugins>
     </build>
+<profiles>
+        <profile>
+            <id>include-libs</id>
+            <activation>
+                <file>
+                    <exists>lib</exists>
+                </file>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-antrun-plugin</artifactId>
+                        <version>3.0.0</version>
+                        <executions>
+                            <execution>
+                                <id>unpack-libs</id>
+                                <phase>compile</phase>
+                                <configuration>
+                                    <target>
+                                        <unzip dest="${project.build.directory}/classes">
+                                            <fileset dir="${project.basedir}/lib">
+                                                <filename regex=".*.jar$"/>
+                                            </fileset>
+                                        </unzip>
+                                    </target>
+                                </configuration>
+                                <goals>
+                                    <goal>run</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 </project>

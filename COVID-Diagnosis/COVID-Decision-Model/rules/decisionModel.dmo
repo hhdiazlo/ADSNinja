@@ -1,31 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+<?xml version="1.0" encoding="UTF-8"?><com.ibm.rules.studio.model.decisionmodel:DecisionModel xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore" xmlns:xmi="http://www.omg.org/XMI" xmi:version="2.0">
   <name>decisionModel</name>
   <uuid>61afdfcf-8776-4940-845e-5f075b61f986</uuid>
   <locale>en_US</locale>
-  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
+  <definition>
+        <definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
     <extensionElements>
         <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
     </extensionElements>
     <inputData id="node_0" name="Received Symptoms">
         <extensionElements>
             <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
-                <output bomType="Symptom" collection="true" name="Received Symptoms"/>
+                <output bomType="decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.Symptom" collection="true" name="Received Symptoms"/>
             </initialization>
         </extensionElements>
-        <variable id="node_0_ii" name="Received Symptoms" typeRef="Symptom[]"/>
+        <variable id="node_0_ii" name="Received Symptoms" typeRef="decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.Symptom[]"/>
     </inputData>
     <decision id="node_1" name="Identify Diagnosis">
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
-                <input bomType="Diagnosis" collection="false" name="Identify Illness"/>
-                <output bomType="Diagnosis" collection="false" name="Identify Diagnosis"/>
+                <input bomType="decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.Diagnosis" collection="false" name="Identify Illness"/>
+                <output bomType="decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.Diagnosis" collection="false" name="Identify Diagnosis"/>
                 <rule defaultRule="false" href="node_1/Provide%20Recommendations.dmt" kind="DecisionTable" name="Provide Recommendations"/>
                 <rule defaultRule="false" href="node_1/Undetermined%20diagnosis.drl" kind="BusinessRule" name="Undetermined diagnosis"/>
                 <rule defaultRule="true" href="node_1/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
             </ruleset>
         </extensionElements>
-        <variable id="node_1_ii" name="Identify Diagnosis" typeRef="Diagnosis"/>
+        <variable id="node_1_ii" name="Identify Diagnosis" typeRef="decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.Diagnosis"/>
         <informationRequirement>
             <requiredInput href="#node_2"/>
         </informationRequirement>
@@ -33,8 +33,8 @@
     <decision id="node_2" name="Identify Illness">
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
-                <input bomType="Symptom" collection="true" name="Received Symptoms"/>
-                <output bomType="Diagnosis" collection="false" name="Identify Illness"/>
+                <input bomType="decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.Symptom" collection="true" name="Received Symptoms"/>
+                <output bomType="decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.Diagnosis" collection="false" name="Identify Illness"/>
                 <rule defaultRule="false" href="node_2/Healthy%20Patient.drl" kind="BusinessRule" name="Healthy Patient"/>
                 <rule defaultRule="false" href="node_2/Single%20Symptom.dmt" kind="DecisionTable" name="Single Symptom"/>
                 <rule defaultRule="false" href="node_2/COVID19%20validation.drl" kind="BusinessRule" name="COVID19 validation"/>
@@ -43,10 +43,11 @@
                 <rule defaultRule="false" href="node_2/healthy%20patient%202.drl" kind="BusinessRule" name="healthy patient 2"/>
             </ruleset>
         </extensionElements>
-        <variable id="node_2_ii" name="Identify Illness" typeRef="Diagnosis"/>
+        <variable id="node_2_ii" name="Identify Illness" typeRef="decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.Diagnosis"/>
         <informationRequirement>
             <requiredInput href="#node_0"/>
         </informationRequirement>
     </decision>
-</definitions></definition>
+</definitions>
+    </definition>
 </com.ibm.rules.studio.model.decisionmodel:DecisionModel>
