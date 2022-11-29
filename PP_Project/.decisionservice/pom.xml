@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>decisions.pp_solution.pp_project</groupId>
+        <groupId>hdiazl.hd_demos.pp_project</groupId>
         <artifactId>PP_Project</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
@@ -24,21 +24,38 @@
         <dependency>
             <groupId>com.ibm.decision</groupId>
             <artifactId>engine-compact-runtime</artifactId>
-            <version>2.3.3</version>
+            <version>${engine-compact-runtime.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.ibm.decision</groupId>
+            <artifactId>engine-de-api</artifactId>
+            <version>${engine-api.version}</version>
+            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>com.ibm.decision</groupId>
             <artifactId>ml-integration-runtime</artifactId>
-            <version>1.2.2</version>
+            <version>${ml-integration-runtime.version}</version>
         </dependency>
     </dependencies>
 
-    <build>
+    
+<build>
+        <resources>
+            <resource>
+                <directory>${project.basedir}</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>META-INF/decisionServiceArchive.json</include>
+                </includes>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
-                <version>3.1.1</version>
+                <version>${maven-dependency-plugin.version}</version>
                 <executions>
                     <execution>
                         <id>unpack</id>
@@ -74,7 +91,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
-                <version>3.2.1</version>
+                <version>${maven-shade-plugin.version}</version>
                 <executions>
                     <execution>
                         <phase>package</phase>
@@ -86,7 +103,15 @@
                             <promoteTransitiveDependencies>true</promoteTransitiveDependencies>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+                                    <resource>META-INF/decision-providers</resource>
+                                </transformer>
                             </transformers>
+                            <artifactSet>
+                                <excludes>
+                                    <exclude>com.ibm.decision:engine-de-api</exclude>
+                                </excludes>
+                            </artifactSet>
                             <filters>
                                 <filter>
                                     <artifact>*:*</artifact>
@@ -95,11 +120,12 @@
                                         <exclude>bom-entries/*</exclude>
                                         <exclude>*.bom</exclude>
                                         <exclude>*.jmod</exclude>
-                                        <exclude>ilog/rules/engine/dataio/*</exclude>
-                                        <exclude>com.ibm.ia.generatedXOM.*</exclude>
+                                        <exclude>ilog/rules/engine/dataio/**</exclude>
+                                        <exclude>com/ibm/ia/generatedXOM/**</exclude>
                                         <exclude>META-INF/*.SF</exclude>
                                         <exclude>META-INF/*.DSA</exclude>
                                         <exclude>META-INF/*.RSA</exclude>
+                                        <exclude>com/fasterxml/**</exclude>
                                     </excludes>
                                 </filter>
                             </filters>
@@ -109,4 +135,41 @@
             </plugin>
         </plugins>
     </build>
+<profiles>
+        <profile>
+            <id>include-libs</id>
+            <activation>
+                <file>
+                    <exists>lib</exists>
+                </file>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-antrun-plugin</artifactId>
+                        <version>3.0.0</version>
+                        <executions>
+                            <execution>
+                                <id>unpack-libs</id>
+                                <phase>compile</phase>
+                                <configuration>
+                                    <target>
+                                        <unzip dest="${project.build.directory}/classes">
+                                            <fileset dir="${project.basedir}/lib">
+                                                <filename regex=".*.jar$"/>
+                                            </fileset>
+                                        </unzip>
+                                    </target>
+                                </configuration>
+                                <goals>
+                                    <goal>run</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 </project>

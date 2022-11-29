@@ -1,56 +1,56 @@
 
-# CountryDomain
-CountryDomain#concept.label = Country Domain
-CountryDomain.ARG#instance.label = Argentina
-CountryDomain.CA#instance.label = Canada
-CountryDomain.FR#instance.label = France
-CountryDomain.MEX#instance.label = Mexico
-CountryDomain.UK#instance.label = United Kingdom
-CountryDomain.USA#instance.label = United States Of America
+# decisions.kyc_validation_decision.documentation_service.documentationmodel.CountryDomain
+decisions.kyc_validation_decision.documentation_service.documentationmodel.CountryDomain#concept.label = Country Domain
+decisions.kyc_validation_decision.documentation_service.documentationmodel.CountryDomain.ARG#instance.label = Argentina
+decisions.kyc_validation_decision.documentation_service.documentationmodel.CountryDomain.CA#instance.label = Canada
+decisions.kyc_validation_decision.documentation_service.documentationmodel.CountryDomain.FR#instance.label = France
+decisions.kyc_validation_decision.documentation_service.documentationmodel.CountryDomain.MEX#instance.label = Mexico
+decisions.kyc_validation_decision.documentation_service.documentationmodel.CountryDomain.UK#instance.label = United Kingdom
+decisions.kyc_validation_decision.documentation_service.documentationmodel.CountryDomain.USA#instance.label = United States Of America
 
-# DocumentationResponse
-DocumentationResponse#concept.label = Documentation Response
-DocumentationResponse.DocumentationResponse(java.util.List)#phrase.navigation = a new {Documentation Response} where {0, required documents list}
-DocumentationResponse.addTo_requiredDocumentsList(KYCDocumentDomain)#phrase.action = add {0} to the required documents lists of {this}
-DocumentationResponse.clear_requiredDocumentsList()#phrase.action = clear the required documents lists of {this}
-DocumentationResponse.removeFrom_requiredDocumentsList(KYCDocumentDomain)#phrase.action = remove {0} from the required documents lists of {this}
-DocumentationResponse.requiredDocumentsList#phrase.action = set the required documents lists of {this} to {required documents list}
-DocumentationResponse.requiredDocumentsList#phrase.navigation = {required documents list} of {this}
+# decisions.kyc_validation_decision.documentation_service.documentationmodel.DocumentationResponse
+decisions.kyc_validation_decision.documentation_service.documentationmodel.DocumentationResponse#concept.label = Documentation Response
+decisions.kyc_validation_decision.documentation_service.documentationmodel.DocumentationResponse.DocumentationResponse(java.util.List)#phrase.navigation = a new {Documentation Response} where {0, required documents list}
+decisions.kyc_validation_decision.documentation_service.documentationmodel.DocumentationResponse.addTo_requiredDocumentsList(decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain)#phrase.action = add {0} to the required documents lists of {this}
+decisions.kyc_validation_decision.documentation_service.documentationmodel.DocumentationResponse.clear_requiredDocumentsList()#phrase.action = clear the required documents lists of {this}
+decisions.kyc_validation_decision.documentation_service.documentationmodel.DocumentationResponse.removeFrom_requiredDocumentsList(decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain)#phrase.action = remove {0} from the required documents lists of {this}
+decisions.kyc_validation_decision.documentation_service.documentationmodel.DocumentationResponse.requiredDocumentsList#phrase.action = set the required documents lists of {this} to {required documents list}
+decisions.kyc_validation_decision.documentation_service.documentationmodel.DocumentationResponse.requiredDocumentsList#phrase.navigation = {required documents list} of {this}
 
-# KYCDocumentDomain
-KYCDocumentDomain#concept.label = KYC Document Domain
-KYCDocumentDomain.AMLPoliciesandProcedures#instance.label = AML Policies and Procedures
-KYCDocumentDomain.AMLQuestionnaire#instance.label = AML Questionnaire
-KYCDocumentDomain.AMLRepresentationLetter#instance.label = AML Representation Letter
-KYCDocumentDomain.AMLServiceProviderVerification#instance.label = AML Service Provider Verification
-KYCDocumentDomain.annualReportFinancialStatements#instance.label = Annual Report Financial Statements
-KYCDocumentDomain.bankingLicense#instance.label = Banking License
-KYCDocumentDomain.bearerShareVerification#instance.label = Bearer Share Verification
-KYCDocumentDomain.constitutionalDocument#instance.label = Constitutional Document
-KYCDocumentDomain.foreignBankCertificate#instance.label = Foreign Bank Certificate
-KYCDocumentDomain.formationCertificate#instance.label = Formation Certificate
-KYCDocumentDomain.formationDocument#instance.label = Formation Document
-KYCDocumentDomain.offeringDocuments#instance.label = Offering Documents
-KYCDocumentDomain.proofofAddress#instance.label = Proof of Address
-KYCDocumentDomain.proofofAffiliation#instance.label = Proof of Affiliation
-KYCDocumentDomain.proofofExchangeListing#instance.label = Proof of Exchange Listing
-KYCDocumentDomain.proofofExistence#instance.label = Proof of Existence
-KYCDocumentDomain.proofofIdentification#instance.label = Proof of Identification
-KYCDocumentDomain.proofofManagementRelationship#instance.label = Proof of Management Relationship
-KYCDocumentDomain.proofofRegistration#instance.label = Proof of Registration
-KYCDocumentDomain.proofofRegulation#instance.label = Proof of Regulation
-KYCDocumentDomain.wolfsbergQuestionnaire#instance.label = Wolfsberg Questionnaire
+# decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain
+decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain#concept.label = KYC Document Domain
+decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain.AMLPoliciesandProcedures#instance.label = AML Policies and Procedures
+decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain.AMLQuestionnaire#instance.label = AML Questionnaire
+decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain.AMLRepresentationLetter#instance.label = AML Representation Letter
+decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain.AMLServiceProviderVerification#instance.label = AML Service Provider Verification
+decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain.annualReportFinancialStatements#instance.label = Annual Report Financial Statements
+decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain.bankingLicense#instance.label = Banking License
+decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain.bearerShareVerification#instance.label = Bearer Share Verification
+decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain.constitutionalDocument#instance.label = Constitutional Document
+decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain.foreignBankCertificate#instance.label = Foreign Bank Certificate
+decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain.formationCertificate#instance.label = Formation Certificate
+decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain.formationDocument#instance.label = Formation Document
+decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain.offeringDocuments#instance.label = Offering Documents
+decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain.proofofAddress#instance.label = Proof of Address
+decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain.proofofAffiliation#instance.label = Proof of Affiliation
+decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain.proofofExchangeListing#instance.label = Proof of Exchange Listing
+decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain.proofofExistence#instance.label = Proof of Existence
+decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain.proofofIdentification#instance.label = Proof of Identification
+decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain.proofofManagementRelationship#instance.label = Proof of Management Relationship
+decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain.proofofRegistration#instance.label = Proof of Registration
+decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain.proofofRegulation#instance.label = Proof of Regulation
+decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain.wolfsbergQuestionnaire#instance.label = Wolfsberg Questionnaire
 
-# PrimaryBusinessPurposeDomain
-PrimaryBusinessPurposeDomain#concept.label = Primary Business Purpose Domain
-PrimaryBusinessPurposeDomain.BROKERDEALER#instance.label = BROKER DEALER
-PrimaryBusinessPurposeDomain.CENTRALBANK#instance.label = CENTRAL BANK
-PrimaryBusinessPurposeDomain.FIDEPOSIT#instance.label = FI DEPOSIT
-PrimaryBusinessPurposeDomain.GOVERNMENT#instance.label = GOVERNMENT
-PrimaryBusinessPurposeDomain.HDGPEVC#instance.label = HDG PE VC
-PrimaryBusinessPurposeDomain.INSURER#instance.label = INSURER
-PrimaryBusinessPurposeDomain.INVESTORADVISOR#instance.label = INVESTOR ADVISOR
-PrimaryBusinessPurposeDomain.MSB#instance.label = MSB
-PrimaryBusinessPurposeDomain.MUTUALFUND#instance.label = MUTUAL FUND
-PrimaryBusinessPurposeDomain.SPV#instance.label = SPV
-PrimaryBusinessPurposeDomain.newEnumValue#instance.label = new enum value
+# decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain
+decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain#concept.label = Primary Business Purpose Domain
+decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain.BROKERDEALER#instance.label = BROKER DEALER
+decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain.CENTRALBANK#instance.label = CENTRAL BANK
+decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain.FIDEPOSIT#instance.label = FI DEPOSIT
+decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain.GOVERNMENT#instance.label = GOVERNMENT
+decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain.HDGPEVC#instance.label = HDG PE VC
+decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain.INSURER#instance.label = INSURER
+decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain.INVESTORADVISOR#instance.label = INVESTOR ADVISOR
+decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain.MSB#instance.label = MSB
+decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain.MUTUALFUND#instance.label = MUTUAL FUND
+decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain.SPV#instance.label = SPV
+decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain.newEnumValue#instance.label = new enum value

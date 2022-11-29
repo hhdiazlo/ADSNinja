@@ -1,4 +1,6 @@
 
+package decisions.claims_demo.risk_decision.claimdatamodel;
+
 
 public class ResponseData
         property "ads.typeId" "1"
@@ -21,7 +23,7 @@ public class ResponseData
                 property "ads.attributeId" "3"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "riskScore"
                 property update "true";
-    public ResponseData(double interestRate, boolean isHighRisk, double riskScore, string riskAssesmentMessage)
+    public ResponseData(double interestRate, boolean isHighRisk, string riskAssesmentMessage, double riskScore)
                 property autoExpand "true"
                 property beanConstructor "true"
                 property groups "BALA"

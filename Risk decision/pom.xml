@@ -1,23 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>decisions.claims_demo.risk_decision</groupId>
+    <groupId>hdiazl.hd_demos.risk_decision</groupId>
     <artifactId>riskDecision</artifactId>
     <version>1.0.0-SNAPSHOT</version>
+    <name>Risk decision</name>
 
     <packaging>pom</packaging>
 
     <properties>
-        <engine-compact-runtime.version>2.7.1</engine-compact-runtime.version>
-        <maven-shade-plugin.version>3.2.4</maven-shade-plugin.version>
-        <ml-integration-runtime.version>7.0.7</ml-integration-runtime.version>
-        <ads-mojo.version>4.2.0</ads-mojo.version>
+        <ads-mojo.version>7.0.5.3</ads-mojo.version>
+        <buildTime>${maven.build.timestamp}</buildTime>
+        <decisionServiceId>${project.groupId}:${project.artifactId}</decisionServiceId>
+        <engine-api.version>2.14.0</engine-api.version>
+        <engine-compact-runtime.version>2.14.2.1</engine-compact-runtime.version>
+        <jackson.version>2.13.4</jackson.version>
+        <junit.jupiter.version>5.8.0</junit.jupiter.version>
         <maven-dependency-plugin.version>3.1.2</maven-dependency-plugin.version>
+        <maven-shade-plugin.version>3.2.4</maven-shade-plugin.version>
+        <maven-surefire-plugin.version>3.0.0-M5</maven-surefire-plugin.version>
+        <maven.build.timestamp.format>yyyy-MM-dd'T'HH:mm:ss'Z'</maven.build.timestamp.format>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <ml-integration-runtime.version>29.2.11</ml-integration-runtime.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.ibm.decision</groupId>
+                <artifactId>engine-compact-runtime</artifactId>
+                <version>${engine-compact-runtime.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.ibm.decision</groupId>
+                <artifactId>engine-de-api</artifactId>
+                <version>${engine-api.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.datatype</groupId>
+                <artifactId>jackson-datatype-jsr310</artifactId>
+                <version>${jackson.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-api</artifactId>
+                <version>${junit.jupiter.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-engine</artifactId>
+                <version>${junit.jupiter.version}</version>
+                <scope>test</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
     <modules>
+        <module>.decisionservice</module>
         <module>Claim data model</module>
         <module>Validation model</module>
-        <module>.decisionservice</module>
     </modules>
 
     <build>
@@ -27,7 +73,7 @@
                     <groupId>com.ibm.decision</groupId>
                     <artifactId>build-maven-plugin</artifactId>
                     <version>${ads-mojo.version}</version>
-                    <extensions>true</extensions>
+                    
                 <dependencies>
                         <dependency>
                             <groupId>com.ibm.decision</groupId>
@@ -35,6 +81,15 @@
                             <version>${ml-integration-runtime.version}</version>
                         </dependency>
                     </dependencies>
+                </plugin>
+            <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>${maven-surefire-plugin.version}</version>
+                    <configuration>
+                        <argLine>-Xmx1024m</argLine>
+                        <redirectTestOutputToFile>true</redirectTestOutputToFile>
+                    </configuration>
                 </plugin>
             </plugins>
         </pluginManagement>

@@ -1,1 +1,5 @@
-{"description":"Validate loans based on the borrower data and compute insurance rates for the requested loan amounts.","locale":"en_US"}
+{
+  "description" : "Validate loans based on the borrower data and compute insurance rates for the requested loan amounts.",
+  "locale" : "en_US",
+  "groupId" : "hdiazl.hd_demos.loan_validation"
+}

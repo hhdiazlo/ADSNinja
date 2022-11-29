@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+<?xml version="1.0" encoding="UTF-8"?><com.ibm.rules.studio.model.decisionmodel:DecisionModel xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore" xmlns:xmi="http://www.omg.org/XMI" xmi:version="2.0">
   <name>decisionModel</name>
   <uuid>d9cefc3d-927d-4da6-90a9-b46965652e45</uuid>
   <locale>en_US</locale>
-  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="My Model" namespace="">
+  <definition>
+        <definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="My Model" namespace="">
     <extensionElements>
         <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
     </extensionElements>
@@ -20,8 +20,8 @@
         <description>Shipping cost in 'points'.</description>
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
-                <input bomType="newtype2" collection="false" name="Shipment"/>
-                <input bomType="newtype" collection="false" name="Method"/>
+                <input bomType="decisions.techpreview_samples.shipment_pricing_project.mydata.newtype2" collection="false" name="Shipment"/>
+                <input bomType="decisions.techpreview_samples.shipment_pricing_project.mydata.newtype" collection="false" name="Method"/>
                 <output bomType="java.lang.Double" collection="false" name="Shipping cost"/>
                 <rule defaultRule="false" href="node_1/Ground%20price%20table.dmt" kind="DecisionTable" name="Ground price table"/>
                 <rule defaultRule="false" href="node_1/Air%20price%20table.dmt" kind="DecisionTable" name="Air price table"/>
@@ -40,26 +40,26 @@
         <description>Description of the package.</description>
         <extensionElements>
             <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
-                <output bomType="newtype2" collection="false" name="Shipment"/>
+                <output bomType="decisions.techpreview_samples.shipment_pricing_project.mydata.newtype2" collection="false" name="Shipment"/>
             </initialization>
         </extensionElements>
-        <variable id="node_2_ii" name="Shipment" typeRef="newtype2"/>
+        <variable id="node_2_ii" name="Shipment" typeRef="decisions.techpreview_samples.shipment_pricing_project.mydata.newtype2"/>
     </inputData>
     <inputData id="node_3" name="Method">
         <description>Transportation and delivery method.</description>
         <extensionElements>
             <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
-                <output bomType="newtype" collection="false" name="Method"/>
+                <output bomType="decisions.techpreview_samples.shipment_pricing_project.mydata.newtype" collection="false" name="Method"/>
             </initialization>
         </extensionElements>
-        <variable id="node_3_ii" name="Method" typeRef="newtype"/>
+        <variable id="node_3_ii" name="Method" typeRef="decisions.techpreview_samples.shipment_pricing_project.mydata.newtype"/>
     </inputData>
     <decision id="node_4" name="Transportation multiplier">
         <description>Transportation multiplier, i.e. the number of 'points' corresponding to the distance and the transportation method (air or ground)</description>
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
                 <input bomType="java.lang.Double" collection="false" name="Distance"/>
-                <input bomType="newtype" collection="false" name="Method"/>
+                <input bomType="decisions.techpreview_samples.shipment_pricing_project.mydata.newtype" collection="false" name="Method"/>
                 <output bomType="java.lang.Double" collection="false" name="Transportation multiplier"/>
                 <rule defaultRule="false" href="node_4/Ground%20tariffs.dmt" kind="DecisionTable" name="Ground tariffs"/>
                 <rule defaultRule="false" href="node_4/Air%20tariffs.dmt" kind="DecisionTable" name="Air tariffs"/>
@@ -95,8 +95,8 @@
         <description>Cost in 'points' for the various options.</description>
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
-                <input bomType="newtype2" collection="false" name="Shipment"/>
-                <input bomType="newtype" collection="false" name="Method"/>
+                <input bomType="decisions.techpreview_samples.shipment_pricing_project.mydata.newtype2" collection="false" name="Shipment"/>
+                <input bomType="decisions.techpreview_samples.shipment_pricing_project.mydata.newtype" collection="false" name="Method"/>
                 <output bomType="java.lang.Double" collection="false" name="Option cost"/>
                 <rule defaultRule="false" href="node_6/Pickup%20costs.dmt" kind="DecisionTable" name="Pickup costs"/>
                 <rule defaultRule="false" href="node_6/Next-day%20costs.drl" kind="BusinessRule" name="Next-day costs"/>
@@ -132,7 +132,7 @@
         <description>Customer discount, based on the customer status (Bronze, Silver, Gold).</description>
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
-                <input bomType="newenum2" collection="false" name="Customer"/>
+                <input bomType="decisions.techpreview_samples.shipment_pricing_project.mydata.newenum2" collection="false" name="Customer"/>
                 <output bomType="java.lang.Double" collection="false" name="Discount"/>
                 <rule defaultRule="false" href="node_9/Discount%20table.dmt" kind="DecisionTable" name="Discount table"/>
             </ruleset>
@@ -146,10 +146,10 @@
         <description>Customer status, such as Bronze, Silver, Gold.</description>
         <extensionElements>
             <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
-                <output bomType="newenum2" collection="false" name="Customer"/>
+                <output bomType="decisions.techpreview_samples.shipment_pricing_project.mydata.newenum2" collection="false" name="Customer"/>
             </initialization>
         </extensionElements>
-        <variable id="node_10_ii" name="Customer" typeRef="newenum2"/>
+        <variable id="node_10_ii" name="Customer" typeRef="decisions.techpreview_samples.shipment_pricing_project.mydata.newenum2"/>
     </inputData>
     <decision id="node_11" name="Shipping price">
         <description>Total price.</description>
@@ -169,5 +169,6 @@
             <requiredInput href="#node_9"/>
         </informationRequirement>
     </decision>
-</definitions></definition>
+</definitions>
+    </definition>
 </com.ibm.rules.studio.model.decisionmodel:DecisionModel>

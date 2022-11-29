@@ -1,4 +1,6 @@
 
+package decisions.pp_solution.pp_project.pp_data_model;
+
 
 public class Temperature
         extends java.lang.Enum
@@ -7,13 +9,13 @@ public class Temperature
         property "de.generated" "true"
 {
     domain {static cold, static hot, static warm}
-    public static final readonly Temperature cold
+    public static final readonly decisions.pp_solution.pp_project.pp_data_model.Temperature cold
                 property "ads.attributeId" "3"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "cold";
-    public static final readonly Temperature hot
+    public static final readonly decisions.pp_solution.pp_project.pp_data_model.Temperature hot
                 property "ads.attributeId" "1"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "hot";
-    public static final readonly Temperature warm
+    public static final readonly decisions.pp_solution.pp_project.pp_data_model.Temperature warm
                 property "ads.attributeId" "2"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "warm";
 }
@@ -31,12 +33,13 @@ public class Weather
                 property "ads.attributeId" "3"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "storm alert"
                 property update "true";
-    public Temperature temperature
+    public decisions.pp_solution.pp_project.pp_data_model.Temperature temperature
                 property "ads.attributeId" "2"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "temperature"
                 property update "true";
-    public Weather(java.lang.Long rainForecst, boolean stormAlert, Temperature temperature)
+    public Weather(java.lang.Long rainForecst, boolean stormAlert, decisions.pp_solution.pp_project.pp_data_model.Temperature temperature)
                 property autoExpand "true"
+                property beanConstructor "true"
                 property groups "BALA"
                 property prototype "true";
     public Weather()

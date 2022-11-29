@@ -1,1 +1,5 @@
-{"description":"","locale":"en_US"}
+{
+  "description" : "",
+  "locale" : "en_US",
+  "groupId" : "hdiazl.hd_demos.pp_project"
+}

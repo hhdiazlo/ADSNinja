@@ -1,53 +1,62 @@
 
-# newenum
-newenum#concept.label = Pickup
-newenum.newenumvalue#instance.label = Dropoff
-newenum.newenumvalue1#instance.label = Pickup
+# decisions.techpreview_samples.shipment_pricing_project.mydata.newenum
+decisions.techpreview_samples.shipment_pricing_project.mydata.newenum#concept.label = Pickup
+decisions.techpreview_samples.shipment_pricing_project.mydata.newenum.newenumvalue#instance.label = Dropoff
+decisions.techpreview_samples.shipment_pricing_project.mydata.newenum.newenumvalue1#instance.label = Pickup
 
-# newenum1
-newenum1#concept.label = Transport
-newenum1.newenumvalue#instance.label = Ground
-newenum1.newenumvalue1#instance.label = Air
+# decisions.techpreview_samples.shipment_pricing_project.mydata.newenum1
+decisions.techpreview_samples.shipment_pricing_project.mydata.newenum1#concept.label = Transport
+decisions.techpreview_samples.shipment_pricing_project.mydata.newenum1.newenumvalue#instance.label = Ground
+decisions.techpreview_samples.shipment_pricing_project.mydata.newenum1.newenumvalue1#instance.label = Air
 
-# newenum2
-newenum2#concept.label = Customer Status
-newenum2.newenumvalue#instance.label = Gold
-newenum2.newenumvalue1#instance.label = Silver
-newenum2.newenumvalue2#instance.label = Bronze
+# decisions.techpreview_samples.shipment_pricing_project.mydata.newenum2
+decisions.techpreview_samples.shipment_pricing_project.mydata.newenum2#concept.label = Customer Status
+decisions.techpreview_samples.shipment_pricing_project.mydata.newenum2.newenumvalue#instance.label = Gold
+decisions.techpreview_samples.shipment_pricing_project.mydata.newenum2.newenumvalue1#instance.label = Silver
+decisions.techpreview_samples.shipment_pricing_project.mydata.newenum2.newenumvalue2#instance.label = Bronze
 
-# newenum3
-newenum3#concept.label = Dimension
-newenum3.newenumvalue#instance.label = Pack 3
-newenum3.newenumvalue1#instance.label = Pack 2
-newenum3.newenumvalue2#instance.label = Pack 1
-newenum3.newenumvalue3#instance.label = Letter
+# decisions.techpreview_samples.shipment_pricing_project.mydata.newenum3
+decisions.techpreview_samples.shipment_pricing_project.mydata.newenum3#concept.label = Dimension
+decisions.techpreview_samples.shipment_pricing_project.mydata.newenum3.newenumvalue#instance.label = Pack 3
+decisions.techpreview_samples.shipment_pricing_project.mydata.newenum3.newenumvalue1#instance.label = Pack 2
+decisions.techpreview_samples.shipment_pricing_project.mydata.newenum3.newenumvalue2#instance.label = Pack 1
+decisions.techpreview_samples.shipment_pricing_project.mydata.newenum3.newenumvalue3#instance.label = Letter
 
-# newtype
-newtype#concept.label = Method
-newtype.newattribute#phrase.action = make it {next day} that {this} is next day
-newtype.newattribute#phrase.navigation = {this} is next day
-newtype.newattribute1#phrase.action = set the transport of {this} to {transport}
-newtype.newattribute1#phrase.clearer = clear the transport of {this}
-newtype.newattribute1#phrase.navigation = {transport} of {this}
-newtype.newattribute2#phrase.action = set the pickup of {this} to {pickup}
-newtype.newattribute2#phrase.clearer = clear the pickup of {this}
-newtype.newattribute2#phrase.navigation = {pickup} of {this}
-newtype.newtype(boolean,newenum1,newenum)#phrase.navigation = a new {Method} where {0, next day} {1, transport} {2, pickup}
+# decisions.techpreview_samples.shipment_pricing_project.mydata.newtype
+decisions.techpreview_samples.shipment_pricing_project.mydata.newtype#concept.label = Method
+decisions.techpreview_samples.shipment_pricing_project.mydata.newtype.newattribute#phrase.action[0] = {this} gets next day only if {next day}
+decisions.techpreview_samples.shipment_pricing_project.mydata.newtype.newattribute#phrase.action[1] = make it {next day} that {this} is next day
+decisions.techpreview_samples.shipment_pricing_project.mydata.newtype.newattribute#phrase.action[1].deprecated = true
+decisions.techpreview_samples.shipment_pricing_project.mydata.newtype.newattribute#phrase.navigation = {this} is next day
+decisions.techpreview_samples.shipment_pricing_project.mydata.newtype.newattribute#phrase.negative_predicate = {this} is not next day
+decisions.techpreview_samples.shipment_pricing_project.mydata.newtype.newattribute#phrase.negative_predicate_setter = {this} does not get next day
+decisions.techpreview_samples.shipment_pricing_project.mydata.newtype.newattribute#phrase.positive_predicate_setter = {this} gets next day
+decisions.techpreview_samples.shipment_pricing_project.mydata.newtype.newattribute1#phrase.action = set the transport of {this} to {transport}
+decisions.techpreview_samples.shipment_pricing_project.mydata.newtype.newattribute1#phrase.clearer = clear the transport of {this}
+decisions.techpreview_samples.shipment_pricing_project.mydata.newtype.newattribute1#phrase.navigation = {transport} of {this}
+decisions.techpreview_samples.shipment_pricing_project.mydata.newtype.newattribute2#phrase.action = set the pickup of {this} to {pickup}
+decisions.techpreview_samples.shipment_pricing_project.mydata.newtype.newattribute2#phrase.clearer = clear the pickup of {this}
+decisions.techpreview_samples.shipment_pricing_project.mydata.newtype.newattribute2#phrase.navigation = {pickup} of {this}
+decisions.techpreview_samples.shipment_pricing_project.mydata.newtype.newtype(boolean,decisions.techpreview_samples.shipment_pricing_project.mydata.newenum1,decisions.techpreview_samples.shipment_pricing_project.mydata.newenum)#phrase.navigation = a new {Method} where {0, next day} {1, transport} {2, pickup}
 
-# newtype1
-newtype1#concept.label = Result
-newtype1.newattribute#phrase.action = set the ETA of {this} to {ETA}
-newtype1.newattribute#phrase.clearer = clear the ETA of {this}
-newtype1.newattribute#phrase.navigation = {ETA} of {this}
-newtype1.newattribute1#phrase.action = set the price of {this} to {price}
-newtype1.newattribute1#phrase.navigation = {price} of {this}
-newtype1.newtype1(ilog.rules.brl.Time,double)#phrase.navigation = a new {Result} where {0, ETA} {1, price}
+# decisions.techpreview_samples.shipment_pricing_project.mydata.newtype1
+decisions.techpreview_samples.shipment_pricing_project.mydata.newtype1#concept.label = Result
+decisions.techpreview_samples.shipment_pricing_project.mydata.newtype1.newattribute#phrase.action = set the ETA of {this} to {ETA}
+decisions.techpreview_samples.shipment_pricing_project.mydata.newtype1.newattribute#phrase.clearer = clear the ETA of {this}
+decisions.techpreview_samples.shipment_pricing_project.mydata.newtype1.newattribute#phrase.navigation = {ETA} of {this}
+decisions.techpreview_samples.shipment_pricing_project.mydata.newtype1.newattribute1#phrase.action = set the price of {this} to {price}
+decisions.techpreview_samples.shipment_pricing_project.mydata.newtype1.newattribute1#phrase.addition_setter = add {price} to the price of {this}
+decisions.techpreview_samples.shipment_pricing_project.mydata.newtype1.newattribute1#phrase.navigation = {price} of {this}
+decisions.techpreview_samples.shipment_pricing_project.mydata.newtype1.newattribute1#phrase.subtraction_setter = subtract {price} from the price of {this}
+decisions.techpreview_samples.shipment_pricing_project.mydata.newtype1.newtype1(ilog.rules.brl.Time,double)#phrase.navigation = a new {Result} where {0, ETA} {1, price}
 
-# newtype2
-newtype2#concept.label = Shipment
-newtype2.newattribute#phrase.action = set the size of {this} to {size}
-newtype2.newattribute#phrase.clearer = clear the size of {this}
-newtype2.newattribute#phrase.navigation = {size} of {this}
-newtype2.newattribute1#phrase.action = set the weight of {this} to {weight}
-newtype2.newattribute1#phrase.navigation = {weight} of {this}
-newtype2.newtype2(newenum3,double)#phrase.navigation = a new {Shipment} where {0, size} {1, weight}
+# decisions.techpreview_samples.shipment_pricing_project.mydata.newtype2
+decisions.techpreview_samples.shipment_pricing_project.mydata.newtype2#concept.label = Shipment
+decisions.techpreview_samples.shipment_pricing_project.mydata.newtype2.newattribute#phrase.action = set the size of {this} to {size}
+decisions.techpreview_samples.shipment_pricing_project.mydata.newtype2.newattribute#phrase.clearer = clear the size of {this}
+decisions.techpreview_samples.shipment_pricing_project.mydata.newtype2.newattribute#phrase.navigation = {size} of {this}
+decisions.techpreview_samples.shipment_pricing_project.mydata.newtype2.newattribute1#phrase.action = set the weight of {this} to {weight}
+decisions.techpreview_samples.shipment_pricing_project.mydata.newtype2.newattribute1#phrase.addition_setter = add {weight} to the weight of {this}
+decisions.techpreview_samples.shipment_pricing_project.mydata.newtype2.newattribute1#phrase.navigation = {weight} of {this}
+decisions.techpreview_samples.shipment_pricing_project.mydata.newtype2.newattribute1#phrase.subtraction_setter = subtract {weight} from the weight of {this}
+decisions.techpreview_samples.shipment_pricing_project.mydata.newtype2.newtype2(decisions.techpreview_samples.shipment_pricing_project.mydata.newenum3,double)#phrase.navigation = a new {Shipment} where {0, size} {1, weight}

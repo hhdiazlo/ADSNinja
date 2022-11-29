@@ -1,21 +1,21 @@
 
-# ResponseData
-ResponseData#concept.label = Response data
-ResponseData.ResponseData(double,boolean,double,java.lang.String)#phrase.navigation = a new {Response data} where {0, interestRate} {1, isHighRisk} {2, riskScore} {3, riskAssesmentMessage}
-ResponseData.interestRate#phrase.action = set the interestRate of {this} to {interestRate}
-ResponseData.interestRate#phrase.addition_setter = add {interestRate} to the interestRate of {this}
-ResponseData.interestRate#phrase.navigation = {interestRate} of {this}
-ResponseData.interestRate#phrase.subtraction_setter = subtract {interestRate} from the interestRate of {this}
-ResponseData.isHighRisk#phrase.action[0] = {this} gets isHighRisk only if {isHighRisk}
-ResponseData.isHighRisk#phrase.action[1] = make it {isHighRisk} that {this} is isHighRisk
-ResponseData.isHighRisk#phrase.action[1].deprecated = true
-ResponseData.isHighRisk#phrase.navigation = {this} is isHighRisk
-ResponseData.isHighRisk#phrase.negative_predicate = {this} is not isHighRisk
-ResponseData.isHighRisk#phrase.negative_predicate_setter = {this} does not get isHighRisk
-ResponseData.isHighRisk#phrase.positive_predicate_setter = {this} gets isHighRisk
-ResponseData.riskAssesmentMessage#phrase.action = set the riskAssesmentMessage of {this} to {riskAssesmentMessage}
-ResponseData.riskAssesmentMessage#phrase.navigation = {riskAssesmentMessage} of {this}
-ResponseData.riskScore#phrase.action = set the riskScore of {this} to {riskScore}
-ResponseData.riskScore#phrase.addition_setter = add {riskScore} to the riskScore of {this}
-ResponseData.riskScore#phrase.navigation = {riskScore} of {this}
-ResponseData.riskScore#phrase.subtraction_setter = subtract {riskScore} from the riskScore of {this}
+# decisions.claims_demo.risk_decision.claimdatamodel.ResponseData
+decisions.claims_demo.risk_decision.claimdatamodel.ResponseData#concept.label = Response data
+decisions.claims_demo.risk_decision.claimdatamodel.ResponseData.ResponseData(double,boolean,java.lang.String,double)#phrase.navigation = a new {Response data} where {0, interestRate} {1, isHighRisk} {2, riskAssesmentMessage} {3, riskScore}
+decisions.claims_demo.risk_decision.claimdatamodel.ResponseData.interestRate#phrase.action = set the interestRate of {this} to {interestRate}
+decisions.claims_demo.risk_decision.claimdatamodel.ResponseData.interestRate#phrase.addition_setter = add {interestRate} to the interestRate of {this}
+decisions.claims_demo.risk_decision.claimdatamodel.ResponseData.interestRate#phrase.navigation = {interestRate} of {this}
+decisions.claims_demo.risk_decision.claimdatamodel.ResponseData.interestRate#phrase.subtraction_setter = subtract {interestRate} from the interestRate of {this}
+decisions.claims_demo.risk_decision.claimdatamodel.ResponseData.isHighRisk#phrase.action[0] = {this} gets isHighRisk only if {isHighRisk}
+decisions.claims_demo.risk_decision.claimdatamodel.ResponseData.isHighRisk#phrase.action[1] = make it {isHighRisk} that {this} is isHighRisk
+decisions.claims_demo.risk_decision.claimdatamodel.ResponseData.isHighRisk#phrase.action[1].deprecated = true
+decisions.claims_demo.risk_decision.claimdatamodel.ResponseData.isHighRisk#phrase.navigation = {this} is isHighRisk
+decisions.claims_demo.risk_decision.claimdatamodel.ResponseData.isHighRisk#phrase.negative_predicate = {this} is not isHighRisk
+decisions.claims_demo.risk_decision.claimdatamodel.ResponseData.isHighRisk#phrase.negative_predicate_setter = {this} does not get isHighRisk
+decisions.claims_demo.risk_decision.claimdatamodel.ResponseData.isHighRisk#phrase.positive_predicate_setter = {this} gets isHighRisk
+decisions.claims_demo.risk_decision.claimdatamodel.ResponseData.riskAssesmentMessage#phrase.action = set the riskAssesmentMessage of {this} to {riskAssesmentMessage}
+decisions.claims_demo.risk_decision.claimdatamodel.ResponseData.riskAssesmentMessage#phrase.navigation = {riskAssesmentMessage} of {this}
+decisions.claims_demo.risk_decision.claimdatamodel.ResponseData.riskScore#phrase.action = set the riskScore of {this} to {riskScore}
+decisions.claims_demo.risk_decision.claimdatamodel.ResponseData.riskScore#phrase.addition_setter = add {riskScore} to the riskScore of {this}
+decisions.claims_demo.risk_decision.claimdatamodel.ResponseData.riskScore#phrase.navigation = {riskScore} of {this}
+decisions.claims_demo.risk_decision.claimdatamodel.ResponseData.riskScore#phrase.subtraction_setter = subtract {riskScore} from the riskScore of {this}

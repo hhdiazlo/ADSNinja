@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+<?xml version="1.0" encoding="UTF-8"?><com.ibm.rules.studio.model.decisionmodel:DecisionModel xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore" xmlns:xmi="http://www.omg.org/XMI" xmi:version="2.0">
   <name>decisionModel</name>
   <uuid>e8ae9210-8eef-4c52-859a-ae5501d3f446</uuid>
   <locale>en_US</locale>
-  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
+  <definition>
+        <definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
     <extensionElements>
         <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
     </extensionElements>
@@ -20,13 +20,13 @@
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
                 <input bomType="ilog.rules.brl.SimpleDate" collection="false" name="Policy Holder Date of Birth"/>
                 <input bomType="java.lang.Long" collection="false" name="Policy validation risk score"/>
-                <output bomType="ResponseData" collection="false" name="Policy Holder validation"/>
+                <output bomType="decisions.claims_demo.risk_decision.claimdatamodel.ResponseData" collection="false" name="Policy Holder validation"/>
                 <rule defaultRule="false" href="node_1/Risk%20by%20age.dmt" kind="DecisionTable" name="Risk by age"/>
                 <rule defaultRule="true" href="node_1/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
                 <rule defaultRule="false" href="node_1/include%20risk%20from%20policy%20validation.drl" kind="BusinessRule" name="include risk from policy validation"/>
             </ruleset>
         </extensionElements>
-        <variable id="node_1_ii" name="Policy Holder validation" typeRef="ResponseData"/>
+        <variable id="node_1_ii" name="Policy Holder validation" typeRef="decisions.claims_demo.risk_decision.claimdatamodel.ResponseData"/>
         <informationRequirement>
             <requiredInput href="#node_0"/>
         </informationRequirement>
@@ -67,5 +67,6 @@
             <requiredInput href="#node_3"/>
         </informationRequirement>
     </decision>
-</definitions></definition>
+</definitions>
+    </definition>
 </com.ibm.rules.studio.model.decisionmodel:DecisionModel>

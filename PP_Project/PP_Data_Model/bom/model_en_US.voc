@@ -1,17 +1,24 @@
 
-# Temperature
-Temperature#concept.label = temperature
-Temperature.cold#instance.label = cold
-Temperature.hot#instance.label = hot
-Temperature.warm#instance.label = warm
+# decisions.pp_solution.pp_project.pp_data_model.Temperature
+decisions.pp_solution.pp_project.pp_data_model.Temperature#concept.label = temperature
+decisions.pp_solution.pp_project.pp_data_model.Temperature.cold#instance.label = cold
+decisions.pp_solution.pp_project.pp_data_model.Temperature.hot#instance.label = hot
+decisions.pp_solution.pp_project.pp_data_model.Temperature.warm#instance.label = warm
 
-# Weather
-Weather#concept.label = weather
-Weather.Weather(java.lang.Long,boolean,Temperature)#phrase.navigation = a new {weather} where {0, rain forecst} {1, storm alert} {2, temperature}
-Weather.rainForecst#phrase.action = set the rain forecst of {this} to {rain forecst}
-Weather.rainForecst#phrase.navigation = {rain forecst} of {this}
-Weather.stormAlert#phrase.action = make it {storm alert} that {this} is storm alert
-Weather.stormAlert#phrase.navigation = {this} is storm alert
-Weather.temperature#phrase.action = set the temperature of {this} to {temperature}
-Weather.temperature#phrase.clearer = clear the temperature of {this}
-Weather.temperature#phrase.navigation = {temperature} of {this}
+# decisions.pp_solution.pp_project.pp_data_model.Weather
+decisions.pp_solution.pp_project.pp_data_model.Weather#concept.label = weather
+decisions.pp_solution.pp_project.pp_data_model.Weather.Weather(java.lang.Long,boolean,decisions.pp_solution.pp_project.pp_data_model.Temperature)#phrase.navigation = a new {weather} where {0, rain forecst} {1, storm alert} {2, temperature}
+decisions.pp_solution.pp_project.pp_data_model.Weather.rainForecst#phrase.action = set the rain forecst of {this} to {rain forecst}
+decisions.pp_solution.pp_project.pp_data_model.Weather.rainForecst#phrase.addition_setter = add {rain forecst} to the rain forecst of {this}
+decisions.pp_solution.pp_project.pp_data_model.Weather.rainForecst#phrase.navigation = {rain forecst} of {this}
+decisions.pp_solution.pp_project.pp_data_model.Weather.rainForecst#phrase.subtraction_setter = subtract {rain forecst} from the rain forecst of {this}
+decisions.pp_solution.pp_project.pp_data_model.Weather.stormAlert#phrase.action[0] = {this} gets storm alert only if {storm alert}
+decisions.pp_solution.pp_project.pp_data_model.Weather.stormAlert#phrase.action[1] = make it {storm alert} that {this} is storm alert
+decisions.pp_solution.pp_project.pp_data_model.Weather.stormAlert#phrase.action[1].deprecated = true
+decisions.pp_solution.pp_project.pp_data_model.Weather.stormAlert#phrase.navigation = {this} is storm alert
+decisions.pp_solution.pp_project.pp_data_model.Weather.stormAlert#phrase.negative_predicate = {this} is not storm alert
+decisions.pp_solution.pp_project.pp_data_model.Weather.stormAlert#phrase.negative_predicate_setter = {this} does not get storm alert
+decisions.pp_solution.pp_project.pp_data_model.Weather.stormAlert#phrase.positive_predicate_setter = {this} gets storm alert
+decisions.pp_solution.pp_project.pp_data_model.Weather.temperature#phrase.action = set the temperature of {this} to {temperature}
+decisions.pp_solution.pp_project.pp_data_model.Weather.temperature#phrase.clearer = clear the temperature of {this}
+decisions.pp_solution.pp_project.pp_data_model.Weather.temperature#phrase.navigation = {temperature} of {this}

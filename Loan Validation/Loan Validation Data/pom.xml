@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>decisions.hd_demo_solution.loan_validation</groupId>
+        <groupId>hdiazl.hd_demos.loan_validation</groupId>
         <artifactId>loanValidation</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
@@ -10,14 +10,21 @@
     <groupId>decisions.techpreview_samples.loan_validation</groupId>
     <artifactId>loanValidationData</artifactId>
     <version>LATEST-SNAPSHOT</version>
-    <packaging>decision-library</packaging>
+    
 
     <build>
         <plugins>
             <plugin>
                 <groupId>com.ibm.decision</groupId>
                 <artifactId>build-maven-plugin</artifactId>
-                <version>2.3.3</version>
+                
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>export</goal>
+                        </goals>
+                    </execution>
+                </executions>
                 <configuration>
                     <deployments>
                         <deployment>
@@ -26,16 +33,31 @@
                     </deployments>
                 <packageName>decisions.techpreview_samples.loan_validation.loanvalidationdata</packageName>
                 </configuration>
-            <dependencies>
-                    <dependency>
-                        <groupId>com.ibm.decision</groupId>
-                        <artifactId>ml-integration-runtime</artifactId>
-                        <version>1.2.2</version>
-                    </dependency>
-                </dependencies>
+            
             </plugin>
         </plugins>
     </build>
 
-<dependencies/>
+<dependencies>
+        <dependency>
+            <groupId>com.ibm.decision</groupId>
+            <artifactId>engine-compact-runtime</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.ibm.decision</groupId>
+            <artifactId>engine-de-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.datatype</groupId>
+            <artifactId>jackson-datatype-jsr310</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+        </dependency>
+    </dependencies>
 </project>

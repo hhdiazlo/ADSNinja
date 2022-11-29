@@ -1,9 +1,11 @@
 
+package decisions.techpreview_samples.loan_validation.loanvalidationdata;
+
 
 public class newtype
+        property "ads.typeId" "6"
         property "com.fasterxml.jackson.annotation.JsonTypeName" "loan"
         property "de.generated" "true"
-        property "ads.typeId" "6"
 {
     public java.lang.Long newattribute
                 property "ads.attributeId" "3"
@@ -23,6 +25,7 @@ public class newtype
                 property update "true";
     public newtype(java.lang.Long newattribute, ilog.rules.brl.Date newattribute1, java.lang.Long newattribute2, double newattribute3)
                 property autoExpand "true"
+                property beanConstructor "true"
                 property groups "BALA"
                 property prototype "true";
     public newtype()
@@ -30,9 +33,9 @@ public class newtype
 }
 
 public class newtype1
+        property "ads.typeId" "3"
         property "com.fasterxml.jackson.annotation.JsonTypeName" "borrower"
         property "de.generated" "true"
-        property "ads.typeId" "3"
 {
     public string newattribute
                 property "ads.attributeId" "4"
@@ -46,7 +49,7 @@ public class newtype1
                 property "ads.attributeId" "2"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "birth date"
                 property update "true";
-    public newtype4 newattribute3
+    public decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype4 newattribute3
                 property "ads.attributeId" "1"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "SSN"
                 property update "true";
@@ -62,24 +65,25 @@ public class newtype1
                 property "ads.attributeId" "3"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "credit score"
                 property update "true";
-    public newtype1 newattribute7
+    public decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype1 newattribute7
                 property "ads.attributeId" "7"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "spouse"
                 property update "true";
-    public newtype2 newattribute8
+    public decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype2 newattribute8
                 property "ads.attributeId" "6"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "latest bankruptcy"
                 property update "true";
     public newtype1(string newattribute, 
         string newattribute1, 
         ilog.rules.brl.Date newattribute2, 
-        newtype4 newattribute3, 
+        decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype4 newattribute3, 
         java.lang.Long newattribute4, 
         string newattribute5, 
         java.lang.Long newattribute6, 
-        newtype1 newattribute7, 
-        newtype2 newattribute8)
+        decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype1 newattribute7, 
+        decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype2 newattribute8)
                 property autoExpand "true"
+                property beanConstructor "true"
                 property groups "BALA"
                 property prototype "true";
     public newtype1()
@@ -87,9 +91,9 @@ public class newtype1
 }
 
 public class newtype2
+        property "ads.typeId" "2"
         property "com.fasterxml.jackson.annotation.JsonTypeName" "bankruptcy"
         property "de.generated" "true"
-        property "ads.typeId" "2"
 {
     public ilog.rules.brl.Date newattribute
                 property "ads.attributeId" "2"
@@ -105,6 +109,7 @@ public class newtype2
                 property update "true";
     public newtype2(ilog.rules.brl.Date newattribute, java.lang.Long newattribute1, string newattribute2)
                 property autoExpand "true"
+                property beanConstructor "true"
                 property groups "BALA"
                 property prototype "true";
     public newtype2()
@@ -112,9 +117,9 @@ public class newtype2
 }
 
 public class newtype3
+        property "ads.typeId" "1"
         property "com.fasterxml.jackson.annotation.JsonTypeName" "approval"
         property "de.generated" "true"
-        property "ads.typeId" "1"
 {
     public boolean newattribute
                 property "ads.attributeId" "1"
@@ -126,6 +131,7 @@ public class newtype3
                 property update "true";
     public newtype3(boolean newattribute, string newattribute1)
                 property autoExpand "true"
+                property beanConstructor "true"
                 property groups "BALA"
                 property prototype "true";
     public newtype3()
@@ -133,9 +139,9 @@ public class newtype3
 }
 
 public class newtype4
+        property "ads.typeId" "7"
         property "com.fasterxml.jackson.annotation.JsonTypeName" "SSN"
         property "de.generated" "true"
-        property "ads.typeId" "7"
 {
     public string newattribute
                 property "ads.attributeId" "1"
@@ -151,6 +157,7 @@ public class newtype4
                 property update "true";
     public newtype4(string newattribute, string newattribute1, string newattribute2)
                 property autoExpand "true"
+                property beanConstructor "true"
                 property groups "BALA"
                 property prototype "true";
     public newtype4()
@@ -158,9 +165,9 @@ public class newtype4
 }
 
 public class newtype5
+        property "ads.typeId" "4"
         property "com.fasterxml.jackson.annotation.JsonTypeName" "grade"
         property "de.generated" "true"
-        property "ads.typeId" "4"
 {
     public string newattribute
                 property "ads.attributeId" "1"
@@ -172,6 +179,7 @@ public class newtype5
                 property update "true";
     public newtype5(string newattribute, string newattribute1)
                 property autoExpand "true"
+                property beanConstructor "true"
                 property groups "BALA"
                 property prototype "true";
     public newtype5()
@@ -179,9 +187,9 @@ public class newtype5
 }
 
 public class newtype6
+        property "ads.typeId" "5"
         property "com.fasterxml.jackson.annotation.JsonTypeName" "insurance"
         property "de.generated" "true"
-        property "ads.typeId" "5"
 {
     public boolean newattribute
                 property "ads.attributeId" "2"
@@ -193,6 +201,7 @@ public class newtype6
                 property update "true";
     public newtype6(boolean newattribute, double newattribute1)
                 property autoExpand "true"
+                property beanConstructor "true"
                 property groups "BALA"
                 property prototype "true";
     public newtype6()

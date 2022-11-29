@@ -1,1 +1,6 @@
-{"description":"","locale":"en_US","properties":{}}
+{
+  "description" : "",
+  "locale" : "en_US",
+  "properties" : { },
+  "groupId" : "hdiazl.hd_demos.documentation_service"
+}

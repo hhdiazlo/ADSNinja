@@ -1,1 +1,5 @@
-{"description":"Determine shipping price through company's pricing policies.\n","locale":"en_US"}
+{
+  "description" : "Determine shipping price through company's pricing policies.\n",
+  "locale" : "en_US",
+  "groupId" : "hdiazl.hd_demos.shipment_pricing"
+}
