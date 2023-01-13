@@ -1,0 +1,11 @@
+{
+  "operationId" : "4758015c-84c9-4d42-8133-6bb07e9d2d55",
+  "body" : {
+    "name" : "Paul",
+    "weather" : {
+      "rain forecst" : 100,
+      "temperature" : "warm",
+      "storm alert" : true
+    }
+  }
+}

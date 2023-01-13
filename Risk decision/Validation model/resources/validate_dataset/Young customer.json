@@ -1,5 +1,8 @@
 {
-  "policyHolderDateOfBirth": "2002-12-16",
-  "threeYearLossRun": 4,
-  "coverageAmount": 10000
+  "operationId" : "b343dfbc-ee50-4640-a810-691148c1f828",
+  "body" : {
+    "policyHolderDateOfBirth" : "2002-12-16",
+    "threeYearLossRun" : 4,
+    "coverageAmount" : 10000
+  }
 }

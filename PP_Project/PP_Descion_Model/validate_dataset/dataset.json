@@ -1,8 +1,0 @@
-{
-  "name": "Paul",
-  "weather": {
-    "rain forecst": 100,
-    "temperature": "warm",
-    "storm alert": true
-  }
-}

@@ -1,0 +1,16 @@
+{
+  "operationId" : "00299fef-0563-4efd-9d04-260b50b7ce9c",
+  "body" : {
+    "distance" : 1000,
+    "shipment" : {
+      "size" : "Letter",
+      "weight" : 0.9
+    },
+    "method" : {
+      "transport" : "Ground",
+      "pickup" : "Dropoff",
+      "next day" : true
+    },
+    "customer" : "Silver"
+  }
+}

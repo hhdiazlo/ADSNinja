@@ -1,16 +1,14 @@
 {
-  "receivedSymptoms": [
-    {
-      "name": "FEVER"
-    },
-    {
-      "name": "SHORTNESS OF BREATH"
-    },
-    {
-      "name": "COUGH"
-    },
-    {
-      "name": "FATIGUE"
-    }
-  ]
+  "operationId" : "76873267-7aa2-4a42-92ef-dd567792755d",
+  "body" : {
+    "receivedSymptoms" : [ {
+      "name" : "FEVER"
+    }, {
+      "name" : "SHORTNESS OF BREATH"
+    }, {
+      "name" : "COUGH"
+    }, {
+      "name" : "FATIGUE"
+    } ]
+  }
 }

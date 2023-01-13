@@ -1,5 +1,8 @@
 {
-  "policyHolderDateOfBirth": "2021-04-20",
-  "threeYearLossRun": 900,
-  "coverageAmount": 3001
+  "operationId" : "b343dfbc-ee50-4640-a810-691148c1f828",
+  "body" : {
+    "policyHolderDateOfBirth" : "2021-04-20",
+    "threeYearLossRun" : 900,
+    "coverageAmount" : 3001
+  }
 }
