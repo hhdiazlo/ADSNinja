@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Consolidate Result-With-Country-only</name>
+  <uuid>10a2b3c8-8d7e-4083-b443-a40240b7cc57</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+ 'General validations' are undefined 
+then
+    for each KYC Document Domain in 'Country and rating validations' : 
+	- add this KYC Document Domain to the required documents lists of decision ;
+ ]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

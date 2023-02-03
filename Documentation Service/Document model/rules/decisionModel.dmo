@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><com.ibm.rules.studio.model.decisionmodel:DecisionModel xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore" xmlns:xmi="http://www.omg.org/XMI" xmi:version="2.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
   <name>decisionModel</name>
   <uuid>2809c3e5-0fc3-4bc9-9868-0e3d4e1ddd9e</uuid>
   <locale>en_US</locale>
-  <definition>
-        <definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
     <extensionElements>
         <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
     </extensionElements>
@@ -57,6 +57,8 @@
                 <input bomType="decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain" collection="true" name="Country and rating validations"/>
                 <output bomType="decisions.kyc_validation_decision.documentation_service.documentationmodel.DocumentationResponse" collection="false" name="Consolidated documents"/>
                 <rule defaultRule="false" href="node_9/Consolidate%20Result.drl" kind="BusinessRule" name="Consolidate Result"/>
+                <rule defaultRule="false" href="node_9/Consolidate%20Result-With-Country-only.drl" kind="BusinessRule" name="Consolidate Result-With-Country-only"/>
+                <rule defaultRule="false" href="node_9/Consolidate%20Result-With-General-Validations-only.drl" kind="BusinessRule" name="Consolidate Result-With-General-Validations-only"/>
             </ruleset>
         </extensionElements>
         <variable id="node_9_ii" name="Consolidated documents" typeRef="decisions.kyc_validation_decision.documentation_service.documentationmodel.DocumentationResponse"/>
@@ -85,5 +87,5 @@
         </informationRequirement>
     </decision>
 </definitions>
-    </definition>
+</definition>
 </com.ibm.rules.studio.model.decisionmodel:DecisionModel>
