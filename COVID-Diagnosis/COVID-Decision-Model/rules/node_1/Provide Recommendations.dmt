@@ -76,7 +76,7 @@
                     <ActionSet>
                         <Action DefId="A0">
                             <Expression>
-                                <Param><![CDATA[{ "Please contact your Physician and start a self-quatantine period of 2 weeks" }]]></Param>
+                                <Param><![CDATA[{ "Please contact your Physician and start a self-quatantine period of 2 weeks -----" }]]></Param>
                             </Expression>
                         </Action>
                     </ActionSet>
@@ -99,10 +99,10 @@
     <Resources DefaultLocale="en_US">
         <ResourceSet Locale="en_US">
             <Data Name="Definitions(C0)#HeaderText"><![CDATA[disease]]></Data>
-            <Data Name="Definitions(A0)#Width"><![CDATA[232]]></Data>
+            <Data Name="Definitions(A0)#Width"><![CDATA[551]]></Data>
             <Data Name="Definitions(A0)[0]#HeaderText"><![CDATA[disease]]></Data>
             <Data Name="Definitions(A0)#HeaderText"><![CDATA[Identify Diagnosis]]></Data>
-            <Data Name="Definitions(C0)#Width"><![CDATA[80]]></Data>
+            <Data Name="Definitions(C0)#Width"><![CDATA[162]]></Data>
         </ResourceSet>
     </Resources>
 </DT>
