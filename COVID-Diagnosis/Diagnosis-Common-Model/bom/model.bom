@@ -11,29 +11,29 @@ public class Diagnosis
                 property "ads.attributeId" "2"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "disease"
                 property update "true";
-    public java.util.List recommendationses domain 0,* class string
+    public java.util.List recommendations domain 0,* class string
                 property "ads.attributeId" "1"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "recommendationses"
+                property "com.fasterxml.jackson.annotation.JsonProperty" "recommendations"
                 property update "true";
     public Diagnosis(decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.IllnessDomain disease, 
-        java.util.List recommendationses domain 0,* class string)
+        java.util.List recommendations domain 0,* class string)
                 property autoExpand "true"
                 property beanConstructor "true"
                 property groups "BALA"
                 property prototype "true";
     public Diagnosis()
                 property "dataio.default" "true";
-    public void addTo_recommendationses(string recommendationses)
-                property collectionAttribute "recommendationses"
+    public void addTo_recommendations(string recommendations)
+                property collectionAttribute "recommendations"
                 property update "true";
-    public void clear_recommendationses()
-                property collectionAttribute "recommendationses"
+    public void clear_recommendations()
+                property collectionAttribute "recommendations"
                 property update "true";
-    public void removeFrom_recommendationses(string recommendationses)
-                property collectionAttribute "recommendationses"
+    public void removeFrom_recommendations(string recommendations)
+                property collectionAttribute "recommendations"
                 property update "true";
-    public void set_recommendationses(java.util.Collection recommendationses domain 0,* class string)
-                property collectionAttribute "recommendationses"
+    public void set_recommendations(java.util.Collection recommendations domain 0,* class string)
+                property collectionAttribute "recommendations"
                 property update "true";
 }
 

@@ -9,10 +9,10 @@
      where the name of  this Symptom is FEVER, 
 - there are 0 Symptoms in 'Received Symptoms' 
      where the name of  each Symptom is SHORTNESS OF BREATH,
-- there is one Symptom in 'Received Symptoms' 
+- there is at least one Symptom in 'Received Symptoms' 
      where the name of  this Symptom is one of {COUGH, FATIGUE,  WEAKNESS, EXHAUSTATION},
 then
    set decision to a new Diagnosis where 
-    the disease is CORONAVIRUS ;
+    the disease is FLU ;
 ]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

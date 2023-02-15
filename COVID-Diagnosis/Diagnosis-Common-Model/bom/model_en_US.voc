@@ -1,15 +1,18 @@
 
+# Term: recommendations
+@recommendations#plural = recommendations
+
 # decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.Diagnosis
 decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.Diagnosis#concept.label = Diagnosis
 decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.Diagnosis.Diagnosis(decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.IllnessDomain,java.util.List)#phrase.navigation = a new {Diagnosis} where {0, disease} {1, recommendations}
-decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.Diagnosis.addTo_recommendationses(java.lang.String)#phrase.action = add {0} to the recommendationses of {this}
-decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.Diagnosis.clear_recommendationses()#phrase.action = clear the recommendationses of {this}
+decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.Diagnosis.addTo_recommendations(java.lang.String)#phrase.action = add {0} to the recommendations of {this}
+decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.Diagnosis.clear_recommendations()#phrase.action = clear the recommendations of {this}
 decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.Diagnosis.disease#phrase.action = set the disease of {this} to {disease}
 decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.Diagnosis.disease#phrase.clearer = clear the disease of {this}
 decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.Diagnosis.disease#phrase.navigation = {disease} of {this}
-decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.Diagnosis.recommendationses#phrase.action = set the recommendationses of {this} to {recommendations}
-decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.Diagnosis.recommendationses#phrase.navigation = {recommendations} of {this}
-decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.Diagnosis.removeFrom_recommendationses(java.lang.String)#phrase.action = remove {0} from the recommendationses of {this}
+decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.Diagnosis.recommendations#phrase.action = set the recommendations of {this} to {recommendations}
+decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.Diagnosis.recommendations#phrase.navigation = {recommendations} of {this}
+decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.Diagnosis.removeFrom_recommendations(java.lang.String)#phrase.action = remove {0} from the recommendations of {this}
 
 # decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.IllnessDomain
 decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.IllnessDomain#concept.label = IllnessDomain

@@ -8,6 +8,6 @@
 then
     set decision to a new Diagnosis where
         the disease is UNDETERMINED, 
-        the recommendationses are { "Based on your symptoms, we are unable to determine a definite diagnosis." } ;
+        the recommendations are { "Based on your symptoms, we are unable to determine a definite diagnosis." } ;
 ]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

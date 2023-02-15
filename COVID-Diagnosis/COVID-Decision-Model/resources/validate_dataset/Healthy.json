@@ -1,6 +1,1 @@
-{
-  "operationId" : "76873267-7aa2-4a42-92ef-dd567792755d",
-  "body" : {
-    "receivedSymptoms" : [ ]
-  }
-}
+{"operationId":"76873267-7aa2-4a42-92ef-dd567792755d","body":{"receivedSymptoms":[]}}

@@ -26,7 +26,7 @@
                     <ExpressionDefinition>
                         <Text><![CDATA[set decision to a new Diagnosis where 
     the disease is the disease of 'Identify Illness', 
-    the recommendationses are <recommendations>]]></Text>
+    the recommendations are <recommendations>]]></Text>
                     </ExpressionDefinition>
                 </ActionDefinition>
             </ActionDefinitions>
@@ -105,5 +105,6 @@
             <Data Name="Definitions(C0)#Width"><![CDATA[80]]></Data>
         </ResourceSet>
     </Resources>
-</DT></definition>
+</DT>
+</definition>
 </ilog.rules.studio.model.dt:DecisionTable>

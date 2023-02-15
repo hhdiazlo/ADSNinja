@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><com.ibm.rules.studio.model.decisionmodel:DecisionModel xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore" xmlns:xmi="http://www.omg.org/XMI" xmi:version="2.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
   <name>decisionModel</name>
   <uuid>61afdfcf-8776-4940-845e-5f075b61f986</uuid>
   <locale>en_US</locale>
-  <definition>
-        <definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="diagram" namespace="">
     <extensionElements>
         <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
     </extensionElements>
@@ -49,5 +49,5 @@
         </informationRequirement>
     </decision>
 </definitions>
-    </definition>
+</definition>
 </com.ibm.rules.studio.model.decisionmodel:DecisionModel>
