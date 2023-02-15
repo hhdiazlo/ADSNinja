@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>default-rule</name>
+  <uuid>fe9b1972-227d-4fb6-84c7-75d6a98f01d7</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[add a new ML model output where
+		the confidence is 0.5 , 
+		the predicted clientdefaultedpayment is "FALSE" , 
+		the weight is 0.5 to decision ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

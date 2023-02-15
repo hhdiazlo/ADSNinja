@@ -1,0 +1,12 @@
+{
+  "operationId" : "dd3bcf75-7486-4d35-81a1-5a186e8b868c",
+  "body" : {
+    "clientInformation" : {
+      "annualRevenue" : 30000000,
+      "companyAge" : 5,
+      "defaultedPayment" : false,
+      "numberOfEmployees" : 20
+    },
+    "industry" : "Telecom"
+  }
+}

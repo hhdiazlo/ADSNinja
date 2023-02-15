@@ -1,0 +1,15 @@
+{
+  "operationId" : "43486c8b-dd21-4b66-a331-6521343ae98e",
+  "body" : {
+    "client" : {
+      "annualRevenue" : 27500000,
+      "companyAge" : 25,
+      "defaultedPayment" : false,
+      "numberOfEmployees" : 350
+    },
+    "services" : {
+      "servicesRequested" : [ "Employee Benefits Plan", "Mental Health Care", "Onsite Medical Testing", "Virtual Medical Assistance" ],
+      "Industry" : "Healthcare"
+    }
+  }
+}

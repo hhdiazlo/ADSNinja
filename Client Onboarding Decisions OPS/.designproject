@@ -1,0 +1,1 @@
+{"description":"OPS List additional services and calculate associated fees based on client information provided during onboarding. Perform a client risk assessment.","groupId":"hdiazl.hd_demos.client_onboarding_ops_decisions","locale":"en_US","properties":{"tags":[],"refactoringEnabled":false}}

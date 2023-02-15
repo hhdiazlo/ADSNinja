@@ -1,0 +1,15 @@
+{
+  "fields" : [ {
+    "name" : "predicted_clientDefaultedPayment",
+    "type" : "string",
+    "nullable" : true
+  }, {
+    "name" : "confidence",
+    "type" : "real",
+    "nullable" : true
+  }, {
+    "name" : "weight",
+    "type" : "real",
+    "nullable" : true
+  } ]
+}

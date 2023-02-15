@@ -1,0 +1,34 @@
+
+# y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input#concept.label = ML 模型输入
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.Input(java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer)#phrase.navigation = 新建 {ML 模型输入}符合条件：{0, clientannualrevenue} {1, clientemployeenumber} {2, clientexistenceduration} {3, clientindustry} 
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientannualrevenue#phrase.action = 设置{this}的当前 clientannualrevenue为{clientannualrevenue}
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientannualrevenue#phrase.addition_setter = 加{clientannualrevenue}到{this}的属性当前 clientannualrevenue里
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientannualrevenue#phrase.navigation = {this} 的{clientannualrevenue}
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientannualrevenue#phrase.subtraction_setter = 减{clientannualrevenue}到{this}的属性当前 clientannualrevenue里
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientemployeenumber#phrase.action = 设置{this}的当前 clientemployeenumber为{clientemployeenumber}
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientemployeenumber#phrase.addition_setter = 加{clientemployeenumber}到{this}的属性当前 clientemployeenumber里
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientemployeenumber#phrase.navigation = {this} 的{clientemployeenumber}
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientemployeenumber#phrase.subtraction_setter = 减{clientemployeenumber}到{this}的属性当前 clientemployeenumber里
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientexistenceduration#phrase.action = 设置{this}的当前 clientexistenceduration为{clientexistenceduration}
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientexistenceduration#phrase.addition_setter = 加{clientexistenceduration}到{this}的属性当前 clientexistenceduration里
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientexistenceduration#phrase.navigation = {this} 的{clientexistenceduration}
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientexistenceduration#phrase.subtraction_setter = 减{clientexistenceduration}到{this}的属性当前 clientexistenceduration里
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientindustry#phrase.action = 设置{this}的当前 clientindustry为{clientindustry}
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientindustry#phrase.addition_setter = 加{clientindustry}到{this}的属性当前 clientindustry里
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientindustry#phrase.navigation = {this} 的{clientindustry}
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientindustry#phrase.subtraction_setter = 减{clientindustry}到{this}的属性当前 clientindustry里
+
+# y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output#concept.label = ML 模型输出
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output.Output(java.lang.Double,java.lang.String,java.lang.Double)#phrase.navigation = 新建 {ML 模型输出}符合条件：{0, confidence} {1, predicted clientdefaultedpayment} {2, weight} 
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output.confidence#phrase.action = 设置{this}的当前 confidence为{confidence}
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output.confidence#phrase.addition_setter = 加{confidence}到{this}的属性当前 confidence里
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output.confidence#phrase.navigation = {this} 的{confidence}
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output.confidence#phrase.subtraction_setter = 减{confidence}到{this}的属性当前 confidence里
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output.predictedClientdefaultedpayment#phrase.action = 设置{this}的当前 predicted clientdefaultedpayment为{predicted clientdefaultedpayment}
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output.predictedClientdefaultedpayment#phrase.navigation = {this} 的{predicted clientdefaultedpayment}
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output.weight#phrase.action = 设置{this}的当前 weight为{weight}
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output.weight#phrase.addition_setter = 加{weight}到{this}的属性当前 weight里
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output.weight#phrase.navigation = {this} 的{weight}
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output.weight#phrase.subtraction_setter = 减{weight}到{this}的属性当前 weight里

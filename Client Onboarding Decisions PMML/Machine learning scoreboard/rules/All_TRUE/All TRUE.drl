@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>All TRUE</name>
+  <uuid>270c879c-3779-42c0-942c-bf13345f90be</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions
+	set 'All TRUE' to Prediction 
+		where the predicted clientdefaultedpayment of each ML model output is "TRUE" ;
+	set 'number of predictions' to the number of Prediction ;
+if
+	'number of predictions' is more than 0 
+then
+	set decision to a new ML model output where
+		the confidence is the total confidence of 'All TRUE' / 'number of predictions' , 
+		the predicted clientdefaultedpayment is "TRUE" , 
+		the weight is the total weight of 'All TRUE' ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

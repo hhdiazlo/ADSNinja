@@ -1,0 +1,12 @@
+{
+  "operationId" : "dd3bcf75-7486-4d35-81a1-5a186e8b868c",
+  "body" : {
+    "clientInformation" : {
+      "numberOfEmployees" : 10,
+      "annualRevenue" : 61399457,
+      "companyAge" : 4,
+      "defaultedPayment" : false
+    },
+    "industry" : "Healthcare"
+  }
+}

@@ -1,0 +1,123 @@
+
+# Term: Extended services
+@Extended\ services#plural = Extended services
+
+# Term: Services requested
+@Services\ requested#plural = Services requested
+
+# decisions.ads_jam_lab.client_onboarding.data.ClientInformation
+decisions.ads_jam_lab.client_onboarding.data.ClientInformation#concept.documentation = 
+decisions.ads_jam_lab.client_onboarding.data.ClientInformation#concept.label = Client Information
+decisions.ads_jam_lab.client_onboarding.data.ClientInformation.ClientInformation(java.lang.Long,java.lang.Long,boolean,java.lang.Long)#phrase.navigation = a new {Client Information} where {0, Annual Revenue} {1, Company Age} {2, Defaulted Payment} {3, Number of Employees}
+decisions.ads_jam_lab.client_onboarding.data.ClientInformation.annualRevenue#phrase.action = set the Annual Revenue of {this} to {Annual Revenue}
+decisions.ads_jam_lab.client_onboarding.data.ClientInformation.annualRevenue#phrase.addition_setter = add {Annual Revenue} to the Annual Revenue of {this}
+decisions.ads_jam_lab.client_onboarding.data.ClientInformation.annualRevenue#phrase.navigation = {Annual Revenue} of {this}
+decisions.ads_jam_lab.client_onboarding.data.ClientInformation.annualRevenue#phrase.subtraction_setter = subtract {Annual Revenue} from the Annual Revenue of {this}
+decisions.ads_jam_lab.client_onboarding.data.ClientInformation.companyAge#phrase.action = set the Company Age of {this} to {Company Age}
+decisions.ads_jam_lab.client_onboarding.data.ClientInformation.companyAge#phrase.addition_setter = add {Company Age} to the Company Age of {this}
+decisions.ads_jam_lab.client_onboarding.data.ClientInformation.companyAge#phrase.navigation = {Company Age} of {this}
+decisions.ads_jam_lab.client_onboarding.data.ClientInformation.companyAge#phrase.subtraction_setter = subtract {Company Age} from the Company Age of {this}
+decisions.ads_jam_lab.client_onboarding.data.ClientInformation.defaultedPayment#phrase.action[0] = {this} gets Defaulted Payment only if {Defaulted Payment}
+decisions.ads_jam_lab.client_onboarding.data.ClientInformation.defaultedPayment#phrase.action[1] = make it {Defaulted Payment} that {this} is Defaulted Payment
+decisions.ads_jam_lab.client_onboarding.data.ClientInformation.defaultedPayment#phrase.action[1].deprecated = true
+decisions.ads_jam_lab.client_onboarding.data.ClientInformation.defaultedPayment#phrase.navigation = {this} is Defaulted Payment
+decisions.ads_jam_lab.client_onboarding.data.ClientInformation.defaultedPayment#phrase.negative_predicate = {this} is not Defaulted Payment
+decisions.ads_jam_lab.client_onboarding.data.ClientInformation.defaultedPayment#phrase.negative_predicate_setter = {this} does not get Defaulted Payment
+decisions.ads_jam_lab.client_onboarding.data.ClientInformation.defaultedPayment#phrase.positive_predicate_setter = {this} gets Defaulted Payment
+decisions.ads_jam_lab.client_onboarding.data.ClientInformation.numberOfEmployees#phrase.action = set the Number of Employees of {this} to {Number of Employees}
+decisions.ads_jam_lab.client_onboarding.data.ClientInformation.numberOfEmployees#phrase.addition_setter = add {Number of Employees} to the Number of Employees of {this}
+decisions.ads_jam_lab.client_onboarding.data.ClientInformation.numberOfEmployees#phrase.navigation = {Number of Employees} of {this}
+decisions.ads_jam_lab.client_onboarding.data.ClientInformation.numberOfEmployees#phrase.subtraction_setter = subtract {Number of Employees} from the Number of Employees of {this}
+
+# decisions.ads_jam_lab.client_onboarding.data.Industry
+decisions.ads_jam_lab.client_onboarding.data.Industry#concept.label = Industry
+decisions.ads_jam_lab.client_onboarding.data.Industry.federal#instance.label = Federal
+decisions.ads_jam_lab.client_onboarding.data.Industry.finance#instance.label = Finance
+decisions.ads_jam_lab.client_onboarding.data.Industry.healthcare#instance.label = Healthcare
+decisions.ads_jam_lab.client_onboarding.data.Industry.insurance#instance.label = Insurance
+decisions.ads_jam_lab.client_onboarding.data.Industry.telecom#instance.label = Telecom
+
+# decisions.ads_jam_lab.client_onboarding.data.Scoreboard
+decisions.ads_jam_lab.client_onboarding.data.Scoreboard#concept.label = Scoreboard
+decisions.ads_jam_lab.client_onboarding.data.Scoreboard.Scoreboard(double,boolean,java.lang.String)#phrase.navigation = a new {Scoreboard} where {0, Confidence} {1, High risk} {2, Segment}
+decisions.ads_jam_lab.client_onboarding.data.Scoreboard.confidence#phrase.action = set the Confidence of {this} to {Confidence}
+decisions.ads_jam_lab.client_onboarding.data.Scoreboard.confidence#phrase.addition_setter = add {Confidence} to the Confidence of {this}
+decisions.ads_jam_lab.client_onboarding.data.Scoreboard.confidence#phrase.navigation = {Confidence} of {this}
+decisions.ads_jam_lab.client_onboarding.data.Scoreboard.confidence#phrase.subtraction_setter = subtract {Confidence} from the Confidence of {this}
+decisions.ads_jam_lab.client_onboarding.data.Scoreboard.highRisk#phrase.action[0] = {this} gets High risk only if {High risk}
+decisions.ads_jam_lab.client_onboarding.data.Scoreboard.highRisk#phrase.action[1] = make it {High risk} that {this} is High risk
+decisions.ads_jam_lab.client_onboarding.data.Scoreboard.highRisk#phrase.action[1].deprecated = true
+decisions.ads_jam_lab.client_onboarding.data.Scoreboard.highRisk#phrase.navigation = {this} is High risk
+decisions.ads_jam_lab.client_onboarding.data.Scoreboard.highRisk#phrase.negative_predicate = {this} is not High risk
+decisions.ads_jam_lab.client_onboarding.data.Scoreboard.highRisk#phrase.negative_predicate_setter = {this} does not get High risk
+decisions.ads_jam_lab.client_onboarding.data.Scoreboard.highRisk#phrase.positive_predicate_setter = {this} gets High risk
+decisions.ads_jam_lab.client_onboarding.data.Scoreboard.segment#phrase.action = set the Segment of {this} to {Segment}
+decisions.ads_jam_lab.client_onboarding.data.Scoreboard.segment#phrase.navigation = {Segment} of {this}
+
+# decisions.ads_jam_lab.client_onboarding.data.Service
+decisions.ads_jam_lab.client_onboarding.data.Service#concept.label = Service
+decisions.ads_jam_lab.client_onboarding.data.Service.businessDevices#instance.documentation = Telecom : Business Devices
+decisions.ads_jam_lab.client_onboarding.data.Service.businessDevices#instance.label = Telecom: Business Devices
+decisions.ads_jam_lab.client_onboarding.data.Service.communicationEquipment#instance.documentation = Telecom
+decisions.ads_jam_lab.client_onboarding.data.Service.communicationEquipment#instance.label = Telecom: Communication Equipment
+decisions.ads_jam_lab.client_onboarding.data.Service.corporateCreditCard#instance.documentation = Finance
+decisions.ads_jam_lab.client_onboarding.data.Service.corporateCreditCard#instance.label = Finance: Corporate Credit Card
+decisions.ads_jam_lab.client_onboarding.data.Service.educationFunding#instance.documentation = 
+decisions.ads_jam_lab.client_onboarding.data.Service.educationFunding#instance.label = Federal: Education Funding
+decisions.ads_jam_lab.client_onboarding.data.Service.employeeBenefitsPlan#instance.documentation = heathcare
+decisions.ads_jam_lab.client_onboarding.data.Service.employeeBenefitsPlan#instance.label = Healthcare: Employee Benefits Plan
+decisions.ads_jam_lab.client_onboarding.data.Service.externalAudit#instance.documentation = Finance
+decisions.ads_jam_lab.client_onboarding.data.Service.externalAudit#instance.label = Finance: External Audit
+decisions.ads_jam_lab.client_onboarding.data.Service.fibreInternet#instance.documentation = Telecom
+decisions.ads_jam_lab.client_onboarding.data.Service.fibreInternet#instance.label = Telecom: Fibre Internet
+decisions.ads_jam_lab.client_onboarding.data.Service.fraudProtection#instance.documentation = Finance
+decisions.ads_jam_lab.client_onboarding.data.Service.fraudProtection#instance.label = Finance: Fraud Protection
+decisions.ads_jam_lab.client_onboarding.data.Service.greenTechnologyEquipment#instance.documentation = Federal
+decisions.ads_jam_lab.client_onboarding.data.Service.greenTechnologyEquipment#instance.label = Federal: Green Technology Equipment
+decisions.ads_jam_lab.client_onboarding.data.Service.infrastructureConsultation#instance.documentation = Federal
+decisions.ads_jam_lab.client_onboarding.data.Service.infrastructureConsultation#instance.label = Federal: Infrastructure Consultation
+decisions.ads_jam_lab.client_onboarding.data.Service.loanInsurance#instance.documentation = Insurance
+decisions.ads_jam_lab.client_onboarding.data.Service.loanInsurance#instance.label = Insurance: Loan Insurance
+decisions.ads_jam_lab.client_onboarding.data.Service.medicalInsurance#instance.documentation = Insurance
+decisions.ads_jam_lab.client_onboarding.data.Service.medicalInsurance#instance.label = Insurance: Medical Insurance
+decisions.ads_jam_lab.client_onboarding.data.Service.mentalHealthCare#instance.documentation = Healthcare
+decisions.ads_jam_lab.client_onboarding.data.Service.mentalHealthCare#instance.label = Healthcare: Mental Health Care
+decisions.ads_jam_lab.client_onboarding.data.Service.merchandiseInsurance#instance.documentation = Insurance
+decisions.ads_jam_lab.client_onboarding.data.Service.merchandiseInsurance#instance.label = Insurance: Merchandise Insurance
+decisions.ads_jam_lab.client_onboarding.data.Service.onsiteMedicalTesting#instance.documentation = Healthcare
+decisions.ads_jam_lab.client_onboarding.data.Service.onsiteMedicalTesting#instance.label = Healthcare: On-site Medical Testing
+decisions.ads_jam_lab.client_onboarding.data.Service.taxConsultation#instance.documentation = Finance
+decisions.ads_jam_lab.client_onboarding.data.Service.taxConsultation#instance.label = Finance: Tax Consultation
+decisions.ads_jam_lab.client_onboarding.data.Service.tielineSolution#instance.documentation = Telecom
+decisions.ads_jam_lab.client_onboarding.data.Service.tielineSolution#instance.label = Telecom: Tie-line Solution
+decisions.ads_jam_lab.client_onboarding.data.Service.transportSecurity#instance.documentation = Federal
+decisions.ads_jam_lab.client_onboarding.data.Service.transportSecurity#instance.label = Federal: Transport Security
+decisions.ads_jam_lab.client_onboarding.data.Service.virtualMedicalAssistance#instance.documentation = Healthcare
+decisions.ads_jam_lab.client_onboarding.data.Service.virtualMedicalAssistance#instance.label = Healthcare: Virtual Medical Assistance
+decisions.ads_jam_lab.client_onboarding.data.Service.warehouseInsurance#instance.documentation = Insurance
+decisions.ads_jam_lab.client_onboarding.data.Service.warehouseInsurance#instance.label = Insurance: Warehouse Insurance
+
+# decisions.ads_jam_lab.client_onboarding.data.ServiceInformation
+decisions.ads_jam_lab.client_onboarding.data.ServiceInformation#concept.label = Service Information
+decisions.ads_jam_lab.client_onboarding.data.ServiceInformation.ServiceInformation(java.util.List,java.lang.Long)#phrase.navigation = a new {Service Information} where {0, Extended services} {1, Services Fee}
+decisions.ads_jam_lab.client_onboarding.data.ServiceInformation.addTo_extendedServices(decisions.ads_jam_lab.client_onboarding.data.Service)#phrase.action = add {0} to the Extended services of {this}
+decisions.ads_jam_lab.client_onboarding.data.ServiceInformation.clear_extendedServices()#phrase.action = clear the Extended services of {this}
+decisions.ads_jam_lab.client_onboarding.data.ServiceInformation.extendedServices#phrase.action = set the Extended services of {this} to {Extended services}
+decisions.ads_jam_lab.client_onboarding.data.ServiceInformation.extendedServices#phrase.navigation = {Extended services} of {this}
+decisions.ads_jam_lab.client_onboarding.data.ServiceInformation.removeFrom_extendedServices(decisions.ads_jam_lab.client_onboarding.data.Service)#phrase.action = remove {0} from the Extended services of {this}
+decisions.ads_jam_lab.client_onboarding.data.ServiceInformation.servicesFee#phrase.action = set the Services Fee of {this} to {Services Fee}
+decisions.ads_jam_lab.client_onboarding.data.ServiceInformation.servicesFee#phrase.addition_setter = add {Services Fee} to the Services Fee of {this}
+decisions.ads_jam_lab.client_onboarding.data.ServiceInformation.servicesFee#phrase.navigation = {Services Fee} of {this}
+decisions.ads_jam_lab.client_onboarding.data.ServiceInformation.servicesFee#phrase.subtraction_setter = subtract {Services Fee} from the Services Fee of {this}
+
+# decisions.ads_jam_lab.client_onboarding.data.ServiceRequest
+decisions.ads_jam_lab.client_onboarding.data.ServiceRequest#concept.label = Service Request
+decisions.ads_jam_lab.client_onboarding.data.ServiceRequest.ServiceRequest(decisions.ads_jam_lab.client_onboarding.data.Industry,java.util.List)#phrase.navigation = a new {Service Request} where {0, Industry} {1, Services requested}
+decisions.ads_jam_lab.client_onboarding.data.ServiceRequest.addTo_servicesRequested(decisions.ads_jam_lab.client_onboarding.data.Service)#phrase.action = add {0} to the Services requested of {this}
+decisions.ads_jam_lab.client_onboarding.data.ServiceRequest.clear_servicesRequested()#phrase.action = clear the Services requested of {this}
+decisions.ads_jam_lab.client_onboarding.data.ServiceRequest.industry#phrase.action = set the Industry of {this} to {Industry}
+decisions.ads_jam_lab.client_onboarding.data.ServiceRequest.industry#phrase.clearer = clear the Industry of {this}
+decisions.ads_jam_lab.client_onboarding.data.ServiceRequest.industry#phrase.navigation = {Industry} of {this}
+decisions.ads_jam_lab.client_onboarding.data.ServiceRequest.removeFrom_servicesRequested(decisions.ads_jam_lab.client_onboarding.data.Service)#phrase.action = remove {0} from the Services requested of {this}
+decisions.ads_jam_lab.client_onboarding.data.ServiceRequest.servicesRequested#phrase.action = set the Services requested of {this} to {Services requested}
+decisions.ads_jam_lab.client_onboarding.data.ServiceRequest.servicesRequested#phrase.navigation = {Services requested} of {this}

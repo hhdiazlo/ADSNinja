@@ -1,0 +1,34 @@
+
+# y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input#concept.label = ML-Modelleingabe
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.Input(java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer)#phrase.navigation = ein neuer {ML-Modelleingabe} wobei {0, clientannualrevenue} {1, clientemployeenumber} {2, clientexistenceduration} {3, clientindustry} 
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientannualrevenue#phrase.action = setze das clientannualrevenue von {this} auf {clientannualrevenue}
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientannualrevenue#phrase.addition_setter = füge {clientannualrevenue} zu das clientannualrevenue von {this} hinzu
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientannualrevenue#phrase.navigation = {clientannualrevenue} von {this}
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientannualrevenue#phrase.subtraction_setter = ziehe {clientannualrevenue} von das clientannualrevenue von {this} ab
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientemployeenumber#phrase.action = setze das clientemployeenumber von {this} auf {clientemployeenumber}
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientemployeenumber#phrase.addition_setter = füge {clientemployeenumber} zu das clientemployeenumber von {this} hinzu
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientemployeenumber#phrase.navigation = {clientemployeenumber} von {this}
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientemployeenumber#phrase.subtraction_setter = ziehe {clientemployeenumber} von das clientemployeenumber von {this} ab
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientexistenceduration#phrase.action = setze das clientexistenceduration von {this} auf {clientexistenceduration}
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientexistenceduration#phrase.addition_setter = füge {clientexistenceduration} zu das clientexistenceduration von {this} hinzu
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientexistenceduration#phrase.navigation = {clientexistenceduration} von {this}
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientexistenceduration#phrase.subtraction_setter = ziehe {clientexistenceduration} von das clientexistenceduration von {this} ab
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientindustry#phrase.action = setze das clientindustry von {this} auf {clientindustry}
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientindustry#phrase.addition_setter = füge {clientindustry} zu das clientindustry von {this} hinzu
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientindustry#phrase.navigation = {clientindustry} von {this}
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientindustry#phrase.subtraction_setter = ziehe {clientindustry} von das clientindustry von {this} ab
+
+# y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output#concept.label = ML-Modellausgabe
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output.Output(java.lang.Double,java.lang.String,java.lang.Double)#phrase.navigation = ein neuer {ML-Modellausgabe} wobei {0, confidence} {1, predicted clientdefaultedpayment} {2, weight} 
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output.confidence#phrase.action = setze das confidence von {this} auf {confidence}
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output.confidence#phrase.addition_setter = füge {confidence} zu das confidence von {this} hinzu
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output.confidence#phrase.navigation = {confidence} von {this}
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output.confidence#phrase.subtraction_setter = ziehe {confidence} von das confidence von {this} ab
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output.predictedClientdefaultedpayment#phrase.action = setze das predicted clientdefaultedpayment von {this} auf {predicted clientdefaultedpayment}
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output.predictedClientdefaultedpayment#phrase.navigation = {predicted clientdefaultedpayment} von {this}
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output.weight#phrase.action = setze das weight von {this} auf {weight}
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output.weight#phrase.addition_setter = füge {weight} zu das weight von {this} hinzu
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output.weight#phrase.navigation = {weight} von {this}
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output.weight#phrase.subtraction_setter = ziehe {weight} von das weight von {this} ab

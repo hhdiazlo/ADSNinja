@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>default-rule</name>
+  <uuid>6fb65426-ebfb-4363-a107-c7f97095bbf7</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[set decision to a new ML model output where
+		the confidence is 0 , 
+		the weight is 0 ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

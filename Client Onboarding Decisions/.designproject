@@ -1,6 +1,0 @@
-{
-  "description" : "List additional services and calculate associated fees based on client information provided during onboarding. Perform a client risk assessment.",
-  "locale" : "en_US",
-  "properties" : { },
-  "groupId" : "hdiazl.hd_demos.client_onboarding_decisions"
-}

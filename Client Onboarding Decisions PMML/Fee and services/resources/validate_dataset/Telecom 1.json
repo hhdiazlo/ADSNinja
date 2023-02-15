@@ -1,0 +1,15 @@
+{
+  "operationId" : "43486c8b-dd21-4b66-a331-6521343ae98e",
+  "body" : {
+    "services" : {
+      "servicesRequested" : [ "Business Devices", "Communication Equipment", "Tieline Solution" ],
+      "Industry" : "Telecom"
+    },
+    "client" : {
+      "annualRevenue" : 200000,
+      "defaultedPayment" : false,
+      "numberOfEmployees" : 1000,
+      "companyAge" : 2
+    }
+  }
+}

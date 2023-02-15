@@ -1,0 +1,9 @@
+{
+  "name" : "disconnectedProvider",
+  "type" : "OPS",
+  "description" : null,
+  "mlUrl" : "",
+  "authUrl" : null,
+  "instanceId" : null,
+  "apiKey" : null
+}
