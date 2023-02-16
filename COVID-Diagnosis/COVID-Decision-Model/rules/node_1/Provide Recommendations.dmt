@@ -76,7 +76,7 @@
                     <ActionSet>
                         <Action DefId="A0">
                             <Expression>
-                                <Param><![CDATA[{ "Please contact your Physician and start a self-quatantine period of 2 weeks -----" }]]></Param>
+                                <Param><![CDATA[{ "Please contact your Physician and start a self-quatantine period of 2 weeks" }]]></Param>
                             </Expression>
                         </Action>
                     </ActionSet>
