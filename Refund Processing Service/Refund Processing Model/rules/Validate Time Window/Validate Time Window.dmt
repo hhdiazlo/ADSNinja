@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.dt:DecisionTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.dt="http://ilog.rules.studio/model/dt.ecore">
+  <name>Validate Time Window</name>
+  <uuid>9917c3a3-6ffe-48fe-8e3e-4ea3b30082ab</uuid>
+  <locale>en_US</locale>
+  <definition><DT xmlns="http://schemas.ilog.com/Rules/7.0/DecisionTable" Version="7.0">
+    <Body>
+        <Properties>
+            <Property Name="UI.MediaType"><![CDATA[Web]]></Property>
+            <Property Name="UI.RenderBoolean" Type="xs:boolean"><![CDATA[true]]></Property>
+        </Properties>
+        <Preconditions>
+            <Text><![CDATA[
+
+]]></Text>
+        </Preconditions>
+        <Structure>
+            <ConditionDefinitions>
+                <ConditionDefinition Id="C0">
+                    <Properties>
+                        <Property Name="Check.Gap" Type="xs:boolean"><![CDATA[false]]></Property>
+                        <Property Name="Check.Overlap" Type="xs:boolean"><![CDATA[true]]></Property>
+                    </Properties>
+                    <ExpressionDefinition>
+                        <Text><![CDATA[the reason of 'the refund request' is <an object>]]></Text>
+                    </ExpressionDefinition>
+                </ConditionDefinition>
+                <ConditionDefinition Id="C1">
+                    <Properties>
+                        <Property Name="Check.Gap" Type="xs:boolean"><![CDATA[false]]></Property>
+                        <Property Name="Check.Overlap" Type="xs:boolean"><![CDATA[false]]></Property>
+                    </Properties>
+                    <ExpressionDefinition>
+                        <Text><![CDATA[the days since order delivered of 'the refund request'  is <a number>]]></Text>
+                    </ExpressionDefinition>
+                </ConditionDefinition>
+                <ConditionDefinition Id="C2">
+                    <Properties>
+                        <Property Name="Check.Gap" Type="xs:boolean"><![CDATA[false]]></Property>
+                        <Property Name="Check.Overlap" Type="xs:boolean"><![CDATA[true]]></Property>
+                    </Properties>
+                    <ExpressionDefinition>
+                        <Text><![CDATA[the goods condition of 'the refund request' is <a Goods Condition>]]></Text>
+                    </ExpressionDefinition>
+                </ConditionDefinition>
+            </ConditionDefinitions>
+            <ActionDefinitions>
+                <ActionDefinition Id="A0">
+                    <ExpressionDefinition>
+                        <Text><![CDATA[set 'decision' to <a Refund Decision>]]></Text>
+                    </ExpressionDefinition>
+                </ActionDefinition>
+            </ActionDefinitions>
+        </Structure>
+        <Contents>
+            <Partition DefId="C0">
+                <Condition>
+                    <Expression>
+                        <Param><![CDATA[accidental order]]></Param>
+                    </Expression>
+                    <Partition DefId="C1">
+                        <Condition>
+                            <Expression>
+                                <Text><![CDATA[<a number> is more than <a number>]]></Text>
+                                <Param><![CDATA[7]]></Param>
+                            </Expression>
+                            <Partition DefId="C2">
+                                <Condition>
+                                    <Expression>
+                                        <Param><![CDATA[open box]]></Param>
+                                    </Expression>
+                                    <ActionSet>
+                                        <Action DefId="A0">
+                                            <Expression>
+                                                <Param><![CDATA[denied]]></Param>
+                                            </Expression>
+                                        </Action>
+                                    </ActionSet>
+                                </Condition>
+                            </Partition>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Text><![CDATA[<a number> is more than <a number>]]></Text>
+                                <Param><![CDATA[15]]></Param>
+                            </Expression>
+                            <Partition DefId="C2">
+                                <Condition>
+                                    <Expression>
+                                        <Text><![CDATA[<an object> is not <an object>]]></Text>
+                                        <Param><![CDATA[open box]]></Param>
+                                    </Expression>
+                                    <ActionSet>
+                                        <Action DefId="A0">
+                                            <Expression>
+                                                <Param><![CDATA[denied]]></Param>
+                                            </Expression>
+                                        </Action>
+                                    </ActionSet>
+                                </Condition>
+                            </Partition>
+                        </Condition>
+                    </Partition>
+                </Condition>
+                <Condition>
+                    <Expression>
+                        <Param><![CDATA[no longer needed]]></Param>
+                    </Expression>
+                    <Partition DefId="C1">
+                        <Condition>
+                            <Expression/>
+                            <Partition DefId="C2">
+                                <Condition>
+                                    <Expression>
+                                        <Param><![CDATA[worn or damaged]]></Param>
+                                    </Expression>
+                                    <ActionSet>
+                                        <Action DefId="A0">
+                                            <Expression>
+                                                <Param><![CDATA[manual]]></Param>
+                                            </Expression>
+                                        </Action>
+                                    </ActionSet>
+                                </Condition>
+                            </Partition>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Text><![CDATA[<a number> is more than <a number>]]></Text>
+                                <Param><![CDATA[30]]></Param>
+                            </Expression>
+                            <Partition DefId="C2">
+                                <Condition>
+                                    <Expression>
+                                        <Text><![CDATA[<an object> is not <an object>]]></Text>
+                                        <Param><![CDATA[worn or damaged]]></Param>
+                                    </Expression>
+                                    <ActionSet>
+                                        <Action DefId="A0">
+                                            <Expression>
+                                                <Param><![CDATA[denied]]></Param>
+                                            </Expression>
+                                        </Action>
+                                    </ActionSet>
+                                </Condition>
+                            </Partition>
+                        </Condition>
+                    </Partition>
+                </Condition>
+                <Condition>
+                    <Expression>
+                        <Text><![CDATA[<an object> is one of <objects>]]></Text>
+                        <Param><![CDATA[{ damaged shipment , defective }]]></Param>
+                    </Expression>
+                    <Partition DefId="C1">
+                        <Condition>
+                            <Expression>
+                                <Text><![CDATA[<a number> is more than <min> and at most <max>]]></Text>
+                                <Param><![CDATA[30]]></Param>
+                                <Param><![CDATA[45]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[manual]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                        <Condition>
+                            <Expression>
+                                <Text><![CDATA[<a number> is more than <a number>]]></Text>
+                                <Param><![CDATA[45]]></Param>
+                            </Expression>
+                            <ActionSet>
+                                <Action DefId="A0">
+                                    <Expression>
+                                        <Param><![CDATA[denied]]></Param>
+                                    </Expression>
+                                </Action>
+                            </ActionSet>
+                        </Condition>
+                    </Partition>
+                </Condition>
+                <Condition>
+                    <Expression>
+                        <Otherwise/>
+                    </Expression>
+                    <ActionSet>
+                        <Action DefId="A0">
+                            <Expression>
+                                <Param><![CDATA[approved]]></Param>
+                            </Expression>
+                        </Action>
+                    </ActionSet>
+                </Condition>
+            </Partition>
+        </Contents>
+    </Body>
+    <Resources DefaultLocale="en_US">
+        <ResourceSet Locale="en_US">
+            <Data Name="Definitions(A0)#HeaderText"><![CDATA[time window decision]]></Data>
+            <Data Name="Definitions(A0)#Width"><![CDATA[144]]></Data>
+            <Data Name="Definitions(C0)#HeaderText"><![CDATA[refund reason]]></Data>
+            <Data Name="Definitions(C0)#Width"><![CDATA[99]]></Data>
+            <Data Name="Definitions(C0)[0]#HeaderText"><![CDATA[an object]]></Data>
+            <Data Name="Definitions(C1)#HeaderText"><![CDATA[days since order delivered]]></Data>
+            <Data Name="Definitions(C1)#Width"><![CDATA[270]]></Data>
+            <Data Name="Definitions(C1)[0]#HeaderText"><![CDATA[min]]></Data>
+            <Data Name="Definitions(C2)#HeaderText"><![CDATA[goods condition]]></Data>
+            <Data Name="Definitions(C2)#Width"><![CDATA[112]]></Data>
+            <Data Name="Definitions(C2)[0]#HeaderText"><![CDATA[an object]]></Data>
+        </ResourceSet>
+    </Resources>
+</DT>
+</definition>
+</ilog.rules.studio.model.dt:DecisionTable>

@@ -1,0 +1,150 @@
+
+package myModel;
+
+
+public class GoodsCategory
+        extends java.lang.Enum
+        property "ads.typeId" "2"
+        property "de.generated" "true"
+{
+    domain {static Downloadable, static HazardousMaterial, static MusicOrVideo, static Perishable}
+    public static final readonly myModel.GoodsCategory Downloadable
+                property "ads.attributeId" "1";
+    public static final readonly myModel.GoodsCategory HazardousMaterial
+                property "ads.attributeId" "2";
+    public static final readonly myModel.GoodsCategory MusicOrVideo
+                property "ads.attributeId" "3";
+    public static final readonly myModel.GoodsCategory Perishable
+                property "ads.attributeId" "4";
+}
+
+public class GoodsCondition
+        extends java.lang.Enum
+        property "ads.typeId" "5"
+        property "de.generated" "true"
+{
+    domain {static InOriginalPackage, static OpenBox, static WornOrDamaged}
+    public static final readonly myModel.GoodsCondition InOriginalPackage
+                property "ads.attributeId" "1";
+    public static final readonly myModel.GoodsCondition OpenBox
+                property "ads.attributeId" "2";
+    public static final readonly myModel.GoodsCondition WornOrDamaged
+                property "ads.attributeId" "3";
+}
+
+public class Order
+        property "ads.typeId" "6"
+        property "de.generated" "true"
+{
+    public java.util.List goodsCategories domain 0,* class myModel.GoodsCategory
+                property "ads.attributeId" "1"
+                property update "true";
+    public double salesTax
+                property "ads.attributeId" "2"
+                property update "true";
+    public double shippingCost
+                property "ads.attributeId" "3"
+                property update "true";
+    public double subtotal
+                property "ads.attributeId" "4"
+                property update "true";
+    public Order(java.util.List goodsCategories domain 0,* class myModel.GoodsCategory, 
+        double salesTax, 
+        double shippingCost, 
+        double subtotal)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public Order()
+                property "dataio.default" "true";
+    public void addTo_goodsCategories(myModel.GoodsCategory goodsCategories)
+                property collectionAttribute "goodsCategories"
+                property update "true";
+    public void clear_goodsCategories()
+                property collectionAttribute "goodsCategories"
+                property update "true";
+    public void removeFrom_goodsCategories(myModel.GoodsCategory goodsCategories)
+                property collectionAttribute "goodsCategories"
+                property update "true";
+    public void set_goodsCategories(java.util.Collection goodsCategories domain 0,* class myModel.GoodsCategory)
+                property collectionAttribute "goodsCategories"
+                property update "true";
+}
+
+public class RefundDecision
+        extends java.lang.Enum
+        property "ads.typeId" "3"
+        property "de.generated" "true"
+{
+    domain {static Approved, static Denied, static Manual}
+    public static final readonly myModel.RefundDecision Approved
+                property "ads.attributeId" "1";
+    public static final readonly myModel.RefundDecision Denied
+                property "ads.attributeId" "2";
+    public static final readonly myModel.RefundDecision Manual
+                property "ads.attributeId" "3";
+}
+
+public class RefundRequest
+        property "ads.typeId" "4"
+        property "de.generated" "true"
+{
+    public double daysSinceOrderDelivered
+                property "ads.attributeId" "1"
+                property update "true";
+    public myModel.GoodsCondition goodsCondition
+                property "ads.attributeId" "2"
+                property update "true";
+    public myModel.RefundRequestReason reason
+                property "ads.attributeId" "3"
+                property update "true";
+    public RefundRequest(double daysSinceOrderDelivered, myModel.GoodsCondition goodsCondition, myModel.RefundRequestReason reason)
+                property autoExpand "true"
+                property beanConstructor "true"
+                property groups "BALA"
+                property prototype "true";
+    public RefundRequest()
+                property "dataio.default" "true";
+}
+
+public class RefundRequestReason
+        extends java.lang.Enum
+        property "ads.typeId" "1"
+        property "de.generated" "true"
+{
+    domain 
+    {
+        static AccidentalOrder,
+        static DamagedShipment,
+        static Defective,
+        static DidNotMeetExpectations,
+        static DoesNotMatchWebsiteDescription,
+        static ExcessiveAmount,
+        static LateDelivery,
+        static NoLongerNeeded,
+        static WrongProductOrdered,
+        static WrongProductShipped
+    }
+    public static final readonly myModel.RefundRequestReason AccidentalOrder
+                property "ads.attributeId" "1";
+    public static final readonly myModel.RefundRequestReason DamagedShipment
+                property "ads.attributeId" "2";
+    public static final readonly myModel.RefundRequestReason Defective
+                property "ads.attributeId" "3";
+    public static final readonly myModel.RefundRequestReason DidNotMeetExpectations
+                property "ads.attributeId" "4";
+    public static final readonly myModel.RefundRequestReason DoesNotMatchWebsiteDescription
+                property "ads.attributeId" "5";
+    public static final readonly myModel.RefundRequestReason ExcessiveAmount
+                property "ads.attributeId" "6";
+    public static final readonly myModel.RefundRequestReason LateDelivery
+                property "ads.attributeId" "7";
+    public static final readonly myModel.RefundRequestReason NoLongerNeeded
+                property "ads.attributeId" "8";
+    public static final readonly myModel.RefundRequestReason WrongProductOrdered
+                property "ads.attributeId" "9";
+    public static final readonly myModel.RefundRequestReason WrongProductShipped
+                property "ads.attributeId" "10";
+}
+

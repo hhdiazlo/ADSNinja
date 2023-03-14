@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>Final Refund Decision</name>
+  <uuid>2033fe81-38bd-4b88-9fb3-6966a055f90f</uuid>
+</ilog.rules.studio.model.base:RulePackage>

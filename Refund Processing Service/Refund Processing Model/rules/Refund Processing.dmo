@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>Refund Processing</name>
+  <uuid>b1f156b4-fcee-4b51-9659-067fa6cae5a2</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="RefundProcessing" name="Refund Processing" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <inputData id="node_1" name="refund request">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="myModel.RefundRequest" collection="false" name="the refund request"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_1_ii" name="refund request" typeRef="myModel.RefundRequest"/>
+    </inputData>
+    <inputData id="node_13" name="order">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="myModel.Order" collection="false" name="the order"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_13_ii" name="order" typeRef="myModel.Order"/>
+    </inputData>
+    <decision id="node_0" name="Validate Time Window">
+        <description>Validate refund request is in the allowable time window</description>
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="myModel.RefundRequest" collection="false" name="the refund request"/>
+                <input bomType="myModel.Order" collection="false" name="the order"/>
+                <output bomType="myModel.RefundDecision" collection="false" name="the validate time window"/>
+                <rule defaultRule="true" href="Validate%20Time%20Window/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
+                <rule defaultRule="false" href="Validate%20Time%20Window/Validate%20Time%20Window.dmt" kind="DecisionTable" name="Validate Time Window"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_0_ii" name="Validate Time Window" typeRef="myModel.RefundDecision"/>
+        <informationRequirement>
+            <requiredInput href="#node_1"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_13"/>
+        </informationRequirement>
+    </decision>
+    <decision id="node_2" name="Validate Type of Goods">
+        <description>Validate the type of goods and their condition in the refund request</description>
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="myModel.RefundRequest" collection="false" name="the refund request"/>
+                <input bomType="myModel.Order" collection="false" name="the order"/>
+                <output bomType="myModel.RefundDecision" collection="false" name="the validate type of goods"/>
+                <rule defaultRule="true" href="Validate%20Type%20of%20Goods/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
+                <rule defaultRule="false" href="Validate%20Type%20of%20Goods/Validate%20Type%20of%20Goods.dmt" kind="DecisionTable" name="Validate Type of Goods"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_2_ii" name="Validate Type of Goods" typeRef="myModel.RefundDecision"/>
+        <informationRequirement>
+            <requiredInput href="#node_1"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_13"/>
+        </informationRequirement>
+    </decision>
+    <decision id="node_3" name="Final Refund Decision">
+        <description>Final decision to determine if the refund should be automatically approved, automatically denied or manually reviewed</description>
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="first">
+                <input bomType="myModel.RefundDecision" collection="false" name="the validate time window"/>
+                <input bomType="myModel.RefundDecision" collection="false" name="the validate type of goods"/>
+                <output bomType="myModel.RefundDecision" collection="false" name="the final refund decision"/>
+                <rule defaultRule="true" href="Final%20Refund%20Decision/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
+                <rule defaultRule="false" href="Final%20Refund%20Decision/Denied%20Decision.drl" kind="BusinessRule" name="Denied Decision"/>
+                <rule defaultRule="false" href="Final%20Refund%20Decision/Manual%20Decision.drl" kind="BusinessRule" name="Manual Decision"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_3_ii" name="Final Refund Decision" typeRef="myModel.RefundDecision"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_2"/>
+        </informationRequirement>
+    </decision>
+</definitions>
+</definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>

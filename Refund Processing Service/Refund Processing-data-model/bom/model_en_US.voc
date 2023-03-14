@@ -1,0 +1,67 @@
+
+# myModel.GoodsCategory
+myModel.GoodsCategory#concept.label = Goods Category
+myModel.GoodsCategory.Downloadable#instance.label = downloadable
+myModel.GoodsCategory.HazardousMaterial#instance.label = hazardous material
+myModel.GoodsCategory.MusicOrVideo#instance.label = music or video
+myModel.GoodsCategory.Perishable#instance.label = perishable
+
+# myModel.GoodsCondition
+myModel.GoodsCondition#concept.label = Goods Condition
+myModel.GoodsCondition.InOriginalPackage#instance.label = in original package
+myModel.GoodsCondition.OpenBox#instance.label = open box
+myModel.GoodsCondition.WornOrDamaged#instance.label = worn or damaged
+
+# myModel.Order
+myModel.Order#concept.label = Order
+myModel.Order.Order(java.util.List,double,double,double)#phrase.navigation = a new {Order} where {0, goods category} {1, sales tax} {2, shipping cost} {3, subtotal}
+myModel.Order.addTo_goodsCategories(myModel.GoodsCategory)#phrase.action = add {0} to the goods categories of {this}
+myModel.Order.clear_goodsCategories()#phrase.action = clear the goods categories of {this}
+myModel.Order.goodsCategories#phrase.action = set the goods categories of {this} to {goods category}
+myModel.Order.goodsCategories#phrase.navigation = {goods category} of {this}
+myModel.Order.removeFrom_goodsCategories(myModel.GoodsCategory)#phrase.action = remove {0} from the goods categories of {this}
+myModel.Order.salesTax#phrase.action = set the sales tax of {this} to {sales tax}
+myModel.Order.salesTax#phrase.addition_setter = add {sales tax} to the sales tax of {this}
+myModel.Order.salesTax#phrase.navigation = {sales tax} of {this}
+myModel.Order.salesTax#phrase.subtraction_setter = subtract {sales tax} from the sales tax of {this}
+myModel.Order.shippingCost#phrase.action = set the shipping cost of {this} to {shipping cost}
+myModel.Order.shippingCost#phrase.addition_setter = add {shipping cost} to the shipping cost of {this}
+myModel.Order.shippingCost#phrase.navigation = {shipping cost} of {this}
+myModel.Order.shippingCost#phrase.subtraction_setter = subtract {shipping cost} from the shipping cost of {this}
+myModel.Order.subtotal#phrase.action = set the subtotal of {this} to {subtotal}
+myModel.Order.subtotal#phrase.addition_setter = add {subtotal} to the subtotal of {this}
+myModel.Order.subtotal#phrase.navigation = {subtotal} of {this}
+myModel.Order.subtotal#phrase.subtraction_setter = subtract {subtotal} from the subtotal of {this}
+
+# myModel.RefundDecision
+myModel.RefundDecision#concept.label = Refund Decision
+myModel.RefundDecision.Approved#instance.label = approved
+myModel.RefundDecision.Denied#instance.label = denied
+myModel.RefundDecision.Manual#instance.label = manual
+
+# myModel.RefundRequest
+myModel.RefundRequest#concept.label = Refund Request
+myModel.RefundRequest.RefundRequest(double,myModel.GoodsCondition,myModel.RefundRequestReason)#phrase.navigation = a new {Refund Request} where {0, days since order delivered} {1, goods condition} {2, reason}
+myModel.RefundRequest.daysSinceOrderDelivered#phrase.action = set the days since order delivered of {this} to {days since order delivered}
+myModel.RefundRequest.daysSinceOrderDelivered#phrase.addition_setter = add {days since order delivered} to the days since order delivered of {this}
+myModel.RefundRequest.daysSinceOrderDelivered#phrase.navigation = {days since order delivered} of {this}
+myModel.RefundRequest.daysSinceOrderDelivered#phrase.subtraction_setter = subtract {days since order delivered} from the days since order delivered of {this}
+myModel.RefundRequest.goodsCondition#phrase.action = set the goods condition of {this} to {goods condition}
+myModel.RefundRequest.goodsCondition#phrase.clearer = clear the goods condition of {this}
+myModel.RefundRequest.goodsCondition#phrase.navigation = {goods condition} of {this}
+myModel.RefundRequest.reason#phrase.action = set the reason of {this} to {reason}
+myModel.RefundRequest.reason#phrase.clearer = clear the reason of {this}
+myModel.RefundRequest.reason#phrase.navigation = {reason} of {this}
+
+# myModel.RefundRequestReason
+myModel.RefundRequestReason#concept.label = Refund Request Reason
+myModel.RefundRequestReason.AccidentalOrder#instance.label = accidental order
+myModel.RefundRequestReason.DamagedShipment#instance.label = damaged shipment
+myModel.RefundRequestReason.Defective#instance.label = defective
+myModel.RefundRequestReason.DidNotMeetExpectations#instance.label = did not meet expectations
+myModel.RefundRequestReason.DoesNotMatchWebsiteDescription#instance.label = does not match website description
+myModel.RefundRequestReason.ExcessiveAmount#instance.label = excessive amount
+myModel.RefundRequestReason.LateDelivery#instance.label = late delivery
+myModel.RefundRequestReason.NoLongerNeeded#instance.label = no longer needed
+myModel.RefundRequestReason.WrongProductOrdered#instance.label = wrong product ordered
+myModel.RefundRequestReason.WrongProductShipped#instance.label = wrong product shipped

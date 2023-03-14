@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>Validate Type of Goods</name>
+  <uuid>dc81a3a0-f6b8-46fd-8819-2daa460391c6</uuid>
+</ilog.rules.studio.model.base:RulePackage>
