@@ -1,8 +1,1 @@
-{
-  "operationId" : "b343dfbc-ee50-4640-a810-691148c1f828",
-  "body" : {
-    "policyHolderDateOfBirth" : "2021-04-16",
-    "coverageAmount" : "1.0",
-    "threeYearLossRun" : "1.0"
-  }
-}
+{"operationId":"b343dfbc-ee50-4640-a810-691148c1f828","body":{"policyHolderDateOfBirth":"2021-04-16","coverageAmount":1,"threeYearLossRun":1}}
