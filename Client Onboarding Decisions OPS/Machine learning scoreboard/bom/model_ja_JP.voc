@@ -1,0 +1,46 @@
+
+# hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Error
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Error#concept.label = 出力エラー
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Error.Error(java.lang.String,java.lang.String)#phrase.navigation = 新規の {出力エラー}ここで{0, コード} {1, メッセージ} 
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Error.code#phrase.action = {this}のコードを{コード}とする
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Error.code#phrase.navigation = {this}の{コード}
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Error.message#phrase.action = {this}のメッセージを{メッセージ}とする
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Error.message#phrase.navigation = {this}の{メッセージ}
+
+# hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input#concept.label = ML モデル入力
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.Input(double,double,double,double)#phrase.navigation = 新規の {ML モデル入力}ここで{0, clientannualrevenue} {1, clientexistenceduration} {2, clientemployeenumber} {3, clientindustry} 
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.clientannualrevenue#phrase.action = {this}のclientannualrevenueを{clientannualrevenue}とする
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.clientannualrevenue#phrase.addition_setter = {this}のclientannualrevenueに{clientannualrevenue}を追加する
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.clientannualrevenue#phrase.navigation = {this}の{clientannualrevenue}
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.clientannualrevenue#phrase.subtraction_setter = {this}のclientannualrevenueから{clientannualrevenue}を引く
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.clientemployeenumber#phrase.action = {this}のclientemployeenumberを{clientemployeenumber}とする
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.clientemployeenumber#phrase.addition_setter = {this}のclientemployeenumberに{clientemployeenumber}を追加する
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.clientemployeenumber#phrase.navigation = {this}の{clientemployeenumber}
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.clientemployeenumber#phrase.subtraction_setter = {this}のclientemployeenumberから{clientemployeenumber}を引く
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.clientexistenceduration#phrase.action = {this}のclientexistencedurationを{clientexistenceduration}とする
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.clientexistenceduration#phrase.addition_setter = {this}のclientexistencedurationに{clientexistenceduration}を追加する
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.clientexistenceduration#phrase.navigation = {this}の{clientexistenceduration}
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.clientexistenceduration#phrase.subtraction_setter = {this}のclientexistencedurationから{clientexistenceduration}を引く
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.clientindustry#phrase.action = {this}のclientindustryを{clientindustry}とする
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.clientindustry#phrase.addition_setter = {this}のclientindustryに{clientindustry}を追加する
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.clientindustry#phrase.navigation = {this}の{clientindustry}
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.clientindustry#phrase.subtraction_setter = {this}のclientindustryから{clientindustry}を引く
+
+# hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output#concept.label = ML モデル出力
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.Output(java.lang.Integer,java.util.List)#phrase.navigation = 新規の {ML モデル出力}ここで{0, predictions} {1, scores} 
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.addTo_scores(java.lang.Double)#phrase.action = {this}のscoresに{0}を追加
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.clear_scores()#phrase.action = {this}のscoresをクリアする
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.error#phrase.action = {this}のエラーを{エラー}とする
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.error#phrase.clearer = エラー{this}をクリアする
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.error#phrase.navigation = {this}の{エラー}
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.inError()#phrase.navigation = {this}はエラーの
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.predictions#phrase.action = {this}のpredictionsを{predictions}とする
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.predictions#phrase.addition_setter = {this}のpredictionsに{predictions}を追加する
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.predictions#phrase.navigation = {this}の{predictions}
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.predictions#phrase.subtraction_setter = {this}のpredictionsから{predictions}を引く
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.removeFrom_scores(java.lang.Double)#phrase.action = {this}のscoresから{0}を削除
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.run(hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input)#phrase.navigation = predict({0})
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.scores#phrase.action = {this}のscoresを{scores}とする
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.scores#phrase.navigation = {this}の{scores}

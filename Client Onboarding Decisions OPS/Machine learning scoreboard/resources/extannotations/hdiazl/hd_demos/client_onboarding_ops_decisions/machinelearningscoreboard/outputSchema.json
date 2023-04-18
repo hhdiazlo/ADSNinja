@@ -2,13 +2,11 @@
   "id" : "default_schema_id",
   "fields" : [ {
     "name" : "predictions",
-    "type" : "double",
-    "nullable" : true,
-    "jsonName" : "predictions"
+    "type" : "integer",
+    "nullable" : true
   }, {
     "name" : "scores",
     "type" : "[double]",
-    "nullable" : true,
-    "jsonName" : "scores"
+    "nullable" : true
   } ]
 }

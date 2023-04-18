@@ -1,0 +1,26 @@
+{
+  "name" : "service-payment-default-risk",
+  "id" : "8",
+  "deployedAt" : "Tue Apr 18 22:02:01 UTC 2023",
+  "status" : "in_service",
+  "metadata" : {
+    "author" : "Pierre Feillet",
+    "description" : "Sample service risk predictive model",
+    "metrics" : [ {
+      "name" : "Coefficient of determination R^2",
+      "value" : 0.9975
+    }, {
+      "name" : "Root Mean Squared Error (RMSE)",
+      "value" : 0.0025
+    }, {
+      "name" : "Accuracy",
+      "value" : 0.9975
+    }, {
+      "name" : "Balanced accuracy",
+      "value" : 0.9951272824020239
+    }, {
+      "name" : "Confusion Matrix",
+      "value" : "[[1748, 3], [2, 247]]"
+    } ]
+  }
+}

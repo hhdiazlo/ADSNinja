@@ -1,5 +1,5 @@
 
-package cp4admin.hd_demos.client_onboarding_decisions.machineLearningScoreboard;
+package hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard;
 
 
 public class Error
@@ -38,7 +38,7 @@ public class Input
     public double clientindustry
                 property "ads.attributeId" "4"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "clientIndustry";
-    public Input(double clientannualrevenue, double clientemployeenumber, double clientexistenceduration, double clientindustry)
+    public Input(double clientannualrevenue, double clientexistenceduration, double clientemployeenumber, double clientindustry)
                 property autoExpand "true"
                 property beanConstructor "true"
                 property groups "BALA"
@@ -54,16 +54,16 @@ public class Output
         }
         property "de.generated" "true"
 {
-    public cp4admin.hd_demos.client_onboarding_decisions.machineLearningScoreboard.Error error
+    public hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Error error
                 property "ads.attributeId" "3"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "error";
-    public java.lang.Double predictions
+    public java.lang.Integer predictions
                 property "ads.attributeId" "1"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "predictions";
     public java.util.List scores domain 0,* class java.lang.Double
                 property "ads.attributeId" "2"
                 property "com.fasterxml.jackson.annotation.JsonProperty" "scores";
-    public Output(java.lang.Double predictions, 
+    public Output(java.lang.Integer predictions, 
         java.util.List scores domain 0,* class java.lang.Double)
                 property autoExpand "true"
                 property beanConstructor "true"
@@ -85,13 +85,13 @@ public class Output
     public void removeFrom_scores(java.lang.Double scores)
                 property collectionAttribute "scores"
                 property update "true";
-    public static Output run(cp4admin.hd_demos.client_onboarding_decisions.machineLearningScoreboard.Input input)
+    public static Output run(hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input input)
                 property pureFunction "true";
-    public static Output run(com.ibm.decision.run.RunContext runContext, cp4admin.hd_demos.client_onboarding_decisions.machineLearningScoreboard.Input input)
+    public static Output run(com.ibm.decision.run.RunContext runContext, hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input input)
                 property "de.generated" {
                     $gen "com.ibm.decision.ml.integration.xom.PredictionRunGenerator",
                     $target "BOM",
-                    providerInfoId "cp4admin/HD-Demos/OPS16515755643666"
+                    providerInfoId "hdiazl/HD-Demos/OPS Demos16818535064108"
                 }
                 property pureFunction "true";
     public void set_scores(java.util.Collection scores domain 0,* class java.lang.Double)

@@ -1,9 +1,9 @@
 {
   "name" : "service-payment-default-risk",
-  "id" : "6",
+  "id" : "8",
   "version" : "V1",
-  "modifiedAt" : "2022-05-03T10:54:59.059202Z",
-  "trainedAt" : "2022-05-03T10:54:59.059202Z",
+  "modifiedAt" : "Tue Apr 18 22:05:01 UTC 2023",
+  "trainedAt" : "Tue Apr 18 22:05:01 UTC 2023",
   "description" : "",
   "inputSchema" : {
     "id" : "input_id",
@@ -38,8 +38,8 @@
     } ]
   },
   "metadata" : {
-    "description" : "Sample service risk predictive model",
     "author" : "Pierre Feillet",
+    "description" : "Sample service risk predictive model",
     "metrics" : [ {
       "name" : "Coefficient of determination R^2",
       "value" : 0.9975

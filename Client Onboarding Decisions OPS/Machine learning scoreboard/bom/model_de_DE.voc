@@ -1,0 +1,46 @@
+
+# hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Error
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Error#concept.label = Ausgabefehler
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Error.Error(java.lang.String,java.lang.String)#phrase.navigation = ein neuer {Ausgabefehler} wobei {0, Code} {1, Nachricht} 
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Error.code#phrase.action = setze das Code von {this} auf {Code}
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Error.code#phrase.navigation = {Code} von {this}
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Error.message#phrase.action = setze das Nachricht von {this} auf {Nachricht}
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Error.message#phrase.navigation = {Nachricht} von {this}
+
+# hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input#concept.label = ML-Modelleingabe
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.Input(double,double,double,double)#phrase.navigation = ein neuer {ML-Modelleingabe} wobei {0, clientannualrevenue} {1, clientexistenceduration} {2, clientemployeenumber} {3, clientindustry} 
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.clientannualrevenue#phrase.action = setze das clientannualrevenue von {this} auf {clientannualrevenue}
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.clientannualrevenue#phrase.addition_setter = füge {clientannualrevenue} zu das clientannualrevenue von {this} hinzu
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.clientannualrevenue#phrase.navigation = {clientannualrevenue} von {this}
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.clientannualrevenue#phrase.subtraction_setter = ziehe {clientannualrevenue} von das clientannualrevenue von {this} ab
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.clientemployeenumber#phrase.action = setze das clientemployeenumber von {this} auf {clientemployeenumber}
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.clientemployeenumber#phrase.addition_setter = füge {clientemployeenumber} zu das clientemployeenumber von {this} hinzu
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.clientemployeenumber#phrase.navigation = {clientemployeenumber} von {this}
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.clientemployeenumber#phrase.subtraction_setter = ziehe {clientemployeenumber} von das clientemployeenumber von {this} ab
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.clientexistenceduration#phrase.action = setze das clientexistenceduration von {this} auf {clientexistenceduration}
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.clientexistenceduration#phrase.addition_setter = füge {clientexistenceduration} zu das clientexistenceduration von {this} hinzu
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.clientexistenceduration#phrase.navigation = {clientexistenceduration} von {this}
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.clientexistenceduration#phrase.subtraction_setter = ziehe {clientexistenceduration} von das clientexistenceduration von {this} ab
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.clientindustry#phrase.action = setze das clientindustry von {this} auf {clientindustry}
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.clientindustry#phrase.addition_setter = füge {clientindustry} zu das clientindustry von {this} hinzu
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.clientindustry#phrase.navigation = {clientindustry} von {this}
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.clientindustry#phrase.subtraction_setter = ziehe {clientindustry} von das clientindustry von {this} ab
+
+# hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output#concept.label = ML-Modellausgabe
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.Output(java.lang.Integer,java.util.List)#phrase.navigation = ein neuer {ML-Modellausgabe} wobei {0, predictions} {1, scores} 
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.addTo_scores(java.lang.Double)#phrase.action = füge {0} zu die Scorese von {this} hinzu
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.clear_scores()#phrase.action = lösche die Scorese von {this}
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.error#phrase.action = setze das Fehler von {this} auf {Fehler}
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.error#phrase.clearer = lösche das Fehler von {this}
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.error#phrase.navigation = {Fehler} von {this}
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.inError()#phrase.navigation = {this} ist im Fehler
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.predictions#phrase.action = setze das predictions von {this} auf {predictions}
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.predictions#phrase.addition_setter = füge {predictions} zu das predictions von {this} hinzu
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.predictions#phrase.navigation = {predictions} von {this}
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.predictions#phrase.subtraction_setter = ziehe {predictions} von das predictions von {this} ab
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.removeFrom_scores(java.lang.Double)#phrase.action = entferne {0} aus die Scorese von {this}
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.run(hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input)#phrase.navigation = predict({0})
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.scores#phrase.action = setze die Scorese von {this} auf {scores}
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.scores#phrase.navigation = {scores} von {this}

@@ -5,22 +5,18 @@
   "fields" : [ {
     "name" : "clientAnnualRevenue",
     "type" : "float64",
-    "nullable" : false,
-    "jsonName" : "clientAnnualRevenue"
+    "nullable" : false
   }, {
     "name" : "clientExistenceDuration",
     "type" : "float64",
-    "nullable" : false,
-    "jsonName" : "clientExistenceDuration"
+    "nullable" : false
   }, {
     "name" : "clientEmployeeNumber",
     "type" : "float64",
-    "nullable" : false,
-    "jsonName" : "clientEmployeeNumber"
+    "nullable" : false
   }, {
     "name" : "clientIndustry",
     "type" : "float64",
-    "nullable" : false,
-    "jsonName" : "clientIndustry"
+    "nullable" : false
   } ]
 }
