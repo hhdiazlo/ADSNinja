@@ -1,0 +1,12 @@
+{
+  "theIntentsLists" : [ {
+    "receivedIntent" : "account address change",
+    "confidence" : 0.4
+  }, {
+    "receivedIntent" : "account address change",
+    "confidence" : 0.75
+  }, {
+    "receivedIntent" : "account address change",
+    "confidence" : 0.95
+  } ]
+}

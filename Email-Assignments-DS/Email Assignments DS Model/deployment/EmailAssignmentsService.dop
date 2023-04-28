@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="EmailAssignmentsService" targetRuleProjectName="Email Assignments DS Model">
+  <name>Email-Assignments-DS-Model</name>
+  <uuid>fc3f50c2-d84c-4fd1-8c73-1cfc770c8995</uuid>
+  <decisionModel href="../rules/Email%20Assignments%20Service.dmo#18ff2d9b-f5e8-47fd-9c90-194558394667"/>
+  <targetRuleProject href="../../Email%20Assignments%20DS%20Model#f0136420-acc7-4fe4-b819-11282cb13307"/>
+  <tags key="operationDescription">
+    <value><![CDATA[""]]></value>
+  </tags>
+  <tags key="operationName">
+    <value><![CDATA["email-assignments-ds-operation"]]></value>
+  </tags>
+  <tags key="exposedAtRuntime">
+    <value><![CDATA[true]]></value>
+  </tags>
+</com.ibm.rules.studio.model.decisionservice:Operation>

@@ -1,0 +1,12 @@
+{
+  "theIntentsLists" : [ {
+    "receivedIntent" : "corporate signer",
+    "confidence" : 0.4
+  }, {
+    "receivedIntent" : "corporate signer",
+    "confidence" : 0.75
+  }, {
+    "receivedIntent" : "corporate signer",
+    "confidence" : 0.95
+  } ]
+}

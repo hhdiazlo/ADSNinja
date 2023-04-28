@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>Email Intents Service</name>
+  <uuid>83ba6def-7e5b-4ce1-ba76-26508bf1af8a</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="EmailIntentsService" name="Email Intents Service" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <inputData id="node_1" name="Intents List">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="myModel.Intent" collection="true" name="the intents lists"/>
+                <rule defaultRule="true" href="Intents%20List/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_1_ii" name="Intents List" typeRef="myModel.Intent[]"/>
+    </inputData>
+    <decision id="node_0" name="Intent label">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="myModel.Intent" collection="true" name="the intents lists"/>
+                <output bomType="myModel.Intent" collection="true" name="the intent labels"/>
+                <rule defaultRule="false" href="Intent%20label/Intent%20label%20.dmt" kind="DecisionTable" name="Intent label "/>
+                <rule defaultRule="false" href="Intent%20label/define%20request%20type.drl" kind="BusinessRule" name="define request type"/>
+                <rule defaultRule="true" href="Intent%20label/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_0_ii" name="Intent label" typeRef="myModel.Intent[]"/>
+        <informationRequirement>
+            <requiredInput href="#node_1"/>
+        </informationRequirement>
+    </decision>
+    <decision id="node_2" name="Confidence Classification">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="myModel.Intent" collection="true" name="the intent labels"/>
+                <output bomType="myModel.Intent" collection="true" name="the confidence classifications"/>
+                <rule defaultRule="false" href="Confidence%20Classification/Confidence%20classification.dmt" kind="DecisionTable" name="Confidence classification"/>
+                <rule defaultRule="true" href="Confidence%20Classification/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_2_ii" name="Confidence Classification" typeRef="myModel.Intent[]"/>
+        <informationRequirement>
+            <requiredInput href="#node_0"/>
+        </informationRequirement>
+    </decision>
+</definitions>
+</definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>

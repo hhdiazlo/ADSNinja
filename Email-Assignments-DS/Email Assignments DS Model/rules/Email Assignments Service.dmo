@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>Email Assignments Service</name>
+  <uuid>18ff2d9b-f5e8-47fd-9c90-194558394667</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="EmailAssignmentsService" name="Email Assignments Service" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <inputData id="node_1" name="AssignmentRequest">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="myModel.Assignment" collection="false" name="the assignment request"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_1_ii" name="AssignmentRequest" typeRef="myModel.Assignment"/>
+    </inputData>
+    <decision id="node_0" name="Assignement">
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="first">
+                <input bomType="myModel.Assignment" collection="false" name="the assignment request"/>
+                <output bomType="myModel.Assignment" collection="false" name="the assignement"/>
+                <rule defaultRule="false" href="Assignement/Assign%20document%20specialist.dmt" kind="DecisionTable" name="Assign document specialist"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_0_ii" name="Assignement" typeRef="myModel.Assignment"/>
+        <informationRequirement>
+            <requiredInput href="#node_1"/>
+        </informationRequirement>
+    </decision>
+</definitions>
+</definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>

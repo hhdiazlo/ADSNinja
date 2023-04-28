@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="EmailIntentsService" targetRuleProjectName="Email Intents Decision Model">
+  <name>Email-Intents-Decision-Model</name>
+  <uuid>9435ea01-bff6-4702-b9b4-81b8b68ac773</uuid>
+  <decisionModel href="../rules/Email%20Intents%20Service.dmo#83ba6def-7e5b-4ce1-ba76-26508bf1af8a"/>
+  <targetRuleProject href="../../Email%20Intents%20Decision%20Model#26d42905-b803-4e04-819a-82af3b3fa5cf"/>
+  <tags key="operationDescription">
+    <value><![CDATA[""]]></value>
+  </tags>
+  <tags key="operationName">
+    <value><![CDATA["email-intents-ds-operation"]]></value>
+  </tags>
+  <tags key="exposedAtRuntime">
+    <value><![CDATA[true]]></value>
+  </tags>
+</com.ibm.rules.studio.model.decisionservice:Operation>

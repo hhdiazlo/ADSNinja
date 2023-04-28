@@ -1,0 +1,31 @@
+
+# myModel.ConfidenceDomain
+myModel.ConfidenceDomain#concept.label = ConfidenceDomain
+myModel.ConfidenceDomain.High#instance.label = High
+myModel.ConfidenceDomain.Low#instance.label = Low
+myModel.ConfidenceDomain.Medium#instance.label = Medium
+myModel.ConfidenceDomain.Undefined#instance.label = Undefined
+
+# myModel.Intent
+myModel.Intent#concept.label = Intent
+myModel.Intent.Intent(double,myModel.ConfidenceDomain,java.lang.String,java.lang.String,myModel.RequestType)#phrase.navigation = a new {Intent} where {0, confidence} {1, confidence label} {2, label} {3, received intent} {4, request type}
+myModel.Intent.confidence#phrase.action = set the confidence of {this} to {confidence}
+myModel.Intent.confidence#phrase.addition_setter = add {confidence} to the confidence of {this}
+myModel.Intent.confidence#phrase.navigation = {confidence} of {this}
+myModel.Intent.confidence#phrase.subtraction_setter = subtract {confidence} from the confidence of {this}
+myModel.Intent.confidenceLabel#phrase.action = set the confidence label of {this} to {confidence label}
+myModel.Intent.confidenceLabel#phrase.clearer = clear the confidence label of {this}
+myModel.Intent.confidenceLabel#phrase.navigation = {confidence label} of {this}
+myModel.Intent.label#phrase.action = set the label of {this} to {label}
+myModel.Intent.label#phrase.navigation = {label} of {this}
+myModel.Intent.receivedIntent#phrase.action = set the received intent of {this} to {received intent}
+myModel.Intent.receivedIntent#phrase.navigation = {received intent} of {this}
+myModel.Intent.requestType#phrase.action = set the request type of {this} to {request type}
+myModel.Intent.requestType#phrase.clearer = clear the request type of {this}
+myModel.Intent.requestType#phrase.navigation = {request type} of {this}
+
+# myModel.RequestType
+myModel.RequestType#concept.label = Request Type
+myModel.RequestType.AMT#instance.label = AMT
+myModel.RequestType.AO#instance.label = AO
+myModel.RequestType.Undefined#instance.label = Undefined

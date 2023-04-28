@@ -1,0 +1,20 @@
+
+# myModel.Assignment
+myModel.Assignment#concept.label = Assignment
+myModel.Assignment.Assignment(java.lang.String,java.lang.String,java.lang.String,myModel.RegionCodeDomain)#phrase.navigation = a new {Assignment} where {0, GFCID} {1, GFPID} {2, docSpecialist} {3, regionCode}
+myModel.Assignment.GFCID#phrase.action = set the GFCID of {this} to {GFCID}
+myModel.Assignment.GFCID#phrase.navigation = {GFCID} of {this}
+myModel.Assignment.GFPID#phrase.action = set the GFPID of {this} to {GFPID}
+myModel.Assignment.GFPID#phrase.navigation = {GFPID} of {this}
+myModel.Assignment.docSpecialist#phrase.action = set the docSpecialist of {this} to {docSpecialist}
+myModel.Assignment.docSpecialist#phrase.navigation = {docSpecialist} of {this}
+myModel.Assignment.regionCode#phrase.action = set the regionCode of {this} to {regionCode}
+myModel.Assignment.regionCode#phrase.clearer = clear the regionCode of {this}
+myModel.Assignment.regionCode#phrase.navigation = {regionCode} of {this}
+
+# myModel.RegionCodeDomain
+myModel.RegionCodeDomain#concept.label = RegionCodeDomain
+myModel.RegionCodeDomain.ASIA#instance.label = ASIA
+myModel.RegionCodeDomain.CEEMEA#instance.label = CEEMEA
+myModel.RegionCodeDomain.EMEA#instance.label = EMEA
+myModel.RegionCodeDomain.LATAM#instance.label = LATAM

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>Intents List</name>
+  <uuid>451cfbc3-7b0b-42ef-a913-4914eee4b68f</uuid>
+</ilog.rules.studio.model.base:RulePackage>

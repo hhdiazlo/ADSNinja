@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.dt:DecisionTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.dt="http://ilog.rules.studio/model/dt.ecore">
+  <name>Intent label </name>
+  <uuid>9931c044-7052-4515-917a-d277e491a7b7</uuid>
+  <locale>en_US</locale>
+  <definition><DT xmlns="http://schemas.ilog.com/Rules/7.0/DecisionTable" Version="7.0">
+    <Body>
+        <Properties>
+            <Property Name="UI.MediaType"><![CDATA[Web]]></Property>
+            <Property Name="UI.RenderBoolean" Type="xs:boolean"><![CDATA[true]]></Property>
+        </Properties>
+        <Preconditions>
+            <Text><![CDATA[definitions
+set 'one intent' to an Intent in 'the intents lists' ;]]></Text>
+        </Preconditions>
+        <Structure>
+            <ConditionDefinitions>
+                <ConditionDefinition Id="C0">
+                    <ExpressionDefinition>
+                        <Text><![CDATA[the received intent of 'one intent' is <an object>]]></Text>
+                    </ExpressionDefinition>
+                </ConditionDefinition>
+            </ConditionDefinitions>
+            <ActionDefinitions>
+                <ActionDefinition Id="A2">
+                    <ExpressionDefinition>
+                        <Text><![CDATA[add a new Intent where
+	the confidence is the confidence of 'one intent' , 
+	the confidence label is Undefined , 
+	the label is <label> , 
+	the received intent is the received intent of 'one intent' , 
+	the request type is Undefined to 'decision']]></Text>
+                    </ExpressionDefinition>
+                </ActionDefinition>
+            </ActionDefinitions>
+        </Structure>
+        <Contents>
+            <Partition DefId="C0">
+                <Condition>
+                    <Expression>
+                        <Text><![CDATA[<an object> is one of <objects>]]></Text>
+                        <Param><![CDATA[{ "corporate signer" , "Corporate Signer" }]]></Param>
+                    </Expression>
+                    <ActionSet>
+                        <Action DefId="A2">
+                            <Expression>
+                                <Param><![CDATA["Authorized Signers Update - Corporate Signers"]]></Param>
+                            </Expression>
+                        </Action>
+                    </ActionSet>
+                </Condition>
+                <Condition>
+                    <Expression>
+                        <Text><![CDATA[<an object> is one of <objects>]]></Text>
+                        <Param><![CDATA[{ "operational signer" , "operational signers" }]]></Param>
+                    </Expression>
+                    <ActionSet>
+                        <Action DefId="A2">
+                            <Expression>
+                                <Param><![CDATA["Authorized Signers Update - Operational Signers"]]></Param>
+                            </Expression>
+                        </Action>
+                    </ActionSet>
+                </Condition>
+                <Condition>
+                    <Expression>
+                        <Text><![CDATA[<an object> is one of <objects>]]></Text>
+                        <Param><![CDATA[{ "account address change" , "change address account" }]]></Param>
+                    </Expression>
+                    <ActionSet>
+                        <Action DefId="A2">
+                            <Expression>
+                                <Param><![CDATA["Name or Address Update - Account Address"]]></Param>
+                            </Expression>
+                        </Action>
+                    </ActionSet>
+                </Condition>
+                <Condition>
+                    <Expression>
+                        <Param><![CDATA["AuthorizedSignersUpdate_CorporateSigners"]]></Param>
+                    </Expression>
+                    <ActionSet>
+                        <Action DefId="A2">
+                            <Expression>
+                                <Param><![CDATA["Authorized Signers Update - Operational Signers"]]></Param>
+                            </Expression>
+                        </Action>
+                    </ActionSet>
+                </Condition>
+            </Partition>
+        </Contents>
+    </Body>
+    <Resources DefaultLocale="en_US">
+        <ResourceSet Locale="en_US">
+            <Data Name="Definitions(A2)#HeaderText"><![CDATA[Label]]></Data>
+            <Data Name="Definitions(A2)#Width"><![CDATA[317]]></Data>
+            <Data Name="Definitions(A2)[0]#HeaderText"><![CDATA[a number]]></Data>
+            <Data Name="Definitions(C0)#HeaderText"><![CDATA[Intent]]></Data>
+            <Data Name="Definitions(C0)#Width"><![CDATA[93]]></Data>
+            <Data Name="Definitions(C0)[0]#HeaderText"><![CDATA[a number]]></Data>
+        </ResourceSet>
+    </Resources>
+</DT>
+</definition>
+</ilog.rules.studio.model.dt:DecisionTable>
