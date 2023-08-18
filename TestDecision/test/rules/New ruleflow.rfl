@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.ruleflow:RuleFlow xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.ruleflow="http://ilog.rules.studio/model/ruleflow.ecore">
+  <name>New ruleflow</name>
+  <uuid>55a2ce22-c96c-4291-8aed-b7f0eaf37e49</uuid>
+  <locale>en_US</locale>
+  <rfModel><Ruleflow xmlns="http://schemas.ilog.com/Rules/7.0/Ruleflow">
+    <Body>
+        <TaskList>
+            <StartTask Identifier="task_0"/>
+            <RuleTask ExecutionMode="Fastpath" ExitCriteria="None" Identifier="task_1" Ordering="Default"/>
+            <StopTask Identifier="task_2"/>
+        </TaskList>
+        <NodeList>
+            <TaskNode Identifier="node_0" Task="task_0"/>
+            <TaskNode Identifier="node_1" Task="task_1"/>
+            <TaskNode Identifier="node_2" Task="task_2"/>
+        </NodeList>
+        <TransitionList>
+            <Transition Identifier="transition_0" Source="node_0" Target="node_1"/>
+            <Transition Identifier="transition_1" Source="node_1" Target="node_2"/>
+        </TransitionList>
+    </Body>
+    <Resources>
+        <ResourceSet Locale="en_US">
+            <Data Name="node_0#name"><![CDATA[Start node]]></Data>
+            <Data Name="node_1#name"><![CDATA[Rule task 1]]></Data>
+            <Data Name="node_2#name"><![CDATA[End node]]></Data>
+            <Data Name="node_1#label"><![CDATA[Rule task 1]]></Data>
+        </ResourceSet>
+    </Resources>
+</Ruleflow>
+</rfModel>
+</ilog.rules.studio.model.ruleflow:RuleFlow>
