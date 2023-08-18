@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><com.ibm.rules.studio.model.decisionmodel:DecisionModel xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore" xmlns:xmi="http://www.omg.org/XMI" xmi:version="2.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
   <name>decisionModel</name>
   <uuid>0acb7853-dd08-4a70-bf30-ce32cfc2f95a</uuid>
   <locale>en_US</locale>
-  <definition>
-        <definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="Loan Validation Decision Model" namespace="">
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="Loan Validation Decision Model" namespace="">
     <extensionElements>
         <description xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">Determine loan approval based on multiple criteria, such as credit score, income, etc.</description>
         <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
@@ -15,7 +15,7 @@
                 <output bomType="decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype" collection="false" name="Loan"/>
             </initialization>
         </extensionElements>
-        <variable id="loan_ii" name="Loan" typeRef="decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype"/>
+        <variable id="node_0_ii" name="Loan" typeRef="decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype"/>
     </inputData>
     <decision id="node_1" name="Duration">
         <description>Calculate the duration of the loan</description>
@@ -26,7 +26,7 @@
                 <rule defaultRule="false" href="node_1/duration.drl" kind="BusinessRule" name="duration"/>
             </ruleset>
         </extensionElements>
-        <variable id="duration_ii" name="Duration" typeRef="java.lang.Long"/>
+        <variable id="node_1_ii" name="Duration" typeRef="java.lang.Long"/>
         <informationRequirement>
             <requiredInput href="#node_0"/>
         </informationRequirement>
@@ -41,7 +41,7 @@
                 <rule defaultRule="false" href="node_2/yearly%20interest%20rate.dmt" kind="DecisionTable" name="yearly interest rate"/>
             </ruleset>
         </extensionElements>
-        <variable id="yearlyInterestRate_ii" name="Yearly Interest Rate" typeRef="java.lang.Double"/>
+        <variable id="node_2_ii" name="Yearly Interest Rate" typeRef="java.lang.Double"/>
         <informationRequirement>
             <requiredInput href="#node_0"/>
         </informationRequirement>
@@ -59,7 +59,7 @@
                 <rule defaultRule="false" href="node_3/repayment.drl" kind="BusinessRule" name="repayment"/>
             </ruleset>
         </extensionElements>
-        <variable id="repayment_ii" name="Repayment" typeRef="java.lang.Double"/>
+        <variable id="node_3_ii" name="Repayment" typeRef="java.lang.Double"/>
         <informationRequirement>
             <requiredInput href="#node_0"/>
         </informationRequirement>
@@ -74,7 +74,7 @@
                 <output bomType="decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype1" collection="false" name="Borrower"/>
             </initialization>
         </extensionElements>
-        <variable id="borrower_ii" name="Borrower" typeRef="decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype1"/>
+        <variable id="node_4_ii" name="Borrower" typeRef="decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype1"/>
     </inputData>
     <decision id="node_5" name="Salary Score">
         <description>Calculate the salary score of the borrower based on their yearly income</description>
@@ -85,7 +85,7 @@
                 <rule defaultRule="false" href="node_5/salary%20score.dmt" kind="DecisionTable" name="salary score"/>
             </ruleset>
         </extensionElements>
-        <variable id="salaryScore_ii" name="Salary Score" typeRef="java.lang.Double"/>
+        <variable id="node_5_ii" name="Salary Score" typeRef="java.lang.Double"/>
         <informationRequirement>
             <requiredInput href="#node_4"/>
         </informationRequirement>
@@ -101,7 +101,7 @@
                 <rule defaultRule="false" href="node_6/bankruptcy%20score.dmt" kind="DecisionTable" name="bankruptcy score"/>
             </ruleset>
         </extensionElements>
-        <variable id="bankruptcyScore_ii" name="Bankruptcy Score" typeRef="java.lang.Double"/>
+        <variable id="node_6_ii" name="Bankruptcy Score" typeRef="java.lang.Double"/>
         <informationRequirement>
             <requiredInput href="#node_4"/>
         </informationRequirement>
@@ -115,7 +115,7 @@
                 <output bomType="ilog.rules.brl.Date" collection="false" name="current time"/>
             </initialization>
         </extensionElements>
-        <variable id="currentTime_ii" name="current time" typeRef="ilog.rules.brl.Date"/>
+        <variable id="node_7_ii" name="current time" typeRef="ilog.rules.brl.Date"/>
     </inputData>
     <decision id="node_8" name="Corporate Score">
         <description>Calculate the corporate score of the borrower based on their bankruptcy score, salary score and credit score</description>
@@ -128,7 +128,7 @@
                 <rule defaultRule="false" href="node_8/corporate%20score.drl" kind="BusinessRule" name="corporate score"/>
             </ruleset>
         </extensionElements>
-        <variable id="corporateScore_ii" name="Corporate Score" typeRef="java.lang.Double"/>
+        <variable id="node_8_ii" name="Corporate Score" typeRef="java.lang.Double"/>
         <informationRequirement>
             <requiredInput href="#node_4"/>
         </informationRequirement>
@@ -149,7 +149,7 @@
                 <rule defaultRule="false" href="node_9/grade.dmt" kind="DecisionTable" name="grade"/>
             </ruleset>
         </extensionElements>
-        <variable id="grade_ii" name="Grade" typeRef="decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype5"/>
+        <variable id="node_9_ii" name="Grade" typeRef="decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype5"/>
         <informationRequirement>
             <requiredInput href="#node_3"/>
         </informationRequirement>
@@ -168,7 +168,7 @@
                 <rule defaultRule="false" href="node_10/insurance.dmt" kind="DecisionTable" name="insurance"/>
             </ruleset>
         </extensionElements>
-        <variable id="insurance_ii" name="Insurance" typeRef="decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype6"/>
+        <variable id="node_10_ii" name="Insurance" typeRef="decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype6"/>
         <informationRequirement>
             <requiredInput href="#node_0"/>
         </informationRequirement>
@@ -198,7 +198,7 @@
                 <rule defaultRule="true" href="node_11/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
             </ruleset>
         </extensionElements>
-        <variable id="approval_ii" name="Approval" typeRef="decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype3"/>
+        <variable id="node_11_ii" name="Approval" typeRef="decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype3"/>
         <informationRequirement>
             <requiredInput href="#node_0"/>
         </informationRequirement>
@@ -216,5 +216,5 @@
         </informationRequirement>
     </decision>
 </definitions>
-    </definition>
+</definition>
 </com.ibm.rules.studio.model.decisionmodel:DecisionModel>

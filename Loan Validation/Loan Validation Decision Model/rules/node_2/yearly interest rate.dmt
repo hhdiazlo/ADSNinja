@@ -402,11 +402,12 @@
             <Data Name="Definitions(A0)#Width"><![CDATA[144]]></Data>
             <Data Name="Definitions(C0)[0]#HeaderText"><![CDATA[min]]></Data>
             <Data Name="Definitions(A0)#HeaderText"><![CDATA[Yearly Interest Rate]]></Data>
-            <Data Name="Definitions(C1)#Width"><![CDATA[91]]></Data>
+            <Data Name="Definitions(C1)#Width"><![CDATA[339]]></Data>
             <Data Name="Definitions(C1)[0]#HeaderText"><![CDATA[min]]></Data>
             <Data Name="Definitions(C0)#Width"><![CDATA[80]]></Data>
             <Data Name="Definitions(C1)[1]#HeaderText"><![CDATA[max]]></Data>
         </ResourceSet>
     </Resources>
-</DT></definition>
+</DT>
+</definition>
 </ilog.rules.studio.model.dt:DecisionTable>
