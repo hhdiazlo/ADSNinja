@@ -3,5 +3,5 @@
   <name>duration</name>
   <uuid>d2e28f1e-f673-4b51-ad18-7ac643cd54b1</uuid>
   <locale>en_US</locale>
-  <definition><![CDATA[set decision to (the number of monthly payments of Loan + 11) / 12 ;]]></definition>
+  <definition><![CDATA[set decision to ( the number of monthly payments of Loan + 11 ) / 12 ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

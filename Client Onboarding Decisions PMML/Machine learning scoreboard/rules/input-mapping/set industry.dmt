@@ -13,14 +13,14 @@
             <ConditionDefinitions>
                 <ConditionDefinition Id="C0">
                     <ExpressionDefinition>
-                        <Text><![CDATA[Industry is <an Industry>]]></Text>
+                        <Text><![CDATA['Industry' is <an Industry>]]></Text>
                     </ExpressionDefinition>
                 </ConditionDefinition>
             </ConditionDefinitions>
             <ActionDefinitions>
                 <ActionDefinition Id="A0">
                     <ExpressionDefinition>
-                        <Text><![CDATA[set the clientindustry of decision to <a number>]]></Text>
+                        <Text><![CDATA[set the clientindustry of 'decision' to <a number>]]></Text>
                     </ExpressionDefinition>
                 </ActionDefinition>
             </ActionDefinitions>
@@ -89,33 +89,54 @@
                 </Condition>
                 <Condition>
                     <Expression/>
-                    <ActionSet/>
+                    <ActionSet>
+                        <Action DefId="A0">
+                            <Expression/>
+                        </Action>
+                    </ActionSet>
                 </Condition>
                 <Condition>
                     <Expression/>
-                    <ActionSet/>
+                    <ActionSet>
+                        <Action DefId="A0">
+                            <Expression/>
+                        </Action>
+                    </ActionSet>
                 </Condition>
                 <Condition>
                     <Expression/>
-                    <ActionSet/>
+                    <ActionSet>
+                        <Action DefId="A0">
+                            <Expression/>
+                        </Action>
+                    </ActionSet>
                 </Condition>
                 <Condition>
                     <Expression/>
-                    <ActionSet/>
+                    <ActionSet>
+                        <Action DefId="A0">
+                            <Expression/>
+                        </Action>
+                    </ActionSet>
                 </Condition>
                 <Condition>
                     <Expression/>
-                    <ActionSet/>
+                    <ActionSet>
+                        <Action DefId="A0">
+                            <Expression/>
+                        </Action>
+                    </ActionSet>
                 </Condition>
             </Partition>
         </Contents>
     </Body>
     <Resources DefaultLocale="en_US">
         <ResourceSet Locale="en_US">
-            <Data Name="Definitions(C0)#HeaderText"><![CDATA[Industry]]></Data>
-            <Data Name="Definitions(A0)[0]#HeaderText"><![CDATA[clientannualrevenue]]></Data>
             <Data Name="Definitions(A0)#HeaderText"><![CDATA[Input mapping]]></Data>
+            <Data Name="Definitions(A0)[0]#HeaderText"><![CDATA[clientannualrevenue]]></Data>
+            <Data Name="Definitions(C0)#HeaderText"><![CDATA[Industry]]></Data>
         </ResourceSet>
     </Resources>
-</DT></definition>
+</DT>
+</definition>
 </ilog.rules.studio.model.dt:DecisionTable>

@@ -13,19 +13,19 @@
             <ConditionDefinitions>
                 <ConditionDefinition Id="C0">
                     <ExpressionDefinition>
-                        <Text><![CDATA[Duration is between <min> and <max> ]]></Text>
+                        <Text><![CDATA['Duration' is between <min> and <max>]]></Text>
                     </ExpressionDefinition>
                 </ConditionDefinition>
                 <ConditionDefinition Id="C1">
                     <ExpressionDefinition>
-                        <Text><![CDATA[the loan to value of Loan is at least <min> and less than <max> ]]></Text>
+                        <Text><![CDATA[the loan to value of 'Loan' is at least <min> and less than <max>]]></Text>
                     </ExpressionDefinition>
                 </ConditionDefinition>
             </ConditionDefinitions>
             <ActionDefinitions>
                 <ActionDefinition Id="A0">
                     <ExpressionDefinition>
-                        <Text><![CDATA[set decision to <a number>]]></Text>
+                        <Text><![CDATA[set 'decision' to <a number>]]></Text>
                     </ExpressionDefinition>
                 </ActionDefinition>
             </ActionDefinitions>
@@ -397,16 +397,17 @@
     </Body>
     <Resources DefaultLocale="en_US">
         <ResourceSet Locale="en_US">
-            <Data Name="Definitions(C0)#HeaderText"><![CDATA[Duration]]></Data>
-            <Data Name="Definitions(C1)#HeaderText"><![CDATA[Loan to value]]></Data>
-            <Data Name="Definitions(A0)#Width"><![CDATA[144]]></Data>
-            <Data Name="Definitions(C0)[0]#HeaderText"><![CDATA[min]]></Data>
             <Data Name="Definitions(A0)#HeaderText"><![CDATA[Yearly Interest Rate]]></Data>
+            <Data Name="Definitions(A0)#Width"><![CDATA[144]]></Data>
+            <Data Name="Definitions(C0)#HeaderText"><![CDATA[Duration]]></Data>
+            <Data Name="Definitions(C0)#Width"><![CDATA[80]]></Data>
+            <Data Name="Definitions(C0)[0]#HeaderText"><![CDATA[min]]></Data>
+            <Data Name="Definitions(C1)#HeaderText"><![CDATA[Loan to value]]></Data>
             <Data Name="Definitions(C1)#Width"><![CDATA[91]]></Data>
             <Data Name="Definitions(C1)[0]#HeaderText"><![CDATA[min]]></Data>
-            <Data Name="Definitions(C0)#Width"><![CDATA[80]]></Data>
             <Data Name="Definitions(C1)[1]#HeaderText"><![CDATA[max]]></Data>
         </ResourceSet>
     </Resources>
-</DT></definition>
+</DT>
+</definition>
 </ilog.rules.studio.model.dt:DecisionTable>

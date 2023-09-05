@@ -2,47 +2,47 @@
 package decisions.pp_solution.pp_project.pp_data_model;
 
 
-public class Temperature
+class Temperature
         extends java.lang.Enum
-        property "ads.typeId" "1"
-        property "com.fasterxml.jackson.annotation.JsonTypeName" "temperature"
-        property "de.generated" "true"
+        property ads.typeId "1"
+        property com.fasterxml.jackson.annotation.JsonTypeName "temperature"
+        #de.generated
 {
     domain {static cold, static hot, static warm}
-    public static final readonly decisions.pp_solution.pp_project.pp_data_model.Temperature cold
-                property "ads.attributeId" "3"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "cold";
-    public static final readonly decisions.pp_solution.pp_project.pp_data_model.Temperature hot
-                property "ads.attributeId" "1"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "hot";
-    public static final readonly decisions.pp_solution.pp_project.pp_data_model.Temperature warm
-                property "ads.attributeId" "2"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "warm";
+    static final readonly decisions.pp_solution.pp_project.pp_data_model.Temperature cold
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "cold";
+    static final readonly decisions.pp_solution.pp_project.pp_data_model.Temperature hot
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "hot";
+    static final readonly decisions.pp_solution.pp_project.pp_data_model.Temperature warm
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "warm";
 }
 
-public class Weather
-        property "ads.typeId" "2"
-        property "com.fasterxml.jackson.annotation.JsonTypeName" "weather"
-        property "de.generated" "true"
+class Weather
+        property ads.typeId "2"
+        property com.fasterxml.jackson.annotation.JsonTypeName "weather"
+        #de.generated
 {
-    public java.lang.Long rainForecst
-                property "ads.attributeId" "1"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "rain forecst"
-                property update "true";
-    public boolean stormAlert
-                property "ads.attributeId" "3"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "storm alert"
-                property update "true";
-    public decisions.pp_solution.pp_project.pp_data_model.Temperature temperature
-                property "ads.attributeId" "2"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "temperature"
-                property update "true";
-    public Weather(java.lang.Long rainForecst, boolean stormAlert, decisions.pp_solution.pp_project.pp_data_model.Temperature temperature)
-                property autoExpand "true"
-                property beanConstructor "true"
+    long rainForecst
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "rain forecst"
+                #update;
+    boolean stormAlert
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "storm alert"
+                #update;
+    decisions.pp_solution.pp_project.pp_data_model.Temperature temperature
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "temperature"
+                #update;
+    Weather(long rainForecst, boolean stormAlert, decisions.pp_solution.pp_project.pp_data_model.Temperature temperature)
+                #autoExpand
+                #beanConstructor
                 property groups "BALA"
-                property prototype "true";
-    public Weather()
-                property "dataio.default" "true";
+                #prototype;
+    Weather()
+                #dataio.default;
 }
 

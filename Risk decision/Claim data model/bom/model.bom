@@ -2,33 +2,33 @@
 package decisions.claims_demo.risk_decision.claimdatamodel;
 
 
-public class ResponseData
-        property "ads.typeId" "1"
-        property "com.fasterxml.jackson.annotation.JsonTypeName" "Response data"
-        property "de.generated" "true"
+class ResponseData
+        property ads.typeId "1"
+        property com.fasterxml.jackson.annotation.JsonTypeName "Response data"
+        #de.generated
 {
-    public double interestRate
-                property "ads.attributeId" "1"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "interestRate"
-                property update "true";
-    public boolean isHighRisk
-                property "ads.attributeId" "2"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "isHighRisk"
-                property update "true";
-    public string riskAssesmentMessage
-                property "ads.attributeId" "4"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "riskAssesmentMessage"
-                property update "true";
-    public double riskScore
-                property "ads.attributeId" "3"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "riskScore"
-                property update "true";
-    public ResponseData(double interestRate, boolean isHighRisk, string riskAssesmentMessage, double riskScore)
-                property autoExpand "true"
-                property beanConstructor "true"
+    double interestRate
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "interestRate"
+                #update;
+    boolean isHighRisk
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "isHighRisk"
+                #update;
+    string riskAssesmentMessage
+                property ads.attributeId "4"
+                property com.fasterxml.jackson.annotation.JsonProperty "riskAssesmentMessage"
+                #update;
+    double riskScore
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "riskScore"
+                #update;
+    ResponseData(double interestRate, boolean isHighRisk, string riskAssesmentMessage, double riskScore)
+                #autoExpand
+                #beanConstructor
                 property groups "BALA"
-                property prototype "true";
-    public ResponseData()
-                property "dataio.default" "true";
+                #prototype;
+    ResponseData()
+                #dataio.default;
 }
 

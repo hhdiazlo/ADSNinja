@@ -25,9 +25,9 @@
                 <ActionDefinition Id="A0">
                     <ExpressionDefinition>
                         <Text><![CDATA[set 'decision' to a new Response data where
-	the interestRate is <interestRate>, 
-	isHighRisk is <isHighRisk>, 
-	the riskScore is <riskScore>, 
+	the interestRate is <interestRate> , 
+	isHighRisk is <isHighRisk> , 
+	the riskScore is <riskScore> , 
 	the riskAssesmentMessage is <riskAssesmentMessage>]]></Text>
                     </ExpressionDefinition>
                 </ActionDefinition>
@@ -96,11 +96,11 @@
             <Data Name="Definitions(A0)[1]#HeaderText"><![CDATA[isHighRisk]]></Data>
             <Data Name="Definitions(A0)[2]#HeaderText"><![CDATA[riskScore]]></Data>
             <Data Name="Definitions(A0)[3]#HeaderText"><![CDATA[riskAssesmentMessage]]></Data>
-            <Data Name="Definitions(A0)[]#Format"><![CDATA[{0}]]></Data>
             <Data Name="Definitions(C0)#HeaderText"><![CDATA[Policy Holder Date of Birth]]></Data>
             <Data Name="Definitions(C0)#Width"><![CDATA[189]]></Data>
             <Data Name="Definitions(C0)[0]#HeaderText"><![CDATA[a date]]></Data>
         </ResourceSet>
     </Resources>
-</DT></definition>
+</DT>
+</definition>
 </ilog.rules.studio.model.dt:DecisionTable>

@@ -8,5 +8,5 @@
 then
 	set decision to 1 ;
 else
-    set decision to 2;]]></definition>
+    set decision to 2 ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

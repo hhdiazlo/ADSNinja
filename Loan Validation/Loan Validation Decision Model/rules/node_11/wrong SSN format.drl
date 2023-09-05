@@ -15,11 +15,10 @@ if
             - digits does not equal 9
             - the length of the area number of the SSN of Borrower does not equal 'area number'
             - the length of the group code of the SSN of Borrower does not equal 'group code'
-            - the length of the serial number of the SSN of Borrower does not equal 'serial number'
+            - the length of the serial number of the SSN of Borrower does not equal 'serial number' ,
 
 then
     set decision to a new approval where
         approved is false ,
-        the message is "The borrower's SSN should be formatted with 3-2-4 characters" ;
-]]></definition>
+        the message is "The borrower's SSN should be formatted with 3-2-4 characters" ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

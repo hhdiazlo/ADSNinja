@@ -3,9 +3,8 @@
   <name>reduce list</name>
   <uuid>ed1fa036-1763-452a-8733-a2dc2664ff43</uuid>
   <locale>en_US</locale>
-  <definition><![CDATA[for each Service called item , in 'Services list'  
-if
-    the number of elements in decision is less than 'Services count'
+  <definition><![CDATA[for each Service called 'item' , in 'Services list'  
+if the number of elements in decision is less than 'Services count'
 then
     add item to decision ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

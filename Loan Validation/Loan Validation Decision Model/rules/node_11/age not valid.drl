@@ -4,13 +4,12 @@
   <uuid>f64d2361-40db-4132-b82c-ad73761fade9</uuid>
   <locale>en_US</locale>
   <definition><![CDATA[definitions
-    set 'minAge' to 0;
-    set 'maxAge' to 150;
+    set 'minAge' to 0 ;
+    set 'maxAge' to 150 ;
 if
   it is not true that the number of years between the birth date of Borrower and 'current time' is between minAge and maxAge
 then
     set decision to a new approval where
-        approved is false,
-        the message is "The borrower's age is not valid." ;
-]]></definition>
+        approved is false ,
+        the message is "The borrower's age is not valid." ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

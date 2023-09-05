@@ -2,8 +2,12 @@
   "name" : "disconnectedProvider",
   "type" : "OPS",
   "description" : null,
-  "mlUrl" : "",
-  "authUrl" : null,
-  "instanceId" : null,
-  "apiKey" : null
+  "version" : "V1",
+  "providerAdditionalInfo" : {
+    "providerType" : "OPS",
+    "mlUrl" : ""
+  },
+  "authInfo" : {
+    "authType" : "NONE"
+  }
 }

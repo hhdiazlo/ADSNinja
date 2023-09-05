@@ -10,6 +10,5 @@ if
 then
     set decision to a new approval where
         approved is false ,
-        the message is "Credit score below " + 'minimum score' ;
-]]></definition>
+        the message is "Credit score below " + 'minimum score' ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

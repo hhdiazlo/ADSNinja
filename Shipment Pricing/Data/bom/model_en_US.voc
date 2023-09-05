@@ -42,13 +42,12 @@ decisions.techpreview_samples.shipment_pricing_project.mydata.newtype.newtype(bo
 # decisions.techpreview_samples.shipment_pricing_project.mydata.newtype1
 decisions.techpreview_samples.shipment_pricing_project.mydata.newtype1#concept.label = Result
 decisions.techpreview_samples.shipment_pricing_project.mydata.newtype1.newattribute#phrase.action = set the ETA of {this} to {ETA}
-decisions.techpreview_samples.shipment_pricing_project.mydata.newtype1.newattribute#phrase.clearer = clear the ETA of {this}
 decisions.techpreview_samples.shipment_pricing_project.mydata.newtype1.newattribute#phrase.navigation = {ETA} of {this}
 decisions.techpreview_samples.shipment_pricing_project.mydata.newtype1.newattribute1#phrase.action = set the price of {this} to {price}
 decisions.techpreview_samples.shipment_pricing_project.mydata.newtype1.newattribute1#phrase.addition_setter = add {price} to the price of {this}
 decisions.techpreview_samples.shipment_pricing_project.mydata.newtype1.newattribute1#phrase.navigation = {price} of {this}
 decisions.techpreview_samples.shipment_pricing_project.mydata.newtype1.newattribute1#phrase.subtraction_setter = subtract {price} from the price of {this}
-decisions.techpreview_samples.shipment_pricing_project.mydata.newtype1.newtype1(ilog.rules.brl.Time,double)#phrase.navigation = a new {Result} where {0, ETA} {1, price}
+decisions.techpreview_samples.shipment_pricing_project.mydata.newtype1.newtype1(java.time.LocalTime,double)#phrase.navigation = a new {Result} where {0, ETA} {1, price}
 
 # decisions.techpreview_samples.shipment_pricing_project.mydata.newtype2
 decisions.techpreview_samples.shipment_pricing_project.mydata.newtype2#concept.label = Shipment

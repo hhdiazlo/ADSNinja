@@ -13,21 +13,21 @@
             <ConditionDefinitions>
                 <ConditionDefinition Id="C0">
                     <ExpressionDefinition>
-                        <Text><![CDATA[the grade of Grade is <an object> ]]></Text>
+                        <Text><![CDATA[the grade of 'Grade' is <an object>]]></Text>
                     </ExpressionDefinition>
                 </ConditionDefinition>
                 <ConditionDefinition Id="C1">
                     <ExpressionDefinition>
-                        <Text><![CDATA[the amount of Loan is at least <min> and less than <max> ]]></Text>
+                        <Text><![CDATA[the amount of 'Loan' is at least <min> and less than <max>]]></Text>
                     </ExpressionDefinition>
                 </ConditionDefinition>
             </ConditionDefinitions>
             <ActionDefinitions>
                 <ActionDefinition Id="A0">
                     <ExpressionDefinition>
-                        <Text><![CDATA[set decision to a new insurance where
-    the rate is <rate>, 
-    required is <required>]]></Text>
+                        <Text><![CDATA[set 'decision' to a new insurance where
+	the rate is <rate> , 
+	required is <required>]]></Text>
                     </ExpressionDefinition>
                 </ActionDefinition>
             </ActionDefinitions>
@@ -228,15 +228,16 @@
     </Body>
     <Resources DefaultLocale="en_US">
         <ResourceSet Locale="en_US">
-            <Data Name="Definitions(C0)#HeaderText"><![CDATA[Grade]]></Data>
-            <Data Name="Definitions(C1)#HeaderText"><![CDATA[Loan]]></Data>
-            <Data Name="Definitions(A0)#Width"><![CDATA[142]]></Data>
-            <Data Name="Definitions(C0)[0]#HeaderText"><![CDATA[a loan]]></Data>
             <Data Name="Definitions(A0)#HeaderText"><![CDATA[Insurance]]></Data>
+            <Data Name="Definitions(A0)#Width"><![CDATA[142]]></Data>
+            <Data Name="Definitions(C0)#HeaderText"><![CDATA[Grade]]></Data>
+            <Data Name="Definitions(C0)#Width"><![CDATA[80]]></Data>
+            <Data Name="Definitions(C0)[0]#HeaderText"><![CDATA[a loan]]></Data>
+            <Data Name="Definitions(C1)#HeaderText"><![CDATA[Loan]]></Data>
             <Data Name="Definitions(C1)#Width"><![CDATA[80]]></Data>
             <Data Name="Definitions(C1)[0]#HeaderText"><![CDATA[min]]></Data>
-            <Data Name="Definitions(C0)#Width"><![CDATA[80]]></Data>
         </ResourceSet>
     </Resources>
-</DT></definition>
+</DT>
+</definition>
 </ilog.rules.studio.model.dt:DecisionTable>

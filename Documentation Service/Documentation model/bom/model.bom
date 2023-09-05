@@ -2,81 +2,81 @@
 package decisions.kyc_validation_decision.documentation_service.documentationmodel;
 
 
-public class CountryDomain
+class CountryDomain
         extends java.lang.Enum
-        property "ads.typeId" "6"
-        property "com.fasterxml.jackson.annotation.JsonTypeName" "Country Domain"
-        property "com.ibm.rules.domainProvider.msexcel.b2xColumn" "0"
-        property "com.ibm.rules.domainProvider.msexcel.documentationColumn.en_US" "2"
-        property "com.ibm.rules.domainProvider.msexcel.hasHeader" "true"
-        property "com.ibm.rules.domainProvider.msexcel.labelColumn.en_US" "1"
-        property "com.ibm.rules.domainProvider.msexcel.sheetIndex" "2"
-        property "com.ibm.rules.domainProvider.msexcel.valueColumn" "0"
-        property "de.generated" "true"
+        property ads.typeId "6"
+        property com.fasterxml.jackson.annotation.JsonTypeName "Country Domain"
+        property com.ibm.rules.domainProvider.msexcel.b2xColumn "0"
+        property com.ibm.rules.domainProvider.msexcel.documentationColumn.en_US "2"
+        #com.ibm.rules.domainProvider.msexcel.hasHeader
+        property com.ibm.rules.domainProvider.msexcel.labelColumn.en_US "1"
+        property com.ibm.rules.domainProvider.msexcel.sheetIndex "2"
+        property com.ibm.rules.domainProvider.msexcel.valueColumn "0"
+        #de.generated
         property domainProviderResource "domains/dynamicDomainTemplate.xlsx"
 {
     domain {static ARG, static CA, static FR, static MEX, static UK, static USA}
-    public static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.CountryDomain ARG
-                property "ads.attributeId" "2"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "ARG";
-    public static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.CountryDomain CA
-                property "ads.attributeId" "3"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "CA";
-    public static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.CountryDomain FR
-                property "ads.attributeId" "4"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "FR";
-    public static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.CountryDomain MEX
-                property "ads.attributeId" "5"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "MEX";
-    public static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.CountryDomain UK
-                property "ads.attributeId" "6"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "UK";
-    public static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.CountryDomain USA
-                property "ads.attributeId" "7"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "USA";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.CountryDomain ARG
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "ARG";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.CountryDomain CA
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "CA";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.CountryDomain FR
+                property ads.attributeId "4"
+                property com.fasterxml.jackson.annotation.JsonProperty "FR";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.CountryDomain MEX
+                property ads.attributeId "5"
+                property com.fasterxml.jackson.annotation.JsonProperty "MEX";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.CountryDomain UK
+                property ads.attributeId "6"
+                property com.fasterxml.jackson.annotation.JsonProperty "UK";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.CountryDomain USA
+                property ads.attributeId "7"
+                property com.fasterxml.jackson.annotation.JsonProperty "USA";
 }
 
-public class DocumentationResponse
-        property "ads.typeId" "4"
-        property "com.fasterxml.jackson.annotation.JsonTypeName" "Documentation Response"
-        property "de.generated" "true"
+class DocumentationResponse
+        property ads.typeId "4"
+        property com.fasterxml.jackson.annotation.JsonTypeName "Documentation Response"
+        #de.generated
 {
-    public java.util.List requiredDocumentsList domain 0,* class decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain
-                property "ads.attributeId" "2"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "requiredDocumentsList"
-                property update "true";
-    public DocumentationResponse(java.util.List requiredDocumentsList domain 0,* class decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain)
-                property autoExpand "true"
-                property beanConstructor "true"
+    java.util.List requiredDocumentsList domain 0,* class decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "requiredDocumentsList"
+                #update;
+    DocumentationResponse(java.util.List requiredDocumentsList domain 0,* class decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain)
+                #autoExpand
+                #beanConstructor
                 property groups "BALA"
-                property prototype "true";
-    public DocumentationResponse()
-                property "dataio.default" "true";
-    public void addTo_requiredDocumentsList(decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain requiredDocumentsList)
+                #prototype;
+    DocumentationResponse()
+                #dataio.default;
+    void addTo_requiredDocumentsList(decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain requiredDocumentsList)
                 property collectionAttribute "requiredDocumentsList"
-                property update "true";
-    public void clear_requiredDocumentsList()
+                #update;
+    void clear_requiredDocumentsList()
                 property collectionAttribute "requiredDocumentsList"
-                property update "true";
-    public void removeFrom_requiredDocumentsList(decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain requiredDocumentsList)
+                #update;
+    void removeFrom_requiredDocumentsList(decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain requiredDocumentsList)
                 property collectionAttribute "requiredDocumentsList"
-                property update "true";
-    public void set_requiredDocumentsList(java.util.Collection requiredDocumentsList domain 0,* class decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain)
+                #update;
+    void set_requiredDocumentsList(java.util.Collection requiredDocumentsList domain 0,* class decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain)
                 property collectionAttribute "requiredDocumentsList"
-                property update "true";
+                #update;
 }
 
-public class KYCDocumentDomain
+class KYCDocumentDomain
         extends java.lang.Enum
-        property "ads.typeId" "5"
-        property "com.fasterxml.jackson.annotation.JsonTypeName" "KYC Document Domain"
-        property "com.ibm.rules.domainProvider.msexcel.b2xColumn" "0"
-        property "com.ibm.rules.domainProvider.msexcel.documentationColumn.en_US" "2"
-        property "com.ibm.rules.domainProvider.msexcel.hasHeader" "true"
-        property "com.ibm.rules.domainProvider.msexcel.labelColumn.en_US" "1"
-        property "com.ibm.rules.domainProvider.msexcel.sheetIndex" "0"
-        property "com.ibm.rules.domainProvider.msexcel.valueColumn" "0"
-        property "de.generated" "true"
+        property ads.typeId "5"
+        property com.fasterxml.jackson.annotation.JsonTypeName "KYC Document Domain"
+        property com.ibm.rules.domainProvider.msexcel.b2xColumn "0"
+        property com.ibm.rules.domainProvider.msexcel.documentationColumn.en_US "2"
+        #com.ibm.rules.domainProvider.msexcel.hasHeader
+        property com.ibm.rules.domainProvider.msexcel.labelColumn.en_US "1"
+        property com.ibm.rules.domainProvider.msexcel.sheetIndex "0"
+        property com.ibm.rules.domainProvider.msexcel.valueColumn "0"
+        #de.generated
         property domainProviderResource "domains/dynamicDomainTemplate.xlsx"
 {
     domain 
@@ -103,82 +103,82 @@ public class KYCDocumentDomain
         static proofofRegulation,
         static wolfsbergQuestionnaire
     }
-    public static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain AMLPoliciesandProcedures
-                property "ads.attributeId" "23"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "AMLPoliciesandProcedures";
-    public static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain AMLQuestionnaire
-                property "ads.attributeId" "24"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "AMLQuestionnaire";
-    public static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain AMLRepresentationLetter
-                property "ads.attributeId" "25"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "AMLRepresentationLetter";
-    public static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain AMLServiceProviderVerification
-                property "ads.attributeId" "26"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "AMLServiceProviderVerification";
-    public static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain annualReportFinancialStatements
-                property "ads.attributeId" "27"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "Annual Report Financial Statements";
-    public static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain bankingLicense
-                property "ads.attributeId" "28"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "BankingLicense";
-    public static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain bearerShareVerification
-                property "ads.attributeId" "29"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "BearerShareVerification";
-    public static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain constitutionalDocument
-                property "ads.attributeId" "30"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "ConstitutionalDocument";
-    public static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain foreignBankCertificate
-                property "ads.attributeId" "31"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "ForeignBankCertificate";
-    public static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain formationCertificate
-                property "ads.attributeId" "32"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "FormationCertificate";
-    public static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain formationDocument
-                property "ads.attributeId" "33"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "FormationDocument";
-    public static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain offeringDocuments
-                property "ads.attributeId" "34"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "OfferingDocuments";
-    public static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain proofofAddress
-                property "ads.attributeId" "35"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "ProofofAddress";
-    public static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain proofofAffiliation
-                property "ads.attributeId" "36"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "ProofofAffiliation";
-    public static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain proofofExchangeListing
-                property "ads.attributeId" "37"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "ProofofExchangeListing";
-    public static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain proofofExistence
-                property "ads.attributeId" "38"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "ProofofExistence";
-    public static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain proofofIdentification
-                property "ads.attributeId" "39"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "ProofofIdentification";
-    public static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain proofofManagementRelationship
-                property "ads.attributeId" "40"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "ProofofManagementRelationship";
-    public static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain proofofRegistration
-                property "ads.attributeId" "41"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "ProofofRegistration";
-    public static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain proofofRegulation
-                property "ads.attributeId" "42"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "ProofofRegulation";
-    public static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain wolfsbergQuestionnaire
-                property "ads.attributeId" "43"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "WolfsbergQuestionnaire";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain AMLPoliciesandProcedures
+                property ads.attributeId "23"
+                property com.fasterxml.jackson.annotation.JsonProperty "AMLPoliciesandProcedures";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain AMLQuestionnaire
+                property ads.attributeId "24"
+                property com.fasterxml.jackson.annotation.JsonProperty "AMLQuestionnaire";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain AMLRepresentationLetter
+                property ads.attributeId "25"
+                property com.fasterxml.jackson.annotation.JsonProperty "AMLRepresentationLetter";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain AMLServiceProviderVerification
+                property ads.attributeId "26"
+                property com.fasterxml.jackson.annotation.JsonProperty "AMLServiceProviderVerification";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain annualReportFinancialStatements
+                property ads.attributeId "27"
+                property com.fasterxml.jackson.annotation.JsonProperty "Annual Report Financial Statements";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain bankingLicense
+                property ads.attributeId "28"
+                property com.fasterxml.jackson.annotation.JsonProperty "BankingLicense";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain bearerShareVerification
+                property ads.attributeId "29"
+                property com.fasterxml.jackson.annotation.JsonProperty "BearerShareVerification";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain constitutionalDocument
+                property ads.attributeId "30"
+                property com.fasterxml.jackson.annotation.JsonProperty "ConstitutionalDocument";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain foreignBankCertificate
+                property ads.attributeId "31"
+                property com.fasterxml.jackson.annotation.JsonProperty "ForeignBankCertificate";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain formationCertificate
+                property ads.attributeId "32"
+                property com.fasterxml.jackson.annotation.JsonProperty "FormationCertificate";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain formationDocument
+                property ads.attributeId "33"
+                property com.fasterxml.jackson.annotation.JsonProperty "FormationDocument";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain offeringDocuments
+                property ads.attributeId "34"
+                property com.fasterxml.jackson.annotation.JsonProperty "OfferingDocuments";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain proofofAddress
+                property ads.attributeId "35"
+                property com.fasterxml.jackson.annotation.JsonProperty "ProofofAddress";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain proofofAffiliation
+                property ads.attributeId "36"
+                property com.fasterxml.jackson.annotation.JsonProperty "ProofofAffiliation";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain proofofExchangeListing
+                property ads.attributeId "37"
+                property com.fasterxml.jackson.annotation.JsonProperty "ProofofExchangeListing";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain proofofExistence
+                property ads.attributeId "38"
+                property com.fasterxml.jackson.annotation.JsonProperty "ProofofExistence";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain proofofIdentification
+                property ads.attributeId "39"
+                property com.fasterxml.jackson.annotation.JsonProperty "ProofofIdentification";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain proofofManagementRelationship
+                property ads.attributeId "40"
+                property com.fasterxml.jackson.annotation.JsonProperty "ProofofManagementRelationship";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain proofofRegistration
+                property ads.attributeId "41"
+                property com.fasterxml.jackson.annotation.JsonProperty "ProofofRegistration";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain proofofRegulation
+                property ads.attributeId "42"
+                property com.fasterxml.jackson.annotation.JsonProperty "ProofofRegulation";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.KYCDocumentDomain wolfsbergQuestionnaire
+                property ads.attributeId "43"
+                property com.fasterxml.jackson.annotation.JsonProperty "WolfsbergQuestionnaire";
 }
 
-public class PrimaryBusinessPurposeDomain
+class PrimaryBusinessPurposeDomain
         extends java.lang.Enum
-        property "ads.typeId" "7"
-        property "com.fasterxml.jackson.annotation.JsonTypeName" "Primary Business Purpose Domain"
-        property "com.ibm.rules.domainProvider.msexcel.b2xColumn" "0"
-        property "com.ibm.rules.domainProvider.msexcel.documentationColumn.en_US" "2"
-        property "com.ibm.rules.domainProvider.msexcel.hasHeader" "true"
-        property "com.ibm.rules.domainProvider.msexcel.labelColumn.en_US" "1"
-        property "com.ibm.rules.domainProvider.msexcel.sheetIndex" "1"
-        property "com.ibm.rules.domainProvider.msexcel.valueColumn" "0"
-        property "de.generated" "true"
+        property ads.typeId "7"
+        property com.fasterxml.jackson.annotation.JsonTypeName "Primary Business Purpose Domain"
+        property com.ibm.rules.domainProvider.msexcel.b2xColumn "0"
+        property com.ibm.rules.domainProvider.msexcel.documentationColumn.en_US "2"
+        #com.ibm.rules.domainProvider.msexcel.hasHeader
+        property com.ibm.rules.domainProvider.msexcel.labelColumn.en_US "1"
+        property com.ibm.rules.domainProvider.msexcel.sheetIndex "1"
+        property com.ibm.rules.domainProvider.msexcel.valueColumn "0"
+        #de.generated
         property domainProviderResource "domains/dynamicDomainTemplate.xlsx"
 {
     domain 
@@ -195,39 +195,39 @@ public class PrimaryBusinessPurposeDomain
         static SPV,
         static newEnumValue
     }
-    public static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain BROKERDEALER
-                property "ads.attributeId" "2"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "BROKERDEALER";
-    public static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain CENTRALBANK
-                property "ads.attributeId" "3"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "CENTRALBANK";
-    public static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain FIDEPOSIT
-                property "ads.attributeId" "4"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "FIDEPOSIT";
-    public static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain GOVERNMENT
-                property "ads.attributeId" "5"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "GOVERNMENT";
-    public static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain HDGPEVC
-                property "ads.attributeId" "6"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "HDGPEVC";
-    public static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain INSURER
-                property "ads.attributeId" "7"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "INSURER";
-    public static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain INVESTORADVISOR
-                property "ads.attributeId" "8"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "INVESTORADVISOR";
-    public static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain MSB
-                property "ads.attributeId" "9"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "MSB";
-    public static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain MUTUALFUND
-                property "ads.attributeId" "10"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "MUTUALFUND";
-    public static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain SPV
-                property "ads.attributeId" "11"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "SPV";
-    public static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain newEnumValue
-                property "ads.attributeId" "1"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "new enum value"
-                property deprecated "true";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain BROKERDEALER
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "BROKERDEALER";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain CENTRALBANK
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "CENTRALBANK";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain FIDEPOSIT
+                property ads.attributeId "4"
+                property com.fasterxml.jackson.annotation.JsonProperty "FIDEPOSIT";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain GOVERNMENT
+                property ads.attributeId "5"
+                property com.fasterxml.jackson.annotation.JsonProperty "GOVERNMENT";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain HDGPEVC
+                property ads.attributeId "6"
+                property com.fasterxml.jackson.annotation.JsonProperty "HDGPEVC";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain INSURER
+                property ads.attributeId "7"
+                property com.fasterxml.jackson.annotation.JsonProperty "INSURER";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain INVESTORADVISOR
+                property ads.attributeId "8"
+                property com.fasterxml.jackson.annotation.JsonProperty "INVESTORADVISOR";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain MSB
+                property ads.attributeId "9"
+                property com.fasterxml.jackson.annotation.JsonProperty "MSB";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain MUTUALFUND
+                property ads.attributeId "10"
+                property com.fasterxml.jackson.annotation.JsonProperty "MUTUALFUND";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain SPV
+                property ads.attributeId "11"
+                property com.fasterxml.jackson.annotation.JsonProperty "SPV";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain newEnumValue
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "new enum value"
+                #deprecated;
 }
 

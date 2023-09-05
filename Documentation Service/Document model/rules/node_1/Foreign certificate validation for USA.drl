@@ -8,8 +8,5 @@
 	and 'Primary business purpose' is CENTRAL BANK 
 then
 	add Foreign Bank Certificate to decision ; 
-    add Wolfsberg Questionnaire to decision;
-  
-    
-    ]]></definition>
+    add Wolfsberg Questionnaire to decision ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

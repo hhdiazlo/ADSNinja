@@ -10,6 +10,5 @@ then
 	add Healthcare: Employee Benefits Plan to decision ;
     add Healthcare: Mental Health Care to decision ;
 	add Healthcare: On-site Medical Testing to decision ;
-    add Healthcare: Virtual Medical Assistance to decision ;
-    ]]></definition>
+    add Healthcare: Virtual Medical Assistance to decision ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

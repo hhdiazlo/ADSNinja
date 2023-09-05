@@ -25,7 +25,7 @@
             <ActionDefinitions>
                 <ActionDefinition Id="A0">
                     <ExpressionDefinition>
-                        <Text><![CDATA[add <a KYC Document Domain> to decision ]]></Text>
+                        <Text><![CDATA[add <a KYC Document Domain> to 'decision']]></Text>
                     </ExpressionDefinition>
                 </ActionDefinition>
             </ActionDefinitions>
@@ -108,14 +108,15 @@
     </Body>
     <Resources DefaultLocale="en_US">
         <ResourceSet Locale="en_US">
-            <Data Name="Definitions(C0)#HeaderText"><![CDATA[Country name]]></Data>
-            <Data Name="Definitions(C1)#HeaderText"><![CDATA[Registered country risk rating]]></Data>
+            <Data Name="Definitions(A0)#HeaderText"><![CDATA[Country and rating validations]]></Data>
             <Data Name="Definitions(A0)#Width"><![CDATA[427]]></Data>
             <Data Name="Definitions(A0)[0]#HeaderText"><![CDATA[a Document Domain]]></Data>
-            <Data Name="Definitions(A0)#HeaderText"><![CDATA[Country and rating validations]]></Data>
-            <Data Name="Definitions(C1)#Width"><![CDATA[232]]></Data>
+            <Data Name="Definitions(C0)#HeaderText"><![CDATA[Country name]]></Data>
             <Data Name="Definitions(C0)#Width"><![CDATA[319]]></Data>
+            <Data Name="Definitions(C1)#HeaderText"><![CDATA[Registered country risk rating]]></Data>
+            <Data Name="Definitions(C1)#Width"><![CDATA[232]]></Data>
         </ResourceSet>
     </Resources>
-</DT></definition>
+</DT>
+</definition>
 </ilog.rules.studio.model.dt:DecisionTable>

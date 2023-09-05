@@ -13,7 +13,7 @@
             <ConditionDefinitions>
                 <ConditionDefinition Id="C0">
                     <ExpressionDefinition>
-                        <Text><![CDATA[Repayment * 12 is at least <min> and less than <max>]]></Text>
+                        <Text><![CDATA['Repayment' * 12 is at least <min> and less than <max>]]></Text>
                     </ExpressionDefinition>
                 </ConditionDefinition>
                 <ConditionDefinition Id="C1">
@@ -25,8 +25,8 @@
             <ActionDefinitions>
                 <ActionDefinition Id="A0">
                     <ExpressionDefinition>
-                        <Text><![CDATA[set decision to a new grade where
-	the grade is <grade>, 
+                        <Text><![CDATA[set 'decision' to a new grade where
+	the grade is <grade> , 
 	the message is <message>]]></Text>
                     </ExpressionDefinition>
                 </ActionDefinition>
@@ -239,15 +239,16 @@
     </Body>
     <Resources DefaultLocale="en_US">
         <ResourceSet Locale="en_US">
-            <Data Name="Definitions(C0)#HeaderText"><![CDATA[Repayment]]></Data>
-            <Data Name="Definitions(C1)#HeaderText"><![CDATA[Corporate Score]]></Data>
-            <Data Name="Definitions(A0)#Width"><![CDATA[130]]></Data>
-            <Data Name="Definitions(C0)[0]#HeaderText"><![CDATA[min]]></Data>
             <Data Name="Definitions(A0)#HeaderText"><![CDATA[Grade]]></Data>
-            <Data Name="Definitions(C1)#Width"><![CDATA[136]]></Data>
+            <Data Name="Definitions(A0)#Width"><![CDATA[130]]></Data>
+            <Data Name="Definitions(C0)#HeaderText"><![CDATA[Repayment]]></Data>
             <Data Name="Definitions(C0)#Width"><![CDATA[98]]></Data>
+            <Data Name="Definitions(C0)[0]#HeaderText"><![CDATA[min]]></Data>
             <Data Name="Definitions(C0)[1]#HeaderText"><![CDATA[max]]></Data>
+            <Data Name="Definitions(C1)#HeaderText"><![CDATA[Corporate Score]]></Data>
+            <Data Name="Definitions(C1)#Width"><![CDATA[136]]></Data>
         </ResourceSet>
     </Resources>
-</DT></definition>
+</DT>
+</definition>
 </ilog.rules.studio.model.dt:DecisionTable>

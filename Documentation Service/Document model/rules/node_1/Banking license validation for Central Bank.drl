@@ -6,6 +6,5 @@
   <definition><![CDATA[if
 	'Primary business purpose' is CENTRAL BANK 
 then
-    add Banking License to decision ; 
-    ]]></definition>
+    add Banking License to decision ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

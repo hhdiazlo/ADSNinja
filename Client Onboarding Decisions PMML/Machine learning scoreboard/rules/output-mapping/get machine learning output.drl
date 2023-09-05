@@ -8,10 +8,10 @@ then
 set decision to a new Scoreboard where 
     High risk is true , 
     the Confidence is the confidence ,
-    the Segment is "Unknown";
+    the Segment is "Unknown" ;
 else 
 set decision to a new Scoreboard where 
     High risk is false , 
     the Confidence is the confidence ,
-    the Segment is "Unknown"; ]]></definition>
+    the Segment is "Unknown" ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>
