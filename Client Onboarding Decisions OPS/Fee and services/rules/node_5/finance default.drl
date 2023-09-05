@@ -10,5 +10,5 @@ then
 	add Finance: Corporate Credit Card to decision ;
     add Finance: External Audit to decision ; 
     add Finance: Fraud Protection to decision ; 
-    add Finance: Tax Consultation to decision ; ]]></definition>
+    add Finance: Tax Consultation to decision ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

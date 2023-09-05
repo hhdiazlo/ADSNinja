@@ -4,8 +4,7 @@
   <uuid>97348a67-1f62-4d8d-a409-c8b2e04d87bb</uuid>
   <locale>en_US</locale>
   <definition><![CDATA[set decision to a new Scoreboard where
-		the Confidence is round(the Confidence of 'Predictive risk'* 100, 4) , 
+		the Confidence is round( the Confidence of 'Predictive risk' * 100 , 4 ) , 
         High risk is 'Predictive risk' is High risk ,
-		the Segment is 'Segment category' ;
-]]></definition>
+		the Segment is 'Segment category' ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

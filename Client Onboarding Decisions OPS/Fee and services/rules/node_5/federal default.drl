@@ -10,5 +10,5 @@ then
 	add Federal: Education Funding to decision ;
     add Federal: Green Technology Equipment to decision ; 
     add Federal: Infrastructure Consultation to decision ; 
-    add Federal: Transport Security  to decision ; ]]></definition>
+    add Federal: Transport Security  to decision ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

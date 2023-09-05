@@ -8,7 +8,7 @@
 # decisions.ads_jam_lab.client_onboarding.data.ClientInformation
 decisions.ads_jam_lab.client_onboarding.data.ClientInformation#concept.documentation = 
 decisions.ads_jam_lab.client_onboarding.data.ClientInformation#concept.label = Client Information
-decisions.ads_jam_lab.client_onboarding.data.ClientInformation.ClientInformation(java.lang.Long,java.lang.Long,boolean,java.lang.Long)#phrase.navigation = a new {Client Information} where {0, Annual Revenue} {1, Company Age} {2, Defaulted Payment} {3, Number of Employees}
+decisions.ads_jam_lab.client_onboarding.data.ClientInformation.ClientInformation(long,long,boolean,long)#phrase.navigation = a new {Client Information} where {0, Annual Revenue} {1, Company Age} {2, Defaulted Payment} {3, Number of Employees}
 decisions.ads_jam_lab.client_onboarding.data.ClientInformation.annualRevenue#phrase.action = set the Annual Revenue of {this} to {Annual Revenue}
 decisions.ads_jam_lab.client_onboarding.data.ClientInformation.annualRevenue#phrase.addition_setter = add {Annual Revenue} to the Annual Revenue of {this}
 decisions.ads_jam_lab.client_onboarding.data.ClientInformation.annualRevenue#phrase.navigation = {Annual Revenue} of {this}
@@ -99,7 +99,7 @@ decisions.ads_jam_lab.client_onboarding.data.Service.warehouseInsurance#instance
 
 # decisions.ads_jam_lab.client_onboarding.data.ServiceInformation
 decisions.ads_jam_lab.client_onboarding.data.ServiceInformation#concept.label = Service Information
-decisions.ads_jam_lab.client_onboarding.data.ServiceInformation.ServiceInformation(java.util.List,java.lang.Long)#phrase.navigation = a new {Service Information} where {0, Extended services} {1, Services Fee}
+decisions.ads_jam_lab.client_onboarding.data.ServiceInformation.ServiceInformation(java.util.List,long)#phrase.navigation = a new {Service Information} where {0, Extended services} {1, Services Fee}
 decisions.ads_jam_lab.client_onboarding.data.ServiceInformation.addTo_extendedServices(decisions.ads_jam_lab.client_onboarding.data.Service)#phrase.action = add {0} to the Extended services of {this}
 decisions.ads_jam_lab.client_onboarding.data.ServiceInformation.clear_extendedServices()#phrase.action = clear the Extended services of {this}
 decisions.ads_jam_lab.client_onboarding.data.ServiceInformation.extendedServices#phrase.action = set the Extended services of {this} to {Extended services}
