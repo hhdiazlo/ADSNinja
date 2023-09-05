@@ -3,5 +3,5 @@
   <name>output-default-setting</name>
   <uuid>0fd50065-5226-41ab-8c8a-be90238ee69a</uuid>
   <locale>en_US</locale>
-  <definition><![CDATA[set decision to "Sorry, we don't have enough information to privide a result";]]></definition>
+  <definition><![CDATA[set decision to "Sorry, we don't have enough information to privide a result" ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>
