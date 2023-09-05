@@ -2,142 +2,142 @@
 package decisions.techpreview_samples.shipment_pricing_project.mydata;
 
 
-public class newenum
+class newenum
         extends java.lang.Enum
-        property "ads.typeId" "1"
-        property "com.fasterxml.jackson.annotation.JsonTypeName" "Pickup"
-        property "de.generated" "true"
+        property ads.typeId "1"
+        property com.fasterxml.jackson.annotation.JsonTypeName "Pickup"
+        #de.generated
 {
     domain {static newenumvalue, static newenumvalue1}
-    public static final readonly decisions.techpreview_samples.shipment_pricing_project.mydata.newenum newenumvalue
-                property "ads.attributeId" "1"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "Dropoff";
-    public static final readonly decisions.techpreview_samples.shipment_pricing_project.mydata.newenum newenumvalue1
-                property "ads.attributeId" "2"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "Pickup";
+    static final readonly decisions.techpreview_samples.shipment_pricing_project.mydata.newenum newenumvalue
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "Dropoff";
+    static final readonly decisions.techpreview_samples.shipment_pricing_project.mydata.newenum newenumvalue1
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "Pickup";
 }
 
-public class newenum1
+class newenum1
         extends java.lang.Enum
-        property "ads.typeId" "2"
-        property "com.fasterxml.jackson.annotation.JsonTypeName" "Transport"
-        property "de.generated" "true"
+        property ads.typeId "2"
+        property com.fasterxml.jackson.annotation.JsonTypeName "Transport"
+        #de.generated
 {
     domain {static newenumvalue, static newenumvalue1}
-    public static final readonly decisions.techpreview_samples.shipment_pricing_project.mydata.newenum1 newenumvalue
-                property "ads.attributeId" "1"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "Ground";
-    public static final readonly decisions.techpreview_samples.shipment_pricing_project.mydata.newenum1 newenumvalue1
-                property "ads.attributeId" "2"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "Air";
+    static final readonly decisions.techpreview_samples.shipment_pricing_project.mydata.newenum1 newenumvalue
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "Ground";
+    static final readonly decisions.techpreview_samples.shipment_pricing_project.mydata.newenum1 newenumvalue1
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "Air";
 }
 
-public class newenum2
+class newenum2
         extends java.lang.Enum
-        property "ads.typeId" "3"
-        property "com.fasterxml.jackson.annotation.JsonTypeName" "Customer Status"
-        property "de.generated" "true"
+        property ads.typeId "3"
+        property com.fasterxml.jackson.annotation.JsonTypeName "Customer Status"
+        #de.generated
 {
     domain {static newenumvalue, static newenumvalue1, static newenumvalue2}
-    public static final readonly decisions.techpreview_samples.shipment_pricing_project.mydata.newenum2 newenumvalue
-                property "ads.attributeId" "1"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "Gold";
-    public static final readonly decisions.techpreview_samples.shipment_pricing_project.mydata.newenum2 newenumvalue1
-                property "ads.attributeId" "2"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "Silver";
-    public static final readonly decisions.techpreview_samples.shipment_pricing_project.mydata.newenum2 newenumvalue2
-                property "ads.attributeId" "3"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "Bronze";
+    static final readonly decisions.techpreview_samples.shipment_pricing_project.mydata.newenum2 newenumvalue
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "Gold";
+    static final readonly decisions.techpreview_samples.shipment_pricing_project.mydata.newenum2 newenumvalue1
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "Silver";
+    static final readonly decisions.techpreview_samples.shipment_pricing_project.mydata.newenum2 newenumvalue2
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "Bronze";
 }
 
-public class newenum3
+class newenum3
         extends java.lang.Enum
-        property "ads.typeId" "4"
-        property "com.fasterxml.jackson.annotation.JsonTypeName" "Dimension"
-        property "de.generated" "true"
+        property ads.typeId "4"
+        property com.fasterxml.jackson.annotation.JsonTypeName "Dimension"
+        #de.generated
 {
     domain {static newenumvalue, static newenumvalue1, static newenumvalue2, static newenumvalue3}
-    public static final readonly decisions.techpreview_samples.shipment_pricing_project.mydata.newenum3 newenumvalue
-                property "ads.attributeId" "3"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "Pack 3";
-    public static final readonly decisions.techpreview_samples.shipment_pricing_project.mydata.newenum3 newenumvalue1
-                property "ads.attributeId" "2"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "Pack 2";
-    public static final readonly decisions.techpreview_samples.shipment_pricing_project.mydata.newenum3 newenumvalue2
-                property "ads.attributeId" "1"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "Pack 1";
-    public static final readonly decisions.techpreview_samples.shipment_pricing_project.mydata.newenum3 newenumvalue3
-                property "ads.attributeId" "4"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "Letter";
+    static final readonly decisions.techpreview_samples.shipment_pricing_project.mydata.newenum3 newenumvalue
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "Pack 3";
+    static final readonly decisions.techpreview_samples.shipment_pricing_project.mydata.newenum3 newenumvalue1
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "Pack 2";
+    static final readonly decisions.techpreview_samples.shipment_pricing_project.mydata.newenum3 newenumvalue2
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "Pack 1";
+    static final readonly decisions.techpreview_samples.shipment_pricing_project.mydata.newenum3 newenumvalue3
+                property ads.attributeId "4"
+                property com.fasterxml.jackson.annotation.JsonProperty "Letter";
 }
 
-public class newtype
-        property "ads.typeId" "5"
-        property "com.fasterxml.jackson.annotation.JsonTypeName" "Method"
-        property "de.generated" "true"
+class newtype
+        property ads.typeId "5"
+        property com.fasterxml.jackson.annotation.JsonTypeName "Method"
+        #de.generated
 {
-    public boolean newattribute
-                property "ads.attributeId" "1"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "next day"
-                property update "true";
-    public decisions.techpreview_samples.shipment_pricing_project.mydata.newenum1 newattribute1
-                property "ads.attributeId" "2"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "transport"
-                property update "true";
-    public decisions.techpreview_samples.shipment_pricing_project.mydata.newenum newattribute2
-                property "ads.attributeId" "3"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "pickup"
-                property update "true";
-    public newtype(boolean newattribute, decisions.techpreview_samples.shipment_pricing_project.mydata.newenum1 newattribute1, decisions.techpreview_samples.shipment_pricing_project.mydata.newenum newattribute2)
-                property autoExpand "true"
-                property beanConstructor "true"
+    boolean newattribute
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "next day"
+                #update;
+    decisions.techpreview_samples.shipment_pricing_project.mydata.newenum1 newattribute1
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "transport"
+                #update;
+    decisions.techpreview_samples.shipment_pricing_project.mydata.newenum newattribute2
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "pickup"
+                #update;
+    newtype(boolean newattribute, decisions.techpreview_samples.shipment_pricing_project.mydata.newenum1 newattribute1, decisions.techpreview_samples.shipment_pricing_project.mydata.newenum newattribute2)
+                #autoExpand
+                #beanConstructor
                 property groups "BALA"
-                property prototype "true";
-    public newtype()
-                property "dataio.default" "true";
+                #prototype;
+    newtype()
+                #dataio.default;
 }
 
-public class newtype1
-        property "ads.typeId" "6"
-        property "com.fasterxml.jackson.annotation.JsonTypeName" "Result"
-        property "de.generated" "true"
+class newtype1
+        property ads.typeId "6"
+        property com.fasterxml.jackson.annotation.JsonTypeName "Result"
+        #de.generated
 {
-    public ilog.rules.brl.Time newattribute
-                property "ads.attributeId" "1"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "ETA"
-                property update "true";
-    public double newattribute1
-                property "ads.attributeId" "2"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "price"
-                property update "true";
-    public newtype1(ilog.rules.brl.Time newattribute, double newattribute1)
-                property autoExpand "true"
-                property beanConstructor "true"
+    java.time.LocalTime newattribute
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "ETA"
+                #update;
+    double newattribute1
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "price"
+                #update;
+    newtype1(java.time.LocalTime newattribute, double newattribute1)
+                #autoExpand
+                #beanConstructor
                 property groups "BALA"
-                property prototype "true";
-    public newtype1()
-                property "dataio.default" "true";
+                #prototype;
+    newtype1()
+                #dataio.default;
 }
 
-public class newtype2
-        property "ads.typeId" "7"
-        property "com.fasterxml.jackson.annotation.JsonTypeName" "Shipment"
-        property "de.generated" "true"
+class newtype2
+        property ads.typeId "7"
+        property com.fasterxml.jackson.annotation.JsonTypeName "Shipment"
+        #de.generated
 {
-    public decisions.techpreview_samples.shipment_pricing_project.mydata.newenum3 newattribute
-                property "ads.attributeId" "1"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "size"
-                property update "true";
-    public double newattribute1
-                property "ads.attributeId" "2"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "weight"
-                property update "true";
-    public newtype2(decisions.techpreview_samples.shipment_pricing_project.mydata.newenum3 newattribute, double newattribute1)
-                property autoExpand "true"
-                property beanConstructor "true"
+    decisions.techpreview_samples.shipment_pricing_project.mydata.newenum3 newattribute
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "size"
+                #update;
+    double newattribute1
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "weight"
+                #update;
+    newtype2(decisions.techpreview_samples.shipment_pricing_project.mydata.newenum3 newattribute, double newattribute1)
+                #autoExpand
+                #beanConstructor
                 property groups "BALA"
-                property prototype "true";
-    public newtype2()
-                property "dataio.default" "true";
+                #prototype;
+    newtype2()
+                #dataio.default;
 }
 

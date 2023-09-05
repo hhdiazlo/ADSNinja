@@ -10,20 +10,20 @@
             <Property Name="UI.RenderBoolean" Type="xs:boolean"><![CDATA[true]]></Property>
         </Properties>
         <Preconditions>
-            <Text><![CDATA[if the transport of Method is Ground  ]]></Text>
+            <Text><![CDATA[if the transport of 'Method' is Ground]]></Text>
         </Preconditions>
         <Structure>
             <ConditionDefinitions>
                 <ConditionDefinition Id="C0">
                     <ExpressionDefinition>
-                        <Text><![CDATA[Distance is at least <min> and less than <max>]]></Text>
+                        <Text><![CDATA['Distance' is at least <min> and less than <max>]]></Text>
                     </ExpressionDefinition>
                 </ConditionDefinition>
             </ConditionDefinitions>
             <ActionDefinitions>
                 <ActionDefinition Id="A0">
                     <ExpressionDefinition>
-                        <Text><![CDATA[set decision to <a number>]]></Text>
+                        <Text><![CDATA[set 'decision' to <a number>]]></Text>
                     </ExpressionDefinition>
                 </ActionDefinition>
             </ActionDefinitions>
@@ -139,11 +139,12 @@
     </Body>
     <Resources DefaultLocale="en_US">
         <ResourceSet Locale="en_US">
-            <Data Name="Definitions(C0)#HeaderText"><![CDATA[Ground distance]]></Data>
-            <Data Name="Definitions(A0)#Width"><![CDATA[176]]></Data>
             <Data Name="Definitions(A0)#HeaderText"><![CDATA[Multiplier]]></Data>
+            <Data Name="Definitions(A0)#Width"><![CDATA[176]]></Data>
+            <Data Name="Definitions(C0)#HeaderText"><![CDATA[Ground distance]]></Data>
             <Data Name="Definitions(C0)#Width"><![CDATA[91]]></Data>
         </ResourceSet>
     </Resources>
-</DT></definition>
+</DT>
+</definition>
 </ilog.rules.studio.model.dt:DecisionTable>
