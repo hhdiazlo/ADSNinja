@@ -5,7 +5,7 @@
   <locale>en_US</locale>
   <definition><![CDATA[if
    there are 0 Symptoms in 'Received Symptoms' or
-   there is one Symptom in 'Received Symptoms' where the name of  this Symptom is null,
+   there is one Symptom in 'Received Symptoms' where the name of this Symptom is null ,
 then
    set the disease of decision to HEALTHY ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

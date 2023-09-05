@@ -29,8 +29,8 @@ set  'a symptom' to a Symptom in 'Received Symptoms' ;
             <ActionDefinitions>
                 <ActionDefinition Id="A0">
                     <ExpressionDefinition>
-                        <Text><![CDATA[set decision to a new Diagnosis where
-    the disease is <disease> ]]></Text>
+                        <Text><![CDATA[set 'decision' to a new Diagnosis where
+	the disease is <disease>]]></Text>
                     </ExpressionDefinition>
                 </ActionDefinition>
             </ActionDefinitions>
@@ -67,13 +67,14 @@ set  'a symptom' to a Symptom in 'Received Symptoms' ;
     </Body>
     <Resources DefaultLocale="en_US">
         <ResourceSet Locale="en_US">
-            <Data Name="Definitions(C0)#HeaderText"><![CDATA[Symptom]]></Data>
+            <Data Name="Definitions(A0)#HeaderText"><![CDATA[Identify Illness]]></Data>
             <Data Name="Definitions(A0)#Width"><![CDATA[232]]></Data>
             <Data Name="Definitions(A0)[0]#HeaderText"><![CDATA[disease]]></Data>
-            <Data Name="Definitions(C0)[0]#HeaderText"><![CDATA[a number]]></Data>
-            <Data Name="Definitions(A0)#HeaderText"><![CDATA[Identify Illness]]></Data>
+            <Data Name="Definitions(C0)#HeaderText"><![CDATA[Symptom]]></Data>
             <Data Name="Definitions(C0)#Width"><![CDATA[125]]></Data>
+            <Data Name="Definitions(C0)[0]#HeaderText"><![CDATA[a number]]></Data>
         </ResourceSet>
     </Resources>
-</DT></definition>
+</DT>
+</definition>
 </ilog.rules.studio.model.dt:DecisionTable>

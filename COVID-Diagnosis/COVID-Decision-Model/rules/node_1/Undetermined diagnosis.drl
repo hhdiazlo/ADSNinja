@@ -4,10 +4,9 @@
   <uuid>927f9ec2-d5ec-4ad1-9e41-7249be043db6</uuid>
   <locale>en_US</locale>
   <definition><![CDATA[if
-    the disease of 'Identify Illness' is not one of { ALLERGIES, COLD, CORONAVIRUS , CORONAVIRUS , FLU , HEALTHY  } 
+    the disease of 'Identify Illness' is not one of { ALLERGIES , COLD , CORONAVIRUS , CORONAVIRUS , FLU , HEALTHY } 
 then
     set decision to a new Diagnosis where
-        the disease is UNDETERMINED, 
-        the recommendations are { "Based on your symptoms, we are unable to determine a definite diagnosis." } ;
-]]></definition>
+        the disease is UNDETERMINED , 
+        the recommendations are { "Based on your symptoms, we are unable to determine a definite diagnosis." } ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

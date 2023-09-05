@@ -13,13 +13,10 @@
             <Text><![CDATA[definitions
 set 'symptom 1' to a Symptom in 'Received Symptoms' ; set 'symptom 2' to a Symptom in 'Received Symptoms' 
     where this Symptom is not 'symptom 1' ;
-set 'symptom 3' to a Symptom in 'Received Symptoms'  where this Symptom is not one of { 'symptom 1' , 'symptom 2' };
+set 'symptom 3' to a Symptom in 'Received Symptoms'  where this Symptom is not one of { 'symptom 1' , 'symptom 2' } ;
 
 if
-there are more than 3 Symptoms in 'Received Symptoms' and the name of 'symptom 1' is not FEVER
-
-
-]]></Text>
+there are more than 3 Symptoms in 'Received Symptoms' and the name of 'symptom 1' is not FEVER]]></Text>
         </Preconditions>
         <Structure>
             <ConditionDefinitions>
@@ -42,8 +39,8 @@ there are more than 3 Symptoms in 'Received Symptoms' and the name of 'symptom 1
             <ActionDefinitions>
                 <ActionDefinition Id="A0">
                     <ExpressionDefinition>
-                        <Text><![CDATA[set decision to a new Diagnosis where
-    the disease is <disease>]]></Text>
+                        <Text><![CDATA[set 'decision' to a new Diagnosis where
+	the disease is <disease>]]></Text>
                     </ExpressionDefinition>
                 </ActionDefinition>
             </ActionDefinitions>
@@ -96,15 +93,16 @@ there are more than 3 Symptoms in 'Received Symptoms' and the name of 'symptom 1
     </Body>
     <Resources DefaultLocale="en_US">
         <ResourceSet Locale="en_US">
-            <Data Name="Definitions(C0)#HeaderText"><![CDATA[Second Symptoms]]></Data>
-            <Data Name="Definitions(A0)#Width"><![CDATA[232]]></Data>
-            <Data Name="Definitions(C2)#HeaderText"><![CDATA[Additional Symptoms]]></Data>
-            <Data Name="Definitions(A0)[0]#HeaderText"><![CDATA[disease]]></Data>
-            <Data Name="Definitions(C0)[0]#HeaderText"><![CDATA[a number]]></Data>
             <Data Name="Definitions(A0)#HeaderText"><![CDATA[Identify Illness]]></Data>
+            <Data Name="Definitions(A0)#Width"><![CDATA[232]]></Data>
+            <Data Name="Definitions(A0)[0]#HeaderText"><![CDATA[disease]]></Data>
+            <Data Name="Definitions(C0)#HeaderText"><![CDATA[Second Symptoms]]></Data>
             <Data Name="Definitions(C0)#Width"><![CDATA[125]]></Data>
+            <Data Name="Definitions(C0)[0]#HeaderText"><![CDATA[a number]]></Data>
+            <Data Name="Definitions(C2)#HeaderText"><![CDATA[Additional Symptoms]]></Data>
             <Data Name="Definitions(C2)#Width"><![CDATA[138]]></Data>
         </ResourceSet>
     </Resources>
-</DT></definition>
+</DT>
+</definition>
 </ilog.rules.studio.model.dt:DecisionTable>

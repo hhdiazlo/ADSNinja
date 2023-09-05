@@ -2,125 +2,125 @@
 package decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model;
 
 
-public class Diagnosis
-        property "ads.typeId" "1"
-        property "com.fasterxml.jackson.annotation.JsonTypeName" "Diagnosis"
-        property "de.generated" "true"
+class Diagnosis
+        property ads.typeId "1"
+        property com.fasterxml.jackson.annotation.JsonTypeName "Diagnosis"
+        #de.generated
 {
-    public decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.IllnessDomain disease
-                property "ads.attributeId" "2"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "disease"
-                property update "true";
-    public java.util.List recommendations domain 0,* class string
-                property "ads.attributeId" "1"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "recommendations"
-                property update "true";
-    public Diagnosis(decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.IllnessDomain disease, 
+    decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.IllnessDomain disease
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "disease"
+                #update;
+    java.util.List recommendations domain 0,* class string
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "recommendations"
+                #update;
+    Diagnosis(decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.IllnessDomain disease, 
         java.util.List recommendations domain 0,* class string)
-                property autoExpand "true"
-                property beanConstructor "true"
+                #autoExpand
+                #beanConstructor
                 property groups "BALA"
-                property prototype "true";
-    public Diagnosis()
-                property "dataio.default" "true";
-    public void addTo_recommendations(string recommendations)
+                #prototype;
+    Diagnosis()
+                #dataio.default;
+    void addTo_recommendations(string recommendations)
                 property collectionAttribute "recommendations"
-                property update "true";
-    public void clear_recommendations()
+                #update;
+    void clear_recommendations()
                 property collectionAttribute "recommendations"
-                property update "true";
-    public void removeFrom_recommendations(string recommendations)
+                #update;
+    void removeFrom_recommendations(string recommendations)
                 property collectionAttribute "recommendations"
-                property update "true";
-    public void set_recommendations(java.util.Collection recommendations domain 0,* class string)
+                #update;
+    void set_recommendations(java.util.Collection recommendations domain 0,* class string)
                 property collectionAttribute "recommendations"
-                property update "true";
+                #update;
 }
 
-public class IllnessDomain
+class IllnessDomain
         extends java.lang.Enum
-        property "ads.typeId" "2"
-        property "com.fasterxml.jackson.annotation.JsonTypeName" "IllnessDomain"
-        property "de.generated" "true"
+        property ads.typeId "2"
+        property com.fasterxml.jackson.annotation.JsonTypeName "IllnessDomain"
+        #de.generated
 {
     domain {static TEST, static aLLERGIES, static cOLD, static cORONAVIRUS, static fLU, static hEALTHY, static uNDETERMINED}
-    public static final readonly decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.IllnessDomain TEST
-                property "ads.attributeId" "7"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "TEST";
-    public static final readonly decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.IllnessDomain aLLERGIES
-                property "ads.attributeId" "3"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "ALLERGIES";
-    public static final readonly decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.IllnessDomain cOLD
-                property "ads.attributeId" "2"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "COLD";
-    public static final readonly decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.IllnessDomain cORONAVIRUS
-                property "ads.attributeId" "4"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "CORONAVIRUS";
-    public static final readonly decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.IllnessDomain fLU
-                property "ads.attributeId" "1"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "FLU";
-    public static final readonly decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.IllnessDomain hEALTHY
-                property "ads.attributeId" "5"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "HEALTHY";
-    public static final readonly decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.IllnessDomain uNDETERMINED
-                property "ads.attributeId" "6"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "UNDETERMINED";
+    static final readonly decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.IllnessDomain TEST
+                property ads.attributeId "7"
+                property com.fasterxml.jackson.annotation.JsonProperty "TEST";
+    static final readonly decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.IllnessDomain aLLERGIES
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "ALLERGIES";
+    static final readonly decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.IllnessDomain cOLD
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "COLD";
+    static final readonly decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.IllnessDomain cORONAVIRUS
+                property ads.attributeId "4"
+                property com.fasterxml.jackson.annotation.JsonProperty "CORONAVIRUS";
+    static final readonly decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.IllnessDomain fLU
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "FLU";
+    static final readonly decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.IllnessDomain hEALTHY
+                property ads.attributeId "5"
+                property com.fasterxml.jackson.annotation.JsonProperty "HEALTHY";
+    static final readonly decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.IllnessDomain uNDETERMINED
+                property ads.attributeId "6"
+                property com.fasterxml.jackson.annotation.JsonProperty "UNDETERMINED";
 }
 
-public class Symptom
-        property "ads.typeId" "4"
-        property "com.fasterxml.jackson.annotation.JsonTypeName" "Symptom"
-        property "de.generated" "true"
+class Symptom
+        property ads.typeId "4"
+        property com.fasterxml.jackson.annotation.JsonTypeName "Symptom"
+        #de.generated
 {
-    public decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.SymptomsDomain newAttribute
-                property "ads.attributeId" "1"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "name"
-                property update "true";
-    public Symptom(decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.SymptomsDomain newAttribute)
-                property autoExpand "true"
-                property beanConstructor "true"
+    decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.SymptomsDomain newAttribute
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "name"
+                #update;
+    Symptom(decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.SymptomsDomain newAttribute)
+                #autoExpand
+                #beanConstructor
                 property groups "BALA"
-                property prototype "true";
-    public Symptom()
-                property "dataio.default" "true";
+                #prototype;
+    Symptom()
+                #dataio.default;
 }
 
-public class SymptomsDomain
+class SymptomsDomain
         extends java.lang.Enum
-        property "ads.typeId" "3"
-        property "com.fasterxml.jackson.annotation.JsonTypeName" "SymptomsDomain"
-        property "de.generated" "true"
+        property ads.typeId "3"
+        property com.fasterxml.jackson.annotation.JsonTypeName "SymptomsDomain"
+        #de.generated
 {
     domain {static cOUGH, static eXHAUSTATION, static fATIGUE, static fEVER, static iTCHYEYES, static mILDCHESTDISCOMFORT, static rUNNYNOSE, static sHORTNESSOFBREATH, static sNEEZING, static wEAKNESS}
-    public static final readonly decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.SymptomsDomain cOUGH
-                property "ads.attributeId" "9"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "COUGH";
-    public static final readonly decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.SymptomsDomain eXHAUSTATION
-                property "ads.attributeId" "6"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "EXHAUSTATION";
-    public static final readonly decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.SymptomsDomain fATIGUE
-                property "ads.attributeId" "8"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "FATIGUE";
-    public static final readonly decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.SymptomsDomain fEVER
-                property "ads.attributeId" "10"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "FEVER";
-    public static final readonly decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.SymptomsDomain iTCHYEYES
-                property "ads.attributeId" "4"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "ITCHY EYES";
-    public static final readonly decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.SymptomsDomain mILDCHESTDISCOMFORT
-                property "ads.attributeId" "1"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "MILD CHEST DISCOMFORT";
-    public static final readonly decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.SymptomsDomain rUNNYNOSE
-                property "ads.attributeId" "2"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "RUNNY NOSE";
-    public static final readonly decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.SymptomsDomain sHORTNESSOFBREATH
-                property "ads.attributeId" "5"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "SHORTNESS OF BREATH";
-    public static final readonly decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.SymptomsDomain sNEEZING
-                property "ads.attributeId" "3"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "SNEEZING";
-    public static final readonly decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.SymptomsDomain wEAKNESS
-                property "ads.attributeId" "7"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "WEAKNESS";
+    static final readonly decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.SymptomsDomain cOUGH
+                property ads.attributeId "9"
+                property com.fasterxml.jackson.annotation.JsonProperty "COUGH";
+    static final readonly decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.SymptomsDomain eXHAUSTATION
+                property ads.attributeId "6"
+                property com.fasterxml.jackson.annotation.JsonProperty "EXHAUSTATION";
+    static final readonly decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.SymptomsDomain fATIGUE
+                property ads.attributeId "8"
+                property com.fasterxml.jackson.annotation.JsonProperty "FATIGUE";
+    static final readonly decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.SymptomsDomain fEVER
+                property ads.attributeId "10"
+                property com.fasterxml.jackson.annotation.JsonProperty "FEVER";
+    static final readonly decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.SymptomsDomain iTCHYEYES
+                property ads.attributeId "4"
+                property com.fasterxml.jackson.annotation.JsonProperty "ITCHY EYES";
+    static final readonly decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.SymptomsDomain mILDCHESTDISCOMFORT
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "MILD CHEST DISCOMFORT";
+    static final readonly decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.SymptomsDomain rUNNYNOSE
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "RUNNY NOSE";
+    static final readonly decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.SymptomsDomain sHORTNESSOFBREATH
+                property ads.attributeId "5"
+                property com.fasterxml.jackson.annotation.JsonProperty "SHORTNESS OF BREATH";
+    static final readonly decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.SymptomsDomain sNEEZING
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "SNEEZING";
+    static final readonly decisions.hd_demo_solution.covid_diagnosis.diagnosis_common_model.SymptomsDomain wEAKNESS
+                property ads.attributeId "7"
+                property com.fasterxml.jackson.annotation.JsonProperty "WEAKNESS";
 }
 
