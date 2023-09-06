@@ -4,6 +4,6 @@
   <uuid>65c8e2fa-5b84-400f-8b6e-93523c156cee</uuid>
   <locale>en_US</locale>
   <definition><![CDATA[set decision to a new approval where
-        approved is true, 
+        approved is true , 
         the message is "Congratulations! Your loan has been approved"  ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

@@ -5,5 +5,5 @@
   <documentation><![CDATA[Calculates the fees for the services based on the services and score rate. The result is rounded to output as integer.]]></documentation>
   <locale>en_US</locale>
   <definition><![CDATA[
-	set decision to round ( decision * 'Score rate', 0 );]]></definition>
+	set decision to round( decision * 'Score rate' , 0 ) ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

@@ -4,15 +4,14 @@
   <uuid>2cb0fa5d-7a94-4fa0-a2b5-75aa85f884d8</uuid>
   <locale>en_US</locale>
   <definition><![CDATA[if
- all of the following conditions are true:
+ all of the following conditions are true :
  - there is one Symptom in 'Received Symptoms' 
-     where the name of  this Symptom is FEVER, 
+     where the name of this Symptom is FEVER , 
 - there are 0 Symptoms in 'Received Symptoms' 
-     where the name of  each Symptom is SHORTNESS OF BREATH,
+     where the name of each Symptom is SHORTNESS OF BREATH ,
 - there is at least one Symptom in 'Received Symptoms' 
-     where the name of  this Symptom is one of {COUGH, FATIGUE,  WEAKNESS, EXHAUSTATION},
+     where the name of this Symptom is one of { COUGH , FATIGUE ,  WEAKNESS , EXHAUSTATION } , ,
 then
    set decision to a new Diagnosis where 
-    the disease is FLU ;
-]]></definition>
+    the disease is FLU ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+<?xml version="1.0" encoding="UTF-8"?><com.ibm.rules.studio.model.decisionmodel:DecisionModel xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore" xmlns:xmi="http://www.omg.org/XMI" xmi:version="2.0">
   <name>decisionModel</name>
   <uuid>0acb7853-dd08-4a70-bf30-ce32cfc2f95a</uuid>
   <locale>en_US</locale>
-  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="Loan Validation Decision Model" namespace="">
+  <definition>
+        <definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="decisions" name="Loan Validation Decision Model" namespace="">
     <extensionElements>
         <description xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">Determine loan approval based on multiple criteria, such as credit score, income, etc.</description>
         <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
@@ -95,7 +95,7 @@
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
                 <input bomType="decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype1" collection="false" name="Borrower"/>
-                <input bomType="ilog.rules.brl.Date" collection="false" name="current time"/>
+                <input bomType="java.time.ZonedDateTime" collection="false" name="current time"/>
                 <output bomType="java.lang.Double" collection="false" name="Bankruptcy Score"/>
                 <rule defaultRule="true" href="node_6/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
                 <rule defaultRule="false" href="node_6/bankruptcy%20score.dmt" kind="DecisionTable" name="bankruptcy score"/>
@@ -112,10 +112,10 @@
     <inputData id="node_7" name="current time">
         <extensionElements>
             <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
-                <output bomType="ilog.rules.brl.Date" collection="false" name="current time"/>
+                <output bomType="java.time.ZonedDateTime" collection="false" name="current time"/>
             </initialization>
         </extensionElements>
-        <variable id="node_7_ii" name="current time" typeRef="ilog.rules.brl.Date"/>
+        <variable id="node_7_ii" name="current time" typeRef="java.time.ZonedDateTime"/>
     </inputData>
     <decision id="node_8" name="Corporate Score">
         <description>Calculate the corporate score of the borrower based on their bankruptcy score, salary score and credit score</description>
@@ -183,7 +183,7 @@
                 <input bomType="decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype" collection="false" name="Loan"/>
                 <input bomType="java.lang.Double" collection="false" name="Repayment"/>
                 <input bomType="decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype1" collection="false" name="Borrower"/>
-                <input bomType="ilog.rules.brl.Date" collection="false" name="current time"/>
+                <input bomType="java.time.ZonedDateTime" collection="false" name="current time"/>
                 <input bomType="decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype5" collection="false" name="Grade"/>
                 <output bomType="decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype3" collection="false" name="Approval"/>
                 <rule defaultRule="false" href="node_11/bad%20score.drl" kind="BusinessRule" name="bad score"/>

@@ -5,7 +5,5 @@
   <locale>en_US</locale>
   <definition><![CDATA[ set decision to the services subsets computed from
       Services count being 'Additional services count' , 
-      Services list being 'Complementary services' ;
-
-]]></definition>
+      Services list being 'Complementary services' ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

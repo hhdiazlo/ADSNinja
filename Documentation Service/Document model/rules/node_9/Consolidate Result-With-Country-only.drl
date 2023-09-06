@@ -7,6 +7,5 @@
  'General validations' are undefined 
 then
     for each KYC Document Domain in 'Country and rating validations' : 
-	- add this KYC Document Domain to the required documents lists of decision ;
- ]]></definition>
+	- add this KYC Document Domain to the required documents lists of decision , ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

@@ -4,13 +4,13 @@
   <uuid>e4584ed3-c375-48a4-8654-58c10710328c</uuid>
   <locale>en_US</locale>
   <definition><![CDATA[if
- all of the following conditions are true:
+ all of the following conditions are true :
  - there is one Symptom in 'Received Symptoms' 
-     where the name of  this Symptom is FEVER, 
+     where the name of this Symptom is FEVER , 
 - there is one Symptom in 'Received Symptoms' 
-     where the name of  this Symptom is SHORTNESS OF BREATH,
+     where the name of this Symptom is SHORTNESS OF BREATH ,
 - there are at least 2 Symptoms in 'Received Symptoms' 
-     where the name of  each Symptom is one of {COUGH, FATIGUE,  WEAKNESS, EXHAUSTATION},
+     where the name of each Symptom is one of { COUGH , FATIGUE ,  WEAKNESS , EXHAUSTATION } , ,
 then
    set decision to a new Diagnosis where 
     the disease is CORONAVIRUS ;]]></definition>

@@ -10,5 +10,5 @@ then
 	add Insurance: Loan Insurance to decision ;
     add Insurance: Medical Insurance to decision ; 
     add Insurance: Merchandise Insurance to decision ; 
-    add Insurance: Warehouse Insurance to decision ; ]]></definition>
+    add Insurance: Warehouse Insurance to decision ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

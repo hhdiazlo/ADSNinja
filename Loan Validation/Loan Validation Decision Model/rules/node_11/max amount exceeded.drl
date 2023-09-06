@@ -4,12 +4,11 @@
   <uuid>ddbf2102-a753-4d57-92df-d4c3c7f2dd90</uuid>
   <locale>en_US</locale>
   <definition><![CDATA[definitions
-    set maxAmount to 1,000,000 ;
+    set 'maxAmount' to 1000000 ;
 if
     the amount of Loan  is at least maxAmount
 then
     set decision to a new approval where
         approved is false ,
-        the message is "The loan cannot exceed " + maxAmount ;
-]]></definition>
+        the message is "The loan cannot exceed " + maxAmount ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

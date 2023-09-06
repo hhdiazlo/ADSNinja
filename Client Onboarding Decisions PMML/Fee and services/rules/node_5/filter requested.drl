@@ -5,5 +5,5 @@
   <documentation><![CDATA[This is the final rule of the sequence. It defines the additional services.]]></documentation>
   <locale>en_US</locale>
   <definition><![CDATA[for each Service in the Services requested :
-   - remove this Service from decision ; ]]></definition>
+   - remove this Service from decision , ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

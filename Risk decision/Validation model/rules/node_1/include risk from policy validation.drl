@@ -9,6 +9,6 @@ then
 	set decision to a new Response data where
 		the interestRate is the interestRate of decision , 
 		isHighRisk is decision is isHighRisk , 
-		the riskScore is the riskScore of decision + 'Policy validation risk score', 
+		the riskScore is the riskScore of decision + 'Policy validation risk score' , 
 		the riskAssesmentMessage is the riskAssesmentMessage of decision ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

@@ -2,44 +2,44 @@
 package myModel;
 
 
-public class Assignment
-        property "ads.typeId" "2"
-        property "de.generated" "true"
+class Assignment
+        property ads.typeId "2"
+        #de.generated
 {
-    public string GFCID
-                property "ads.attributeId" "1"
-                property update "true";
-    public string GFPID
-                property "ads.attributeId" "2"
-                property update "true";
-    public string docSpecialist
-                property "ads.attributeId" "3"
-                property update "true";
-    public myModel.RegionCodeDomain regionCode
-                property "ads.attributeId" "4"
-                property update "true";
-    public Assignment(string GFCID, string GFPID, string docSpecialist, myModel.RegionCodeDomain regionCode)
-                property autoExpand "true"
-                property beanConstructor "true"
+    string GFCID
+                property ads.attributeId "1"
+                #update;
+    string GFPID
+                property ads.attributeId "2"
+                #update;
+    string docSpecialist
+                property ads.attributeId "3"
+                #update;
+    myModel.RegionCodeDomain regionCode
+                property ads.attributeId "4"
+                #update;
+    Assignment(string GFCID, string GFPID, string docSpecialist, myModel.RegionCodeDomain regionCode)
+                #autoExpand
+                #beanConstructor
                 property groups "BALA"
-                property prototype "true";
-    public Assignment()
-                property "dataio.default" "true";
+                #prototype;
+    Assignment()
+                #dataio.default;
 }
 
-public class RegionCodeDomain
+class RegionCodeDomain
         extends java.lang.Enum
-        property "ads.typeId" "1"
-        property "de.generated" "true"
+        property ads.typeId "1"
+        #de.generated
 {
     domain {static ASIA, static CEEMEA, static EMEA, static LATAM}
-    public static final readonly myModel.RegionCodeDomain ASIA
-                property "ads.attributeId" "1";
-    public static final readonly myModel.RegionCodeDomain CEEMEA
-                property "ads.attributeId" "2";
-    public static final readonly myModel.RegionCodeDomain EMEA
-                property "ads.attributeId" "3";
-    public static final readonly myModel.RegionCodeDomain LATAM
-                property "ads.attributeId" "4";
+    static final readonly myModel.RegionCodeDomain ASIA
+                property ads.attributeId "1";
+    static final readonly myModel.RegionCodeDomain CEEMEA
+                property ads.attributeId "2";
+    static final readonly myModel.RegionCodeDomain EMEA
+                property ads.attributeId "3";
+    static final readonly myModel.RegionCodeDomain LATAM
+                property ads.attributeId "4";
 }
 

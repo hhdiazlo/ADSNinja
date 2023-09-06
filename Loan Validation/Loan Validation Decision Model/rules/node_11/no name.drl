@@ -8,6 +8,5 @@
 then
     set decision to a new approval where
         approved is false ,
-        the message is "The borrower's name is empty" ;
-]]></definition>
+        the message is "The borrower's name is empty" ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

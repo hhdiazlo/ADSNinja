@@ -5,12 +5,11 @@
   <locale>en_US</locale>
   <definition><![CDATA[definitions
     set 'minimum income' to 0.37 * the yearly income of Borrower ;
-    set 'yearly repayment' to Repayment * 12;
+    set 'yearly repayment' to Repayment * 12 ;
 if
     'yearly repayment' is at least 'minimum income'
 then
     set decision to a new approval where
-        approved is false,
-        the message is "Too big Debt/Income ratio: " + 'yearly repayment' / the yearly income of Borrower ;
-]]></definition>
+        approved is false ,
+        the message is "Too big Debt/Income ratio: " + 'yearly repayment' / the yearly income of Borrower ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

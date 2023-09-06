@@ -7,7 +7,6 @@
     the grade of Grade is not one of { "A" , "B" , "C" }
 then
     set decision to a new approval where
-        approved is false,
-        the message is "We are sorry. Your loan has not been approved" ;
-]]></definition>
+        approved is false ,
+        the message is "We are sorry. Your loan has not been approved" ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

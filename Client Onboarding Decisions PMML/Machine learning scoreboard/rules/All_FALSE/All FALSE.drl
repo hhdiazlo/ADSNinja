@@ -6,12 +6,12 @@
   <definition><![CDATA[definitions
 	set 'All FALSE' to Prediction 
 		where the predicted clientdefaultedpayment of each ML model output is "FALSE" ;
-	set 'number of predictions' to the number of Prediction ;
+	set 'number of predictions' to the number of elements in Prediction ;
 if
 	'number of predictions' is more than 0 
 then
 	set decision to a new ML model output where
-		the confidence is the total confidence of 'All FALSE' / 'number of predictions' , 
+		the confidence is the sum of the confidences of 'All FALSE' / 'number of predictions' , 
 		the predicted clientdefaultedpayment is "FALSE" , 
-		the weight is the total weight of 'All FALSE' ;]]></definition>
+		the weight is the sum of the weights of 'All FALSE' ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

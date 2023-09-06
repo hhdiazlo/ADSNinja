@@ -9,7 +9,6 @@ decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype.newattr
 decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype.newattribute#phrase.navigation = {number of monthly payments} of {this}
 decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype.newattribute#phrase.subtraction_setter = subtract {number of monthly payments} from the number of monthly payments of {this}
 decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype.newattribute1#phrase.action = set the start date of {this} to {start date}
-decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype.newattribute1#phrase.clearer = clear the start date of {this}
 decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype.newattribute1#phrase.navigation = {start date} of {this}
 decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype.newattribute2#phrase.action = set the amount of {this} to {amount}
 decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype.newattribute2#phrase.addition_setter = add {amount} to the amount of {this}
@@ -19,7 +18,7 @@ decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype.newattr
 decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype.newattribute3#phrase.addition_setter = add {loan to value} to the loan to value of {this}
 decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype.newattribute3#phrase.navigation = {loan to value} of {this}
 decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype.newattribute3#phrase.subtraction_setter = subtract {loan to value} from the loan to value of {this}
-decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype.newtype(java.lang.Long,ilog.rules.brl.Date,java.lang.Long,double)#phrase.navigation = a new {loan} where {0, number of monthly payments} {1, start date} {2, amount} {3, loan to value}
+decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype.newtype(long,java.time.ZonedDateTime,long,double)#phrase.navigation = a new {loan} where {0, number of monthly payments} {1, start date} {2, amount} {3, loan to value}
 
 # decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype1
 decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype1#concept.label = borrower
@@ -28,7 +27,6 @@ decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype1.newatt
 decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype1.newattribute1#phrase.action = set the last name of {this} to {last name}
 decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype1.newattribute1#phrase.navigation = {last name} of {this}
 decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype1.newattribute2#phrase.action = set the birth date of {this} to {birth date}
-decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype1.newattribute2#phrase.clearer = clear the birth date of {this}
 decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype1.newattribute2#phrase.navigation = {birth date} of {this}
 decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype1.newattribute3#phrase.action = set the SSN of {this} to {SSN}
 decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype1.newattribute3#phrase.clearer = clear the SSN of {this}
@@ -49,12 +47,11 @@ decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype1.newatt
 decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype1.newattribute8#phrase.action = set the latest bankruptcy of {this} to {latest bankruptcy}
 decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype1.newattribute8#phrase.clearer = clear the latest bankruptcy of {this}
 decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype1.newattribute8#phrase.navigation = {latest bankruptcy} of {this}
-decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype1.newtype1(java.lang.String,java.lang.String,ilog.rules.brl.Date,decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype4,java.lang.Long,java.lang.String,java.lang.Long,decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype1,decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype2)#phrase.navigation = a new {borrower} where {0, first name} {1, last name} {2, birth date} {3, SSN} {4, yearly income} {5, zip code} {6, credit score} {7, spouse} {8, latest bankruptcy}
+decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype1.newtype1(java.lang.String,java.lang.String,java.time.ZonedDateTime,decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype4,long,java.lang.String,long,decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype1,decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype2)#phrase.navigation = a new {borrower} where {0, first name} {1, last name} {2, birth date} {3, SSN} {4, yearly income} {5, zip code} {6, credit score} {7, spouse} {8, latest bankruptcy}
 
 # decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype2
 decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype2#concept.label = bankruptcy
 decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype2.newattribute#phrase.action = set the date of {this} to {date}
-decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype2.newattribute#phrase.clearer = clear the date of {this}
 decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype2.newattribute#phrase.navigation = {date} of {this}
 decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype2.newattribute1#phrase.action = set the chapter of {this} to {chapter}
 decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype2.newattribute1#phrase.addition_setter = add {chapter} to the chapter of {this}
@@ -62,7 +59,7 @@ decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype2.newatt
 decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype2.newattribute1#phrase.subtraction_setter = subtract {chapter} from the chapter of {this}
 decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype2.newattribute2#phrase.action = set the reason of {this} to {reason}
 decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype2.newattribute2#phrase.navigation = {reason} of {this}
-decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype2.newtype2(ilog.rules.brl.Date,java.lang.Long,java.lang.String)#phrase.navigation = a new {bankruptcy} where {0, date} {1, chapter} {2, reason}
+decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype2.newtype2(java.time.ZonedDateTime,long,java.lang.String)#phrase.navigation = a new {bankruptcy} where {0, date} {1, chapter} {2, reason}
 
 # decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype3
 decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype3#concept.label = approval

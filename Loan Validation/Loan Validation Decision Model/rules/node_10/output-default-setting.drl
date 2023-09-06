@@ -4,6 +4,6 @@
   <uuid>1eaeb128-aede-4aed-9ce5-144c1fa30da3</uuid>
   <locale>en_US</locale>
   <definition><![CDATA[set decision to a new insurance where
-        required is true, 
-        the rate is 0.02;]]></definition>
+        required is true , 
+        the rate is 0.02 ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

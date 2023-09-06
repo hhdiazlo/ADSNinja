@@ -8,6 +8,5 @@
 then
     set decision to a new approval where
         approved is false ,
-        the message is "The borrower's SSN area number cannot be " + the area number of the SSN of Borrower ;
-]]></definition>
+        the message is "The borrower's SSN area number cannot be " + the area number of the SSN of Borrower ;]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>

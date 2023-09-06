@@ -10,15 +10,15 @@
     <inputData id="node_0" name="Policy Holder Date of Birth">
         <extensionElements>
             <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
-                <output bomType="ilog.rules.brl.SimpleDate" collection="false" name="Policy Holder Date of Birth"/>
+                <output bomType="java.time.LocalDate" collection="false" name="Policy Holder Date of Birth"/>
             </initialization>
         </extensionElements>
-        <variable id="node_0_ii" name="Policy Holder Date of Birth" typeRef="ilog.rules.brl.SimpleDate"/>
+        <variable id="node_0_ii" name="Policy Holder Date of Birth" typeRef="java.time.LocalDate"/>
     </inputData>
     <decision id="node_1" name="Policy Holder validation">
         <extensionElements>
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
-                <input bomType="ilog.rules.brl.SimpleDate" collection="false" name="Policy Holder Date of Birth"/>
+                <input bomType="java.time.LocalDate" collection="false" name="Policy Holder Date of Birth"/>
                 <input bomType="java.lang.Long" collection="false" name="Policy validation risk score"/>
                 <output bomType="decisions.claims_demo.risk_decision.claimdatamodel.ResponseData" collection="false" name="Policy Holder validation"/>
                 <rule defaultRule="false" href="node_1/Risk%20by%20age.dmt" kind="DecisionTable" name="Risk by age"/>

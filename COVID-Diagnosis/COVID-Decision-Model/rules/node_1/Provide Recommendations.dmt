@@ -24,9 +24,9 @@
             <ActionDefinitions>
                 <ActionDefinition Id="A0">
                     <ExpressionDefinition>
-                        <Text><![CDATA[set decision to a new Diagnosis where 
-    the disease is the disease of 'Identify Illness', 
-    the recommendations are <recommendations>]]></Text>
+                        <Text><![CDATA[set 'decision' to a new Diagnosis where
+	the disease is the disease of 'Identify Illness' , 
+	the recommendations are <recommendations>]]></Text>
                     </ExpressionDefinition>
                 </ActionDefinition>
             </ActionDefinitions>
@@ -98,10 +98,10 @@
     </Body>
     <Resources DefaultLocale="en_US">
         <ResourceSet Locale="en_US">
-            <Data Name="Definitions(C0)#HeaderText"><![CDATA[disease]]></Data>
+            <Data Name="Definitions(A0)#HeaderText"><![CDATA[Identify Diagnosis]]></Data>
             <Data Name="Definitions(A0)#Width"><![CDATA[551]]></Data>
             <Data Name="Definitions(A0)[0]#HeaderText"><![CDATA[disease]]></Data>
-            <Data Name="Definitions(A0)#HeaderText"><![CDATA[Identify Diagnosis]]></Data>
+            <Data Name="Definitions(C0)#HeaderText"><![CDATA[disease]]></Data>
             <Data Name="Definitions(C0)#Width"><![CDATA[162]]></Data>
         </ResourceSet>
     </Resources>

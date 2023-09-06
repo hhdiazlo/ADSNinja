@@ -2,61 +2,61 @@
 package myModel;
 
 
-public class ConfidenceDomain
+class ConfidenceDomain
         extends java.lang.Enum
-        property "ads.typeId" "2"
-        property "de.generated" "true"
+        property ads.typeId "2"
+        #de.generated
 {
     domain {static High, static Low, static Medium, static Undefined}
-    public static final readonly myModel.ConfidenceDomain High
-                property "ads.attributeId" "1";
-    public static final readonly myModel.ConfidenceDomain Low
-                property "ads.attributeId" "2";
-    public static final readonly myModel.ConfidenceDomain Medium
-                property "ads.attributeId" "3";
-    public static final readonly myModel.ConfidenceDomain Undefined
-                property "ads.attributeId" "4";
+    static final readonly myModel.ConfidenceDomain High
+                property ads.attributeId "1";
+    static final readonly myModel.ConfidenceDomain Low
+                property ads.attributeId "2";
+    static final readonly myModel.ConfidenceDomain Medium
+                property ads.attributeId "3";
+    static final readonly myModel.ConfidenceDomain Undefined
+                property ads.attributeId "4";
 }
 
-public class Intent
-        property "ads.typeId" "3"
-        property "de.generated" "true"
+class Intent
+        property ads.typeId "3"
+        #de.generated
 {
-    public double confidence
-                property "ads.attributeId" "1"
-                property update "true";
-    public myModel.ConfidenceDomain confidenceLabel
-                property "ads.attributeId" "2"
-                property update "true";
-    public string label
-                property "ads.attributeId" "3"
-                property update "true";
-    public string receivedIntent
-                property "ads.attributeId" "4"
-                property update "true";
-    public myModel.RequestType requestType
-                property "ads.attributeId" "5"
-                property update "true";
-    public Intent(double confidence, myModel.ConfidenceDomain confidenceLabel, string label, string receivedIntent, myModel.RequestType requestType)
-                property autoExpand "true"
-                property beanConstructor "true"
+    double confidence
+                property ads.attributeId "1"
+                #update;
+    myModel.ConfidenceDomain confidenceLabel
+                property ads.attributeId "2"
+                #update;
+    string label
+                property ads.attributeId "3"
+                #update;
+    string receivedIntent
+                property ads.attributeId "4"
+                #update;
+    myModel.RequestType requestType
+                property ads.attributeId "5"
+                #update;
+    Intent(double confidence, myModel.ConfidenceDomain confidenceLabel, string label, string receivedIntent, myModel.RequestType requestType)
+                #autoExpand
+                #beanConstructor
                 property groups "BALA"
-                property prototype "true";
-    public Intent()
-                property "dataio.default" "true";
+                #prototype;
+    Intent()
+                #dataio.default;
 }
 
-public class RequestType
+class RequestType
         extends java.lang.Enum
-        property "ads.typeId" "1"
-        property "de.generated" "true"
+        property ads.typeId "1"
+        #de.generated
 {
     domain {static AMT, static AO, static Undefined}
-    public static final readonly myModel.RequestType AMT
-                property "ads.attributeId" "1";
-    public static final readonly myModel.RequestType AO
-                property "ads.attributeId" "2";
-    public static final readonly myModel.RequestType Undefined
-                property "ads.attributeId" "3";
+    static final readonly myModel.RequestType AMT
+                property ads.attributeId "1";
+    static final readonly myModel.RequestType AO
+                property ads.attributeId "2";
+    static final readonly myModel.RequestType Undefined
+                property ads.attributeId "3";
 }
 

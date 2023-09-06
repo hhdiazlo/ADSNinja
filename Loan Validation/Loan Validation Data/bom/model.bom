@@ -2,209 +2,209 @@
 package decisions.techpreview_samples.loan_validation.loanvalidationdata;
 
 
-public class newtype
-        property "ads.typeId" "6"
-        property "com.fasterxml.jackson.annotation.JsonTypeName" "loan"
-        property "de.generated" "true"
+class newtype
+        property ads.typeId "6"
+        property com.fasterxml.jackson.annotation.JsonTypeName "loan"
+        #de.generated
 {
-    public java.lang.Long newattribute
-                property "ads.attributeId" "3"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "number of monthly payments"
-                property update "true";
-    public ilog.rules.brl.Date newattribute1
-                property "ads.attributeId" "4"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "start date"
-                property update "true";
-    public java.lang.Long newattribute2
-                property "ads.attributeId" "1"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "amount"
-                property update "true";
-    public double newattribute3
-                property "ads.attributeId" "2"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "loan to value"
-                property update "true";
-    public newtype(java.lang.Long newattribute, ilog.rules.brl.Date newattribute1, java.lang.Long newattribute2, double newattribute3)
-                property autoExpand "true"
-                property beanConstructor "true"
+    long newattribute
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "number of monthly payments"
+                #update;
+    java.time.ZonedDateTime newattribute1
+                property ads.attributeId "4"
+                property com.fasterxml.jackson.annotation.JsonProperty "start date"
+                #update;
+    long newattribute2
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "amount"
+                #update;
+    double newattribute3
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "loan to value"
+                #update;
+    newtype(long newattribute, java.time.ZonedDateTime newattribute1, long newattribute2, double newattribute3)
+                #autoExpand
+                #beanConstructor
                 property groups "BALA"
-                property prototype "true";
-    public newtype()
-                property "dataio.default" "true";
+                #prototype;
+    newtype()
+                #dataio.default;
 }
 
-public class newtype1
-        property "ads.typeId" "3"
-        property "com.fasterxml.jackson.annotation.JsonTypeName" "borrower"
-        property "de.generated" "true"
+class newtype1
+        property ads.typeId "3"
+        property com.fasterxml.jackson.annotation.JsonTypeName "borrower"
+        #de.generated
 {
-    public string newattribute
-                property "ads.attributeId" "4"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "first name"
-                property update "true";
-    public string newattribute1
-                property "ads.attributeId" "5"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "last name"
-                property update "true";
-    public ilog.rules.brl.Date newattribute2
-                property "ads.attributeId" "2"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "birth date"
-                property update "true";
-    public decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype4 newattribute3
-                property "ads.attributeId" "1"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "SSN"
-                property update "true";
-    public java.lang.Long newattribute4
-                property "ads.attributeId" "8"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "yearly income"
-                property update "true";
-    public string newattribute5
-                property "ads.attributeId" "9"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "zip code"
-                property update "true";
-    public java.lang.Long newattribute6
-                property "ads.attributeId" "3"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "credit score"
-                property update "true";
-    public decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype1 newattribute7
-                property "ads.attributeId" "7"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "spouse"
-                property update "true";
-    public decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype2 newattribute8
-                property "ads.attributeId" "6"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "latest bankruptcy"
-                property update "true";
-    public newtype1(string newattribute, 
+    string newattribute
+                property ads.attributeId "4"
+                property com.fasterxml.jackson.annotation.JsonProperty "first name"
+                #update;
+    string newattribute1
+                property ads.attributeId "5"
+                property com.fasterxml.jackson.annotation.JsonProperty "last name"
+                #update;
+    java.time.ZonedDateTime newattribute2
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "birth date"
+                #update;
+    decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype4 newattribute3
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "SSN"
+                #update;
+    long newattribute4
+                property ads.attributeId "8"
+                property com.fasterxml.jackson.annotation.JsonProperty "yearly income"
+                #update;
+    string newattribute5
+                property ads.attributeId "9"
+                property com.fasterxml.jackson.annotation.JsonProperty "zip code"
+                #update;
+    long newattribute6
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "credit score"
+                #update;
+    decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype1 newattribute7
+                property ads.attributeId "7"
+                property com.fasterxml.jackson.annotation.JsonProperty "spouse"
+                #update;
+    decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype2 newattribute8
+                property ads.attributeId "6"
+                property com.fasterxml.jackson.annotation.JsonProperty "latest bankruptcy"
+                #update;
+    newtype1(string newattribute, 
         string newattribute1, 
-        ilog.rules.brl.Date newattribute2, 
+        java.time.ZonedDateTime newattribute2, 
         decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype4 newattribute3, 
-        java.lang.Long newattribute4, 
+        long newattribute4, 
         string newattribute5, 
-        java.lang.Long newattribute6, 
+        long newattribute6, 
         decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype1 newattribute7, 
         decisions.techpreview_samples.loan_validation.loanvalidationdata.newtype2 newattribute8)
-                property autoExpand "true"
-                property beanConstructor "true"
+                #autoExpand
+                #beanConstructor
                 property groups "BALA"
-                property prototype "true";
-    public newtype1()
-                property "dataio.default" "true";
+                #prototype;
+    newtype1()
+                #dataio.default;
 }
 
-public class newtype2
-        property "ads.typeId" "2"
-        property "com.fasterxml.jackson.annotation.JsonTypeName" "bankruptcy"
-        property "de.generated" "true"
+class newtype2
+        property ads.typeId "2"
+        property com.fasterxml.jackson.annotation.JsonTypeName "bankruptcy"
+        #de.generated
 {
-    public ilog.rules.brl.Date newattribute
-                property "ads.attributeId" "2"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "date"
-                property update "true";
-    public java.lang.Long newattribute1
-                property "ads.attributeId" "1"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "chapter"
-                property update "true";
-    public string newattribute2
-                property "ads.attributeId" "3"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "reason"
-                property update "true";
-    public newtype2(ilog.rules.brl.Date newattribute, java.lang.Long newattribute1, string newattribute2)
-                property autoExpand "true"
-                property beanConstructor "true"
+    java.time.ZonedDateTime newattribute
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "date"
+                #update;
+    long newattribute1
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "chapter"
+                #update;
+    string newattribute2
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "reason"
+                #update;
+    newtype2(java.time.ZonedDateTime newattribute, long newattribute1, string newattribute2)
+                #autoExpand
+                #beanConstructor
                 property groups "BALA"
-                property prototype "true";
-    public newtype2()
-                property "dataio.default" "true";
+                #prototype;
+    newtype2()
+                #dataio.default;
 }
 
-public class newtype3
-        property "ads.typeId" "1"
-        property "com.fasterxml.jackson.annotation.JsonTypeName" "approval"
-        property "de.generated" "true"
+class newtype3
+        property ads.typeId "1"
+        property com.fasterxml.jackson.annotation.JsonTypeName "approval"
+        #de.generated
 {
-    public boolean newattribute
-                property "ads.attributeId" "1"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "approved"
-                property update "true";
-    public string newattribute1
-                property "ads.attributeId" "2"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "message"
-                property update "true";
-    public newtype3(boolean newattribute, string newattribute1)
-                property autoExpand "true"
-                property beanConstructor "true"
+    boolean newattribute
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "approved"
+                #update;
+    string newattribute1
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "message"
+                #update;
+    newtype3(boolean newattribute, string newattribute1)
+                #autoExpand
+                #beanConstructor
                 property groups "BALA"
-                property prototype "true";
-    public newtype3()
-                property "dataio.default" "true";
+                #prototype;
+    newtype3()
+                #dataio.default;
 }
 
-public class newtype4
-        property "ads.typeId" "7"
-        property "com.fasterxml.jackson.annotation.JsonTypeName" "SSN"
-        property "de.generated" "true"
+class newtype4
+        property ads.typeId "7"
+        property com.fasterxml.jackson.annotation.JsonTypeName "SSN"
+        #de.generated
 {
-    public string newattribute
-                property "ads.attributeId" "1"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "area number"
-                property update "true";
-    public string newattribute1
-                property "ads.attributeId" "2"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "group code"
-                property update "true";
-    public string newattribute2
-                property "ads.attributeId" "3"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "serial number"
-                property update "true";
-    public newtype4(string newattribute, string newattribute1, string newattribute2)
-                property autoExpand "true"
-                property beanConstructor "true"
+    string newattribute
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "area number"
+                #update;
+    string newattribute1
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "group code"
+                #update;
+    string newattribute2
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "serial number"
+                #update;
+    newtype4(string newattribute, string newattribute1, string newattribute2)
+                #autoExpand
+                #beanConstructor
                 property groups "BALA"
-                property prototype "true";
-    public newtype4()
-                property "dataio.default" "true";
+                #prototype;
+    newtype4()
+                #dataio.default;
 }
 
-public class newtype5
-        property "ads.typeId" "4"
-        property "com.fasterxml.jackson.annotation.JsonTypeName" "grade"
-        property "de.generated" "true"
+class newtype5
+        property ads.typeId "4"
+        property com.fasterxml.jackson.annotation.JsonTypeName "grade"
+        #de.generated
 {
-    public string newattribute
-                property "ads.attributeId" "1"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "grade"
-                property update "true";
-    public string newattribute1
-                property "ads.attributeId" "2"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "message"
-                property update "true";
-    public newtype5(string newattribute, string newattribute1)
-                property autoExpand "true"
-                property beanConstructor "true"
+    string newattribute
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "grade"
+                #update;
+    string newattribute1
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "message"
+                #update;
+    newtype5(string newattribute, string newattribute1)
+                #autoExpand
+                #beanConstructor
                 property groups "BALA"
-                property prototype "true";
-    public newtype5()
-                property "dataio.default" "true";
+                #prototype;
+    newtype5()
+                #dataio.default;
 }
 
-public class newtype6
-        property "ads.typeId" "5"
-        property "com.fasterxml.jackson.annotation.JsonTypeName" "insurance"
-        property "de.generated" "true"
+class newtype6
+        property ads.typeId "5"
+        property com.fasterxml.jackson.annotation.JsonTypeName "insurance"
+        #de.generated
 {
-    public boolean newattribute
-                property "ads.attributeId" "2"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "required"
-                property update "true";
-    public double newattribute1
-                property "ads.attributeId" "1"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "rate"
-                property update "true";
-    public newtype6(boolean newattribute, double newattribute1)
-                property autoExpand "true"
-                property beanConstructor "true"
+    boolean newattribute
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "required"
+                #update;
+    double newattribute1
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "rate"
+                #update;
+    newtype6(boolean newattribute, double newattribute1)
+                #autoExpand
+                #beanConstructor
                 property groups "BALA"
-                property prototype "true";
-    public newtype6()
-                property "dataio.default" "true";
+                #prototype;
+    newtype6()
+                #dataio.default;
 }
 
