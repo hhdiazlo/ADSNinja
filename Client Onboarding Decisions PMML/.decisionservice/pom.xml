@@ -63,11 +63,6 @@
             <version>${engine-api.version}</version>
             <scope>compile</scope>
         </dependency>
-        <dependency>
-            <groupId>com.ibm.decision</groupId>
-            <artifactId>ml-integration-runtime</artifactId>
-            <version>${ml-integration-runtime.version}</version>
-        </dependency>
     </dependencies>
             
 
@@ -211,6 +206,7 @@
     
 
     
+
 
 
 
