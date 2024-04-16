@@ -1,6 +1,10 @@
 {
   "id" : null,
   "providerId" : null,
-  "deploymentId" : null,
-  "metadata" : null
+  "predictionParameters" : {
+    "predictionParamType" : "SIMPLE",
+    "deploymentId" : null,
+    "modelId" : null
+  },
+  "version" : "V1"
 }

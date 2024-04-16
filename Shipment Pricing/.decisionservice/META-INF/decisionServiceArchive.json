@@ -8,5 +8,8 @@
   "decisionServiceId" : "${decisionServiceId}",
   "decisionServiceVersion" : "${project.parent.version}",
   "engineRuntimeVersion" : "${engine-compact-runtime.version}",
-  "engineAPIVersion" : "${engine-api.version}"
+  "engineAPIVersion" : "${engine-api.version}",
+  "decisionId" : "${decisionId}",
+  "commitId" : "${commitId}",
+  "mlIntegrationRuntimeVersion" : "${ml-integration-runtime.version}"
 }
