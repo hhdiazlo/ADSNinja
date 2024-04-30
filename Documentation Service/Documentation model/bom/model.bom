@@ -15,7 +15,7 @@ class CountryDomain
         #de.generated
         property domainProviderResource "domains/dynamicDomainTemplate.xlsx"
 {
-    domain {static ARG, static CA, static FR, static MEX, static UK, static USA}
+    domain {static ARG, static CA, static FR, static MEX, static UK, static US}
     static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.CountryDomain ARG
                 property ads.attributeId "2"
                 property com.fasterxml.jackson.annotation.JsonProperty "ARG";
@@ -31,9 +31,9 @@ class CountryDomain
     static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.CountryDomain UK
                 property ads.attributeId "6"
                 property com.fasterxml.jackson.annotation.JsonProperty "UK";
-    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.CountryDomain USA
-                property ads.attributeId "7"
-                property com.fasterxml.jackson.annotation.JsonProperty "USA";
+    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.CountryDomain US
+                property ads.attributeId "8"
+                property com.fasterxml.jackson.annotation.JsonProperty "US";
 }
 
 class DocumentationResponse
@@ -181,20 +181,7 @@ class PrimaryBusinessPurposeDomain
         #de.generated
         property domainProviderResource "domains/dynamicDomainTemplate.xlsx"
 {
-    domain 
-    {
-        static BROKERDEALER,
-        static CENTRALBANK,
-        static FIDEPOSIT,
-        static GOVERNMENT,
-        static HDGPEVC,
-        static INSURER,
-        static INVESTORADVISOR,
-        static MSB,
-        static MUTUALFUND,
-        static SPV,
-        static newEnumValue
-    }
+    domain {static BROKERDEALER, static CENTRALBANK, static FIDEPOSIT, static GOVERNMENT, static HDGPEVC, static INSURER, static INVESTORADVISOR, static MSB, static MUTUALFUND, static SPV}
     static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain BROKERDEALER
                 property ads.attributeId "2"
                 property com.fasterxml.jackson.annotation.JsonProperty "BROKERDEALER";
@@ -225,9 +212,5 @@ class PrimaryBusinessPurposeDomain
     static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain SPV
                 property ads.attributeId "11"
                 property com.fasterxml.jackson.annotation.JsonProperty "SPV";
-    static final readonly decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain newEnumValue
-                property ads.attributeId "1"
-                property com.fasterxml.jackson.annotation.JsonProperty "new enum value"
-                #deprecated;
 }
 

@@ -1,8 +1,1 @@
-{
-  "operationId" : "44f9c81e-b795-4390-b5a5-0897abc2daac",
-  "body" : {
-    "countryName" : "USA",
-    "primaryBusinessPurpose" : "CENTRALBANK",
-    "registeredCountryRiskRating" : 4
-  }
-}
+{"operationId":"44f9c81e-b795-4390-b5a5-0897abc2daac","body":{"countryName":"US","primaryBusinessPurpose":"CENTRALBANK","registeredCountryRiskRating":4}}

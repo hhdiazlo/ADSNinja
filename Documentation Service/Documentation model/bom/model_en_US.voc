@@ -6,7 +6,7 @@ decisions.kyc_validation_decision.documentation_service.documentationmodel.Count
 decisions.kyc_validation_decision.documentation_service.documentationmodel.CountryDomain.FR#instance.label = France
 decisions.kyc_validation_decision.documentation_service.documentationmodel.CountryDomain.MEX#instance.label = Mexico
 decisions.kyc_validation_decision.documentation_service.documentationmodel.CountryDomain.UK#instance.label = United Kingdom
-decisions.kyc_validation_decision.documentation_service.documentationmodel.CountryDomain.USA#instance.label = United States Of America
+decisions.kyc_validation_decision.documentation_service.documentationmodel.CountryDomain.US#instance.label = United States Of America
 
 # decisions.kyc_validation_decision.documentation_service.documentationmodel.DocumentationResponse
 decisions.kyc_validation_decision.documentation_service.documentationmodel.DocumentationResponse#concept.label = Documentation Response
@@ -53,4 +53,3 @@ decisions.kyc_validation_decision.documentation_service.documentationmodel.Prima
 decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain.MSB#instance.label = MSB
 decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain.MUTUALFUND#instance.label = MUTUAL FUND
 decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain.SPV#instance.label = SPV
-decisions.kyc_validation_decision.documentation_service.documentationmodel.PrimaryBusinessPurposeDomain.newEnumValue#instance.label = new enum value
