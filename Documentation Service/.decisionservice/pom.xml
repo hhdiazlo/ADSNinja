@@ -80,6 +80,7 @@
 
 
 
+
 <build>
         <resources>
             <resource>
@@ -145,6 +146,7 @@
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
                                     <resource>META-INF/decision-providers</resource>
                                 </transformer>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ApacheLicenseResourceTransformer"/>
                             </transformers>
                             <artifactSet>
                                 <excludes>
