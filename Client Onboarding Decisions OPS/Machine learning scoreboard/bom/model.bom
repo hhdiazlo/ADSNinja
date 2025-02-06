@@ -2,100 +2,111 @@
 package hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard;
 
 
-public class Error
-        property "ads.typeId" "2"
-        property "de.generated" "true"
+class Error
+        property ads.typeId "2"
+        #de.generated
 {
-    public string code
-                property "ads.attributeId" "1"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "code";
-    public string message
-                property "ads.attributeId" "2"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "message";
-    public Error(string code, string message)
-                property autoExpand "true"
-                property beanConstructor "true"
+    string code
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "code"
+                #update;
+    string message
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "message"
+                #update;
+    Error(string code, string message)
+                #autoExpand
+                #beanConstructor
                 property groups "BALA"
-                property prototype "true";
-    public Error()
-                property "dataio.default" "true";
+                #prototype;
+    Error()
+                #dataio.default;
 }
 
-public class Input
-        property "ads.typeId" "1"
-        property "com.fasterxml.jackson.annotation.JsonPropertyOrder" "{clientAnnualRevenue,clientExistenceDuration,clientEmployeeNumber,clientIndustry}"
-        property "de.generated" "true"
+class Input
+        property ads.typeId "1"
+        property com.fasterxml.jackson.annotation.JsonPropertyOrder "{clientAnnualRevenue,clientExistenceDuration,clientEmployeeNumber,clientIndustry}"
+        #de.generated
 {
-    public double clientannualrevenue
-                property "ads.attributeId" "1"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "clientAnnualRevenue";
-    public double clientemployeenumber
-                property "ads.attributeId" "3"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "clientEmployeeNumber";
-    public double clientexistenceduration
-                property "ads.attributeId" "2"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "clientExistenceDuration";
-    public double clientindustry
-                property "ads.attributeId" "4"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "clientIndustry";
-    public Input(double clientannualrevenue, double clientexistenceduration, double clientemployeenumber, double clientindustry)
-                property autoExpand "true"
-                property beanConstructor "true"
+    double clientannualrevenue
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "clientAnnualRevenue"
+                #update;
+    double clientemployeenumber
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "clientEmployeeNumber"
+                #update;
+    double clientexistenceduration
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "clientExistenceDuration"
+                #update;
+    double clientindustry
+                property ads.attributeId "4"
+                property com.fasterxml.jackson.annotation.JsonProperty "clientIndustry"
+                #update;
+    Input(double clientannualrevenue, double clientemployeenumber, double clientexistenceduration, double clientindustry)
+                #autoExpand
+                #beanConstructor
                 property groups "BALA"
-                property prototype "true";
-    public Input()
-                property "dataio.default" "true";
+                #prototype;
+    Input()
+                #dataio.default;
 }
 
-public class Output
-        property "ads.typeId" "3"
-        property "com.fasterxml.jackson.annotation.JsonIgnoreProperties" {
+class Output
+        property ads.typeId "3"
+        property com.fasterxml.jackson.annotation.JsonIgnoreProperties {
             ignoreUnknown "true"
         }
-        property "de.generated" "true"
+        #de.generated
 {
-    public hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Error error
-                property "ads.attributeId" "3"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "error";
-    public java.lang.Integer predictions
-                property "ads.attributeId" "1"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "predictions";
-    public java.util.List scores domain 0,* class java.lang.Double
-                property "ads.attributeId" "2"
-                property "com.fasterxml.jackson.annotation.JsonProperty" "scores";
-    public Output(java.lang.Integer predictions, 
+    hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Error error
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "error"
+                #update;
+    java.lang.Integer predictions
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "predictions"
+                #update;
+    java.util.List scores domain 0,* class java.lang.Double
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "scores"
+                #update;
+    Output(hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Error error, 
+        java.lang.Integer predictions, 
         java.util.List scores domain 0,* class java.lang.Double)
-                property autoExpand "true"
-                property beanConstructor "true"
+                #autoExpand
+                #beanConstructor
                 property groups "BALA"
-                property prototype "true";
-    public Output()
-                property "dataio.default" "true";
-    public void addTo_scores(java.lang.Double scores)
+                #prototype;
+    Output()
+                #dataio.default;
+    void addTo_scores(java.lang.Double scores)
                 property collectionAttribute "scores"
-                property update "true";
-    public void clear_scores()
+                #update;
+    void clear_scores()
                 property collectionAttribute "scores"
-                property update "true";
-    public boolean inError()
-                property "de.generated" {
+                #update;
+    boolean inError()
+                property de.generated {
                     $gen "com.ibm.decision.ml.integration.xom.InErrorTestGenerator",
                     $target "BOM"
-                };
-    public void removeFrom_scores(java.lang.Double scores)
+                }
+                #pureFunction;
+    void removeFrom_scores(java.lang.Double scores)
                 property collectionAttribute "scores"
-                property update "true";
-    public static Output run(hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input input)
-                property pureFunction "true";
-    public static Output run(com.ibm.decision.run.RunContext runContext, hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input input)
-                property "de.generated" {
+                #update;
+    static hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output run(hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input input)
+                #pureFunction;
+    static hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output run(com.ibm.decision.run.RunContext runContext, hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input input)
+                property de.generated {
                     $gen "com.ibm.decision.ml.integration.xom.PredictionRunGenerator",
                     $target "BOM",
                     providerInfoId "hdiazl/HD-Demos/OPS Demos16818535064108"
                 }
-                property pureFunction "true";
-    public void set_scores(java.util.Collection scores domain 0,* class java.lang.Double)
+                #pureFunction;
+    void set_scores(java.util.Collection scores domain 0,* class java.lang.Double)
                 property collectionAttribute "scores"
-                property update "true";
+                #update;
 }
 

@@ -1,7 +1,7 @@
 
 # y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input
 y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input#concept.label = Entrada del modelo mL
-y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.Input(java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer)#phrase.navigation = un nuevo {Entrada del modelo mL} en que {0, clientannualrevenue} {1, clientemployeenumber} {2, clientexistenceduratión} {3, clientindustry} 
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.Input(java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer)#phrase.navigation = un nuevo {Entrada del modelo mL} en que {0, clientannualrevenue} {1, clientemployeenumber} {2, clientexistenceduratión} {3, clientindustry}
 y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientannualrevenue#phrase.action = cambiar el clientannualrevenue {this,PARTITIVE_ARTICLE} a {clientannualrevenue}
 y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientannualrevenue#phrase.addition_setter = añadir {clientannualrevenue} a el clientannualrevenue {this,PARTITIVE_ARTICLE}
 y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientannualrevenue#phrase.navigation = {clientannualrevenue} {this,PARTITIVE_ARTICLE}
@@ -21,7 +21,7 @@ y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearnings
 
 # y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output
 y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output#concept.label = Salida del modelo mL
-y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output.Output(java.lang.Double,java.lang.String,java.lang.Double)#phrase.navigation = un nuevo {Salida del modelo mL} en que {0, confidence} {1, predicted clientdefaultedpayment} {2, weight} 
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output.Output(java.lang.Double,java.lang.String,java.lang.Double)#phrase.navigation = un nuevo {Salida del modelo mL} en que {0, confidence} {1, predicted clientdefaultedpayment} {2, weight}
 y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output.confidence#phrase.action = cambiar el confidence {this,PARTITIVE_ARTICLE} a {confidence}
 y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output.confidence#phrase.addition_setter = añadir {confidence} a el confidence {this,PARTITIVE_ARTICLE}
 y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output.confidence#phrase.navigation = {confidence} {this,PARTITIVE_ARTICLE}

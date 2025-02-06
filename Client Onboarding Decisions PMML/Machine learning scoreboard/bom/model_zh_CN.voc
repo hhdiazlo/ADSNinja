@@ -1,7 +1,7 @@
 
 # y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input
 y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input#concept.label = ML 模型输入
-y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.Input(java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer)#phrase.navigation = 新建 {ML 模型输入}符合条件：{0, clientannualrevenue} {1, clientemployeenumber} {2, clientexistenceduration} {3, clientindustry} 
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.Input(java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer)#phrase.navigation = 新建 {ML 模型输入}符合条件：{0, clientannualrevenue} {1, clientemployeenumber} {2, clientexistenceduration} {3, clientindustry}
 y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientannualrevenue#phrase.action = 设置{this}的当前 clientannualrevenue为{clientannualrevenue}
 y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientannualrevenue#phrase.addition_setter = 加{clientannualrevenue}到{this}的属性当前 clientannualrevenue里
 y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientannualrevenue#phrase.navigation = {this} 的{clientannualrevenue}
@@ -21,7 +21,7 @@ y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearnings
 
 # y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output
 y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output#concept.label = ML 模型输出
-y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output.Output(java.lang.Double,java.lang.String,java.lang.Double)#phrase.navigation = 新建 {ML 模型输出}符合条件：{0, confidence} {1, predicted clientdefaultedpayment} {2, weight} 
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output.Output(java.lang.Double,java.lang.String,java.lang.Double)#phrase.navigation = 新建 {ML 模型输出}符合条件：{0, confidence} {1, predicted clientdefaultedpayment} {2, weight}
 y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output.confidence#phrase.action = 设置{this}的当前 confidence为{confidence}
 y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output.confidence#phrase.addition_setter = 加{confidence}到{this}的属性当前 confidence里
 y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output.confidence#phrase.navigation = {this} 的{confidence}

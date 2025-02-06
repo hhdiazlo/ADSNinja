@@ -3,7 +3,7 @@
   "providerId" : "hdiazl/HD-Demos/OPS Demos1681853506410",
   "predictionParameters" : {
     "predictionParamType" : "SIMPLE",
-    "deploymentId" : "8",
+    "deploymentId" : null,
     "modelId" : null
   },
   "version" : "V1"

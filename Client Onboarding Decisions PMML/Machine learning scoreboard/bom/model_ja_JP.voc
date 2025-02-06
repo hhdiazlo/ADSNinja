@@ -1,7 +1,7 @@
 
 # y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input
 y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input#concept.label = ML モデル入力
-y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.Input(java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer)#phrase.navigation = 新規の {ML モデル入力}ここで{0, clientannualrevenue} {1, clientemployeenumber} {2, clientexistenceduration} {3, clientindustry} 
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.Input(java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer)#phrase.navigation = 新規の {ML モデル入力}ここで{0, clientannualrevenue} {1, clientemployeenumber} {2, clientexistenceduration} {3, clientindustry}
 y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientannualrevenue#phrase.action = {this}のclientannualrevenueを{clientannualrevenue}とする
 y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientannualrevenue#phrase.addition_setter = {this}のclientannualrevenueに{clientannualrevenue}を追加する
 y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Input.clientannualrevenue#phrase.navigation = {this}の{clientannualrevenue}
@@ -21,7 +21,7 @@ y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearnings
 
 # y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output
 y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output#concept.label = ML モデル出力
-y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output.Output(java.lang.Double,java.lang.String,java.lang.Double)#phrase.navigation = 新規の {ML モデル出力}ここで{0, confidence} {1, predicted clientdefaultedpayment} {2, weight} 
+y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output.Output(java.lang.Double,java.lang.String,java.lang.Double)#phrase.navigation = 新規の {ML モデル出力}ここで{0, confidence} {1, predicted clientdefaultedpayment} {2, weight}
 y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output.confidence#phrase.action = {this}のconfidenceを{confidence}とする
 y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output.confidence#phrase.addition_setter = {this}のconfidenceに{confidence}を追加する
 y9dx18706.clientonboardingdecisions.client_onboarding_decisions.machinelearningscoreboard.Output.confidence#phrase.navigation = {this}の{confidence}

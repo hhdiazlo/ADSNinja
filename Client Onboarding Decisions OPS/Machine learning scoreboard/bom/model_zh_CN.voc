@@ -1,7 +1,7 @@
 
 # hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Error
 hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Error#concept.label = 输出错误
-hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Error.Error(java.lang.String,java.lang.String)#phrase.navigation = 新建 {输出错误}符合条件：{0, 代码} {1, 讯息} 
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Error.Error(java.lang.String,java.lang.String)#phrase.navigation = 新建 {输出错误}符合条件：{0, 代码} {1, 讯息}
 hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Error.code#phrase.action = 设置{this}的当前 代码为{代码}
 hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Error.code#phrase.navigation = {this} 的{代码}
 hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Error.message#phrase.action = 设置{this}的当前 讯息为{讯息}
@@ -9,7 +9,7 @@ hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Error.
 
 # hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input
 hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input#concept.label = ML 模型输入
-hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.Input(double,double,double,double)#phrase.navigation = 新建 {ML 模型输入}符合条件：{0, clientannualrevenue} {1, clientexistenceduration} {2, clientemployeenumber} {3, clientindustry} 
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.Input(double,double,double,double)#phrase.navigation = 新建 {ML 模型输入}符合条件：{0, clientannualrevenue} {1, clientemployeenumber} {2, clientexistenceduration} {3, clientindustry}
 hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.clientannualrevenue#phrase.action = 设置{this}的当前 clientannualrevenue为{clientannualrevenue}
 hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.clientannualrevenue#phrase.addition_setter = 加{clientannualrevenue}到{this}的属性当前 clientannualrevenue里
 hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.clientannualrevenue#phrase.navigation = {this} 的{clientannualrevenue}
@@ -29,7 +29,7 @@ hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.
 
 # hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output
 hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output#concept.label = ML 模型输出
-hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.Output(java.lang.Integer,java.util.List)#phrase.navigation = 新建 {ML 模型输出}符合条件：{0, predictions} {1, scores} 
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.Output(hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Error,java.lang.Integer,java.util.List)#phrase.navigation = 新建 {ML 模型输出}符合条件：{0, 错误} {1, predictions} {2, scores}
 hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.addTo_scores(java.lang.Double)#phrase.action = 在{this}的这些 scores中增加{0}
 hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.clear_scores()#phrase.action = 删除这些 scores的 {this}
 hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.error#phrase.action = 设置{this}的当前 错误为{错误}
@@ -41,6 +41,7 @@ hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output
 hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.predictions#phrase.navigation = {this} 的{predictions}
 hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.predictions#phrase.subtraction_setter = 减{predictions}到{this}的属性当前 predictions里
 hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.removeFrom_scores(java.lang.Double)#phrase.action = 从{this}的这些 scores中删除{0}
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.run(com.ibm.decision.run.RunContext,hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input)#phrase.navigation = ML 模型输出.run({0}, {1})
 hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.run(hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input)#phrase.navigation = predict({0})
 hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.scores#phrase.action = 设置{this}的当前 scores为{scores}
 hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.scores#phrase.navigation = {this} 的{scores}

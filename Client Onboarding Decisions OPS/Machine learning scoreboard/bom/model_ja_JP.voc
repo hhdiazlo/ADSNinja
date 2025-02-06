@@ -1,7 +1,7 @@
 
 # hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Error
 hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Error#concept.label = 出力エラー
-hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Error.Error(java.lang.String,java.lang.String)#phrase.navigation = 新規の {出力エラー}ここで{0, コード} {1, メッセージ} 
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Error.Error(java.lang.String,java.lang.String)#phrase.navigation = 新規の {出力エラー}ここで{0, コード} {1, メッセージ}
 hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Error.code#phrase.action = {this}のコードを{コード}とする
 hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Error.code#phrase.navigation = {this}の{コード}
 hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Error.message#phrase.action = {this}のメッセージを{メッセージ}とする
@@ -9,7 +9,7 @@ hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Error.
 
 # hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input
 hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input#concept.label = ML モデル入力
-hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.Input(double,double,double,double)#phrase.navigation = 新規の {ML モデル入力}ここで{0, clientannualrevenue} {1, clientexistenceduration} {2, clientemployeenumber} {3, clientindustry} 
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.Input(double,double,double,double)#phrase.navigation = 新規の {ML モデル入力}ここで{0, clientannualrevenue} {1, clientemployeenumber} {2, clientexistenceduration} {3, clientindustry}
 hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.clientannualrevenue#phrase.action = {this}のclientannualrevenueを{clientannualrevenue}とする
 hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.clientannualrevenue#phrase.addition_setter = {this}のclientannualrevenueに{clientannualrevenue}を追加する
 hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.clientannualrevenue#phrase.navigation = {this}の{clientannualrevenue}
@@ -29,7 +29,7 @@ hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input.
 
 # hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output
 hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output#concept.label = ML モデル出力
-hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.Output(java.lang.Integer,java.util.List)#phrase.navigation = 新規の {ML モデル出力}ここで{0, predictions} {1, scores} 
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.Output(hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Error,java.lang.Integer,java.util.List)#phrase.navigation = 新規の {ML モデル出力}ここで{0, エラー} {1, predictions} {2, scores}
 hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.addTo_scores(java.lang.Double)#phrase.action = {this}のscoresに{0}を追加
 hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.clear_scores()#phrase.action = {this}のscoresをクリアする
 hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.error#phrase.action = {this}のエラーを{エラー}とする
@@ -41,6 +41,7 @@ hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output
 hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.predictions#phrase.navigation = {this}の{predictions}
 hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.predictions#phrase.subtraction_setter = {this}のpredictionsから{predictions}を引く
 hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.removeFrom_scores(java.lang.Double)#phrase.action = {this}のscoresから{0}を削除
+hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.run(com.ibm.decision.run.RunContext,hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input)#phrase.navigation = ML モデル出力.run({0}, {1})
 hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.run(hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Input)#phrase.navigation = predict({0})
 hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.scores#phrase.action = {this}のscoresを{scores}とする
 hdiazl.hd_demos.client_onboarding_ops_decisions.machinelearningscoreboard.Output.scores#phrase.navigation = {this}の{scores}
